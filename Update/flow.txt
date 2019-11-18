@@ -41,9 +41,9 @@ void Title()
 
 	Wait(100);
 
-	//DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
+	//DrawSprite( 10, "logo", NULL, 0, 0, 0, 0, 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, FALSE );
 
-	DrawSprite( 10, "Logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
+	DrawSprite( 10, "logo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 10, 0, FALSE );
 
 	DrawSceneWithMask("black", "maskc", 0, 0, 1000);
 
@@ -52,13 +52,13 @@ void Title()
 
 	DrawScene("white", 1000);
 
-	PlayBGM( 2, "higurashi", 128, 0 );
+	PlayBGM( 2, "higurashi", 56, 0 );
 
 	DrawScene("ji1_menu", 1500);
 
 	Wait(1000);
 
-	DrawSpriteWithFiltering( 10, "SGTitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
+	DrawSpriteWithFiltering( 10, "sgtitle900200", "maskleft", 0, 0, 0, TRUE, TRUE, 0, 0, 10, 1500, TRUE );
 
 	DrawSprite( 12, "titlelogo", NULL, 0, 0, 0, 0, 0, 0, FALSE, FALSE, 0, 0, 12, 1000, TRUE );
 
@@ -84,14 +84,14 @@ void Title()
 
 void ChapterPreview()
 {
-	SetValidityOfInput( FALSE );
+	// SetValidityOfInput( FALSE );
 
 	Wait( 200 );
 	FadeOutBGM( 1, 300, FALSE );
 	FadeOutBGM( 2, 300, FALSE );
 	DisableWindow();
 
-	PlayBGM( 0, "lsys13", 128, 0 );
+	PlayBGM( 0, "lsys13", 56, 0 );
 	DrawSceneWithMask("black", "mask2", 1, 0, 1200 );
 	Wait( 1500 );
 
@@ -107,22 +107,18 @@ void ChapterPreview()
 	DrawBustshotWithFiltering(9, "scenario/description", "mask5", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 20, 1000, TRUE );
 	Wait( 200 );
 
-	SetValidityOfInput( TRUE );
+	// SetValidityOfInput( TRUE );
 
 	ShowChapterPreview();
 
-	if(LoadValueFromLocalWork( LOCALWORK_NO_RESULT ) == 1)
-	{
-		StopBGM( 2 );
-		PlaySE( 1, "wa_037", 128, 64 );
-
-		DrawScene( "black", 1000 );
+	if (LoadValueFromLocalWork( LOCALWORK_NO_RESULT ) == 1) {
+		StopBGM( 0 );
+		PlaySE( 1, "wa_037", 56, 64 );
 
 		JumpSection("Game");
 	}
 
 	FadeOutBGM( 2, 1000, FALSE );
-
 	DrawScene("black", 1000);
 
 	CallSection("Title");
