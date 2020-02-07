@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 	FadeOutBGM( 0, 300, FALSE );

@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 
 	SetFontOfMessage( 2, 24, 0 );
@@ -13,175 +13,175 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こんにちは、竜騎士07です。",
-		   NULL, "Hi, this is Ryukishi07.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bonjour, ici Ryûkishi 07.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この度は『ひぐらしのなく頃に解』皆殺し編をお楽しみいただき、誠にありがとうございます。",
-		   NULL, "Thank you for playing\nHigurashi When They Cry Kai - Ch.7 Minagoroshi.", Line_Normal);
+		   NULL, "Merci d'avoir lu le septième tome du sanglot des cigales, La solution finale.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今回のシナリオは、例えるなら、なぞなぞ帳の巻末の答えのページのような無味簡素さがあったと思います。",
-		   NULL, "This time around, the scenario was almost like the answer page in a book of riddles.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense que cette fois-ci, l'histoire a dû avoir un goût un peu sec, un peu comme ces parties dans les cahiers de jeux de l'été où l'on vous donne toutes les solutions vite fait, sans rien expliquer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これまでのシナリオに併せて読む、副菜のようなシナリオだったかもしれません。",
-		   NULL, "Or maybe the scenario was like a side dish we enjoyed alongside all the scenarios up to now.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était peut-être un de ces plats de légumes qu'il faut absolument manger en même temps que votre plat principal.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　召し上がり方は皆さんにお任せいたします。",
-		   NULL, "You can take it how you like.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je vous laisse le choix de l'art et de la manière de le dévorer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　楽しんで読めたなら、それに勝る召し上がり方はないかと思います。",
-		   NULL, "I just hope you enjoyed it.", Line_Normal);
+		   NULL, "Et si jamais il vous plaisait, alors tant mieux.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　謎は謎である内が一番楽しいだけに、今回のシナリオの発表はとても不安でした。",
-		   NULL, "I was very nervous about releasing this scenario, because a mystery is only good when it's still a mystery.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tant que le mystère reste un mystère, le suspense de ce genre d'histoire reste intact et l'intérêt résiste. Je dois vous avouer que j'ai beaucoup redouté la sortie de ce tome.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういった楽しみ方にある種の終止符を打ちかねないからです。",
-		   NULL, "This scenario marks the end of that mystery.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Parce que donner la solution, c'était mettre un terme au côté enquête et donc quelque part au côté intéressant de la série.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　公開を渋りたい弱気も少しありました。",
-		   NULL, "To be honest, I didn't want to release this chapter for a while.", Line_Normal);
+		   NULL, "J'ai même pensé à reculer la date de sortie pour éviter ça.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ただ、ゆえにか昨今、明かさぬ謎を前提にした作品が散見しているように感じています。",
-		   NULL, "However, way too many similar stories are being published with no answers at all.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais c'est aussi peut-être pour ça que j'ai remarqué qu'en ce moment, on voyait de plus en plus d'œuvres partant du principe de ne pas révéler la solution.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　答えのページがないなぞなぞ帳など何の意味もありません。",
-		   NULL, "A book of riddles means nothing if there's no answer page in the back.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sauf qu'une énigme impossible à résoudre n'a aucun sens.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　せっかく苦労して自分なりの答えを見つけても、正解かどうか確かめられないなら悲しいだけです。",
-		   NULL, "Coming up with an answer when you have no way to see if it's right or not is a little sad, I think.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Même en se donnant du mal et en trouvant une explication satisfaisante pour soi, finalement, si nous n'avons pas “la” bonne réponse pour comparer, c'est plus frustrant qu'autre chose.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その悲しさゆえに、なぞなぞ帳を斜め読みし、悩む楽しみ方が失われているように感じています。",
-		   NULL, "If there are no answers, you can't get any joy out of reading a book of riddles.", Line_Normal);
+		   NULL, "Et c'est pour éviter la déception, peut-être, que nous survolons ces œuvres là, et que nous oublions, petit à petit, le plaisir de l'enquête et de la découverte progressive des secrets de l'histoire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのため、なぞなぞ本来の楽しさが失われ、",
-		   NULL, "I regret to see that there are way too many stories out there", Line_WaitForInput);
+		   NULL, "Ce n'est que mon avis personnel, mais je trouve dommage que les histoires actuelles misent plus sur des scènes à gros impact visuel ou violent", Line_WaitForInput);
 	OutputLine(NULL, "インパクトだけが先行した作品が増えすぎたことを個人的に残念に思ってきました。",
-		   NULL, " that don't offer this kind of joy.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " que sur un mystère distillé au compte-gouttes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それなので『ひぐらしのなく頃に』では、少なくとも答え合わせができる解答的なものをきちんと描ききろうと考えました。",
-		   NULL, "That's why I decided to release something that you can compare your answer to for this series.", Line_Normal);
+		   NULL, "Et c'est pour cela que dans le sanglot des cigales, j'ai voulu ne serait-ce qu'apporter une solution aux questions principales.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　色々と反則的な表現の世界ゆえに、いわゆる正解を得られた方は少ないかもしれません。",
-		   NULL, "Since this world had a rather irregular presentation, there may not have been many people who reached what might be called the right answer.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors bon, étant donné certaines formulations tarabiscotées, je pense que peu de gens auront réussi à résoudre l'énigme correctement.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ですので、いわゆる得点というものは、正解したかどうかで与えられるよりも、",
-		   NULL, "But it's not really about whether your answer was right or wrong.", Line_WaitForInput);
+		   NULL, "C'est pourquoi je préfèrerais noter les gens non pas seulement sur la question du coupable,", Line_WaitForInput);
 	OutputLine(NULL, "いくつの問いを見付け出しその答えを用意できたか、解答用紙の文字数で与えられるべきではないかと思います。",
-		   NULL, " It's much more about how many questions you raised when reading the story and how many answers you were able to find.", Line_Normal);
+		   NULL, " mais en plusieurs points, pour voir qui a réfléchi à tel ou tel indice, un peu comme un test avec un barème à points.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　本日までお寄せくださった大勢の皆さんの推理やご感想を心より感謝いたします。",
-		   NULL, "Thank you all very much for the solutions you've sent me.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'ai reçu de très nombreuses lettres m'expliquant vos théories et vos réponses, et je vous en remercie du fond du cœur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いずれもとても素晴らしい推理で、中には劇中よりも考察が深く、それを正解にしてしまいたいと思ったことも何度かあるくらいです（苦笑）。",
-		   NULL, "They were all wonderful theories, and some were thought out so much more than the actual story that I frequently thought about making them the right answer (wry laugh).", Line_Normal);
+		   NULL, "Certaines déductions étaient plus intéressantes que mon histoire elle-même, et certains ont inventés des solutions super tordues, je dois dire, parfois tellement bien pensées que je me suis demandé si je ne pourrais pas les utiliser à la place des miennes...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　また、それらの深い推理に勇気付けられたお陰で、第７話まで挫けずに書き進むことができたと思います。",
-		   NULL, "Also, your support has given me courage to finish writing the seventh chapter of this series.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais surtout, c'est grâce à ces lettres que j'ai pu finir ce tome sans devenir fou entre-temps.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今日まで『ひぐらし』を支えてくださったのは皆さんに心より感謝いたします。",
-		   NULL, "Thank you very much for supporting Higurashi.", Line_Normal);
+		   NULL, "Je vous remercie humblement de m'avoir soutenu jusqu'à aujourd'hui.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さて、最後にお詫びしたいのは、児童福祉行政の描き方です。",
-		   NULL, "Finally, I would like to apologize about how I portrayed the child consultation center.", Line_Normal);
+		   NULL, "Et maintenant, juste avant de finir, je dois quelques excuses aux agents de la protection de l'enfance.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年当時はどうだったかはさて置き、",
-		   NULL, "I don't know what it was like in 1983,", Line_WaitForInput);
+		   NULL, "Je ne sais pas quelle était la réalité des centres de protection de l'enfance en 1983, et à vrai dire, ce n'est pas mon propos.", Line_WaitForInput);
 	OutputLine(NULL, "今日の児童福祉行政はとても親身で、劇中で描かれたような意地悪なものでは断じてありません。",
-		   NULL, " but child consultation centers are not mean places like I depicted in my story.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Par contre, je connais bien les centres tels qu'ils sont aujourd'hui. Je peux vous assurer que les choses ne se passent pas du tout comme dans ce que j'ai écrit ici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　劇中、演出上の都合で意地悪っぽく描きましたが、",
-		   NULL, "I made the characters look so unfeeling,", Line_WaitForInput);
+		   NULL, "Dans l'histoire, il me fallait des fonctionnaires vraiment révoltants, parce que ça servait à renforcer certains liens entre les personnages et les lecteurs,", Line_WaitForInput);
 	OutputLine(NULL, "今日の行政は常に心強い、",
-		   NULL, " but in reality,", Line_WaitForInput);
+		   NULL, " mais dans la réalité,", Line_WaitForInput);
 	OutputLine(NULL, "住民の一番最初の味方であることを最後にお伝えさせてください。",
-		   NULL, " the government today is the number one hero for us civilians.", Line_Normal);
+		   NULL, " je vous assure que ces fonctionnaires-là sont, presque plus que d'autres, j'allais dire, au service de la nation et à l'écoute du public. Que les choses soient claires, ils sont vraiment là pour vous aider. Juste histoire de mettre les points sur les i, quoi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実際、児童福祉や青少年育成に関わる方々は非常に熱心で滅私奉公な方々ばかりです。",
-		   NULL, "In fact, those involved with child welfare and youth education are all extremely passionate and selflessly devoted people.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Parce que je vous assure que les gens qui s'occupent des services sociaux, et surtout des enfants maltraités, se donnent vraiment au maximum pour réparer les choses, sans penser à eux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そういった方々をさも頼りなさそうに描いてしまったことをお詫びさせてください。",
-		   NULL, "I'm sorry for giving them such a negative image in this chapter.", Line_Normal);
+		   NULL, "Je voudrais m'excuser une dernière fois d'en avoir donné une image aussi misérable dans le fil de mon histoire.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　残す物語は最後の第８話「祭囃し編」のみとなりました。",
-		   NULL, "The next chapter, Matsuribayashi, is going to be the last one of the series.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Eh bien voilà, il ne nous reste plus que le dernier tome, Les réjouissances.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これだけの長い物語となった『ひぐらしのなく頃に』の、締めとなるシナリオとして見事描ききれるかどうか、",
-		   NULL, "I'm overwhelmed by the pressure of writing the last chapter of Higurashi When They Cry,", Line_WaitForInput);
+		   NULL, "Il aura la lourde tâche de couronner et de terminer ma saga.", Line_WaitForInput);
 	OutputLine(NULL, "早くもプレッシャーでいっぱいですが、頑張ろうと思います。",
-		   NULL, " which turned out to be such a long story.", Line_Normal);
+		   NULL, " Je ne sais pas si je serai à la hauteur pour l'écrire, et ça me met déjà la pression, mais j'ai bien l'intention de faire de mon mieux.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうか温かく見守っていただければ幸いです。",
-		   NULL, "I hope you'll continue your kind support.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'espère qu'il vous plaira.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうか今後ともよろしくお願いいたします。",
-		   NULL, "Thank you all very much.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et j'espère vous compter encore une fois parmi mes lecteurs pour ce dernier tome.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -189,12 +189,12 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "０７ｔｈ　Ｅｘｐａｎｓｉｏｎ",
-		   NULL, "                               07th Expansion", Line_ContinueAfterTyping);
+		   NULL, " 07th Expansion", Line_ContinueAfterTyping);
 
 	if (GetGlobalFlag(GADVMode) == 0) { SetDrawingPointOfMessage( 0, 9 ); }
 
 	OutputLine(NULL, "竜騎士07",
-		   NULL, "                                   Ryukishi07", GetGlobalFlag(GLinemodeSp));
+		   NULL, " 竜騎士07 Ryûkishi 07", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 	SetSpeedOfMessage( FALSE, 0 );
 

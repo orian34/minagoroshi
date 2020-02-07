@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -11,20 +11,20 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神がいつ降臨されるのかは誰も知りません。",
-		   NULL, "Watch therefore: for ye know not what hour your Lord doth come.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Personne ne sait quel jour Dieu descendra sur la terre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それは例えるなら、泥棒がいつ訪れるのかわからないように。",
-		   NULL, "But know this, that if the goodman of the house had known in what watch the thief would come, he would have watched, and would not have suffered his house to be broken up.", Line_Normal);
+		   NULL, "Tout comme personne ne sait à quelle veille le voleur doit venir.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから予期せずしてその時を迎えて、不信心であったことを悔いぬよう、常に目を醒ましていなさい。",
-		   NULL, "Therefore, be ye also ready: for in such an hour as ye think not the Son of man cometh.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi tu devras toujours être prête et vigilante, pour que la foi ne te fasse pas défaut lorsque le jour viendra.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -32,52 +32,52 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その日が何時なのか、神さえも知り得ないのです。",
-		   NULL, "Even God doesn't know when he will descend once more.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Personne ne sait quand arrivera l'heure de son avènement, pas-même Dieu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神はいつその時が訪れてもいいように、常に目を醒ましているでしょう。",
-		   NULL, "He is constantly prepared for that day to come.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais lui se tiendra toujours prêt et vigilant, pour pouvoir descendre sur la terre à n'importe quel moment.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　常に自分の中の神を信じよ。",
-		   NULL, "Have faith in your God at all times.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Aie toujours foi en ton Dieu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつ日の光を浴びるかは、その神すらも知り得ないのだから。",
-		   NULL, "Your God doesn't even know when he'll see the light.", Line_Normal);
+		   NULL, "Car ni lui ni toi ne savent quand sa lumière te couvrira.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　努力を惜しむな。",
-		   NULL, "Do not spare any effort.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne ménage jamais ta peine.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　常に勤勉であれ。",
-		   NULL, "Study hard every day.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sois toujours assidue à la tâche.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　探求に情熱を。",
-		   NULL, "Have the passion for discovery.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Va toujours de l'avant, cherchant avec ardeur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　報われる日は神でも知り得ないが、その日は約束されているのだ。",
-		   NULL, "You never know when you will be rewarded, but that day will come for sure.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Même ton Dieu ne sait pas quand tu seras récompensée, mais aie confiance, car cette récompense t'est promise.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　約束の日まで、私は自らの情熱の炎を潰えさせることはない。",
-		   NULL, "Until then, you must let the fires of your passion burn bright.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Jusqu'au jour de ta rétribution, ne laisse jamais cesser d'ardre les flammes en ton âme.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -85,7 +85,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　Hifumi．T ",
-		   NULL, "                                   Hifumi. T", Line_Normal);
+		   NULL, " Hifumi T", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

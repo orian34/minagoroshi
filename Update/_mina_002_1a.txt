@@ -1,78 +1,78 @@
-void main()
+﻿void main()
 {
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は覚えていた。",
-		   NULL, "I remembered.", Line_Normal);
+		   NULL, "J'en avais des souvenirs très nets.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この圭一のデリカシーのない「いつもの行為」が、致命的な結末を運命付けることを覚えていた。",
-		   NULL, "I remembered that Keiichi's insensitive decision eventually caused a fatal ending. That was fate.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je savais que Keiichi allait vouloir “faire comme d'habitude”, et que son geste indélicat allait déclencher la tragédie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は、内心は人形を魅音に渡すべきだと理解している。",
-		   NULL, "Keiichi was internally thinking that he should give the doll to Mion.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il comprenait bien qu'il devrait la donner à Mion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音にだけおみやげの袋が渡されていないのだから、公平に考えて魅音に権利を譲るのは当然のことだ。",
-		   NULL, "She was the only one who didn't get anything, so it would be natural for him to give it to her.", Line_Normal);
+		   NULL, "Elle était la seule à ne rien avoir reçu, c'était donc le plus logique des choix.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、異性であることを知りながら同性のように付き合っている、魅音という不思議な存在に対して戸惑いを持っているのだ。",
-		   NULL, "But the hesitation he was feeling was because Mion was such a close friend to him.", Line_Normal);
+		   NULL, "Mais Mion était dans une position spéciale. Il se comportait avec elle comme avec un garçon, tout en sachant pertinemment que c'était une fille, et qu'elle n'était pas moche, en plus de ça...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は魅音は同性の友人のように思い接してきた。",
-		   NULL, "He'd been treating Mion as if she was a male friend.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors forcément, il devait faire un choix ; et il avait choisi de la considérer comme un garçon, pour ne rien gâcher entre eux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そう思うなら、男友達にお人形を渡すという選択肢はありえない。",
-		   NULL, "But it would be weird to give a doll to another boy.", Line_Normal);
+		   NULL, "Et donc forcément, s'il la considère comme un garçon, il ne peut pas, logiquement, lui refiler la poupée.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は魅音にお人形を渡せば、異性同士であることを意識せずにはいられなくなることを恐れた。",
-		   NULL, "He was afraid that if he gave the doll to Mion, he would start looking at her as a girl from that point onward.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il devait certainement avoir peur de ne plus pouvoir la regarder comme avant s'il lui donnait la poupée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、これからも魅音と同性同士のような、これまでと同じ関係を続けていきたいと願った。",
-		   NULL, "He wanted to continue his friendship with Mion without thinking about their difference in gender.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Peur de ne plus avoir les mêmes liens avec elle. Et il ne voulait pas d'un changement entre eux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、この関係を壊したくない。",
-		   NULL, "He didn't want to ruin the relationship they had at that moment.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il ne voulait pas casser l'ambiance.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、壊すお人形を魅音に渡せない。",
-		   NULL, "That's why he couldn't give the doll to Mion.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi il ne pouvait pas lui refiler la poupée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お人形を唯一もらっていないのが魅音であると知りながら、渡せない。",
-		   NULL, "Even though she was the only one without a doll, he felt so hesitant.", Line_Normal);
+		   NULL, "Même s'il savait bien qu'elle était la seule à ne pas en avoir eue.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でもそれは圭一個人の価値観に基づく考え方で、魅音には通じないのだ。",
-		   NULL, "Of course, that was only how he felt. Mion didn't agree.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sauf que bien sûr, tout ça, c'était dans la tête de Keiichi ; Mion ne savait rien de ses pensées et réflexions sur la question.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だって、魅音はそれでも自分を、女の子として扱ってもらいたいと思っているのだから…。",
-		   NULL, "In actuality, she wished he would treat her more like a girl...", Line_Normal);
+		   NULL, "Et puis aussi, elle désirait en secret être considérée comme une femme, surtout par lui, d'ailleurs. Alors forcément...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -83,27 +83,27 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は圭一に声を掛けようと近付く。",
-		   NULL, "I walked closer to Keiichi so I could talk to him.", Line_Normal);
+		   NULL, "Je me rapprochai, bien décidée à lui porter conseil.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音にお人形を渡せと言う助言が、魅音の耳にも入ってしまったら、魅音は意固地になって拒否してくるだろう。",
-		   NULL, "If Mion heard me telling Keiichi to give her the doll, she would resist taking it.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si Mion devait m'entendre lui dire de la lui donner, elle prendrait la mouche et la refuserait mordicus.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから圭一にだけ聞こえる声でなくてはならないのだ。",
-		   NULL, "I had to make sure that no one but Keiichi could hear me.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je devais donc absolument lui parler à voix basse, sans me faire remarquer.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、私に入れ知恵をされたことを意識させるような長い時間であってもならない……。",
-		   NULL, "I also had to make this very quick...", Line_Normal);
+		   NULL, "Et je devais faire vite, pour ne pas attirer les soupçons...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ちょんちょんと圭一の背中を突っつく。",
-		   NULL, "I poked Keiichi in the back.", Line_Normal);
+		   NULL, "Je lui piquai le dos avec un doigt pour lui faire signe.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -113,21 +113,21 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100129", 256, TRUE);
 	OutputLine(NULL, "「ん？」",
-		   NULL, "\"Huh?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Hmm ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一。",
-		   NULL, "Keiichi.", Line_WaitForInput);
+		   NULL, "Keiichi,", Line_WaitForInput);
 	OutputLine(NULL, "一番お人形を欲しい人が、一番憎まれ口を叩いていますのですよ。",
-		   NULL, " The person who really wants that doll is the one who's bullying you the most about it.", Line_Normal);
+		   NULL, " c'est celle qui en dit le plus de mal qui en a le plus envie...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言うつもりだった。",
-		   NULL, "I was going to say that...", Line_WaitForInput);
+		   NULL, "C'était l'indice gros comme une maison que je voulais lui donner.", Line_WaitForInput);
 	OutputLine(NULL, "…ところが圭一は、私がまだ何も口にしていないのにこう言った。",
-		   NULL, " But Keiichi opened his mouth first, even before I could say anything to him.", Line_Normal);
+		   NULL, " Mais Keiichi ne me laissa pas le temps de parler.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -136,27 +136,27 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100130", 256, TRUE);
 	OutputLine(NULL, "「あぁ、わかってるって。」",
-		   NULL, "\"I know.\"", Line_Normal);
+		   NULL, "— Ça va, c'est bon, je suis pas complètement idiot non plus.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まだ私は何も言っていなかった。",
-		   NULL, "I hadn't said anything to him yet.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je n'avais rien dit.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも圭一は、わかったと返事をする。",
-		   NULL, "But Keiichi told me that he knew.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et pourtant, Keiichi avait compris.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　何のコミュニケーションが取れたのかわからず、私は一瞬困惑した。",
-		   NULL, "I felt confused, not knowing what he just meant.", Line_Normal);
+		   NULL, "Je restai interdite, me demandant quel moyen de communication il avait bien pu déceler.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　すると圭一は魅音の方に向き直り、嫌味っぽくにやりと笑いながら言った。",
-		   NULL, "He turned around to face Mion, smiling mischievously.", Line_Normal);
+		   NULL, "Keiichi se tourna alors vers Mion, et lui lança sur un ton un peu moqueur :", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -166,10 +166,10 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100131", 256, TRUE);
 	OutputLine(NULL, "「魅音〜、俺が持ってたら変態扱いなら、こりゃ誰が持ってりゃ変態扱いにならないんだ〜？",
-		   NULL, "\"Mion, if you think I would look like a pervert with this doll, who do you think deserves to have it?", Line_WaitForInput);
+		   NULL, "— Mion, dis voir, si moi je passe pour un détraqué avec cette poupée, à qui je pourrais la refiler ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100132", 256, TRUE);
 	OutputLine(NULL, "　う〜ん？」",
-		   NULL, " Huh?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " T'sais pas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -179,19 +179,19 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300031", 256, TRUE);
 	OutputLine(NULL, "「そそ、そんなことは知らないよ。",
-		   NULL, "\"I-I don't know...", Line_WaitForInput);
+		   NULL, "— Co-co-comment veux-tu qu'je l'sache ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300032", 256, TRUE);
 	OutputLine(NULL, "まぁ、お人形なんて男の子の持つものじゃないよね〜って言っただけだしさ？」",
-		   NULL, " All I'm saying is that dolls aren't for boys.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Moi je dis juste que c'est pas un truc pour un garçon, c'est tout, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100133", 256, TRUE);
 	OutputLine(NULL, "「ほほぅ、じゃお前が持てば万事解決じゃねぇか。",
-		   NULL, "\"I see... Then I guess you can have it.", Line_WaitForInput);
+		   NULL, "— Ah ouais ? Ben alors tu sais quoi, t'as le droit de te démerder avec.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100134", 256, TRUE);
 	OutputLine(NULL, "ほれ。」",
-		   NULL, " Here.\"", Line_Normal);
+		   NULL, " Attrape !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -202,61 +202,61 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は、バスケットボールのパスみたいに両手に持って突き出しながら、お人形を魅音の胸に無理やり預ける。",
-		   NULL, "Keiichi tossed the doll to Mion as if passing her a basketball.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Keiichi lança la poupée vers Mion comme un ballon de basket, la lui plaçant de force dans les mains.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まるで、荷物持ちのジャンケンに負けた相手にランドセルを押し付けるような感じだった。",
-		   NULL, "As if forcing to her to carry his bag, or something.", Line_Normal);
+		   NULL, "Comme si, après un gage, il lui avait refilé son cartable pour le lui faire porter.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　魅音の顔が真っ赤になる。",
-		   NULL, "Mion's face quickly turned red.", Line_WaitForInput);
+		   NULL, "Le visage de Mion devint tout rouge.", Line_WaitForInput);
 	OutputLine(NULL, "圭一は照れ臭そうに顔を背けた。",
-		   NULL, " Feeling shy, Keiichi turned away from her.", Line_Normal);
+		   NULL, " Keiichi lui tourna le dos, toussant pour se redonner une contenance.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…私は驚く。",
-		   NULL, "...That was surprising.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Encore une fois, je restai sidérée.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は私から合図を受けただけで、それを「魅音に人形を渡せ」というサインだと受け取ったのだ。",
-		   NULL, "He got my message just by getting a tap on his back.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Keiichi n'avait reçu de moi qu'un signal, mais il l'avait décrypté en un ordre bien précis de ma part, celui de donner la poupée à Mion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一はそんなにもデリカシーのある人だったっけ。",
-		   NULL, "Was Keiichi always that smart...?", Line_Normal);
+		   NULL, "Il n'avait pourtant jamais été du genre à comprendre ce genre de petites attentions délicates.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　背中を突っつかれただけで、魅音に渡すべきなのだと考えを改められた。",
-		   NULL, "Just one tap was all it took...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il avait suffi d'un doigt dans son dos pour lui faire penser à Mion.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　以前の世界でも同じように背中を突っついたとしても、きっと圭一はこういう反応は示さないに違いない。",
-		   NULL, "I don't think he would've done the same in a previous life...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'ai beaucoup de mal à croire que le résultat aurait été le même si j'avais fait ça la dernière fois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……これは小さな変化だけれども、以前の世界とは明らかに違う反応だったのだ。",
-		   NULL, "This was just a small incident, but this world is definitely different from the previous one...", Line_Normal);
+		   NULL, "C'était un détail différent par rapport au monde précédent, mais ce détail faisait une sacrée différence.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……いや、……あるいはまさか。",
-		   NULL, "Or could it be...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Ou bien alors... Non, c'est pas possible.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一は私に背中を突っつかれなくても、魅音にお人形を渡していたのではないだろうか…？",
-		   NULL, "Perhaps he would've given that doll to Mion even if I didn't poke him in the back...?", Line_Normal);
+		   NULL, "Lui aurait-il donné la poupée, même sans aucun signal de ma part ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/mati_o1", 400 );
@@ -264,51 +264,51 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500168", 256, TRUE);
 	OutputLine(NULL, "「…………以前の世界の記憶を、…受け継いでいる？」",
-		   NULL, "\"Does he have memories from previous worlds after all...?\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ... Est-ce qu'il aurait par hasard des souvenirs de la dernière fois ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModSetLayerFilter(0, 179, "none");
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha1_yowaki_", "0", "mask00", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyuu</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s12/12/181100053", 256, TRUE);
 	OutputLine(NULL, "「……まさか。",
-		   NULL, "\"No way... he can't.", Line_WaitForInput);
+		   NULL, "— ... Allons bon, Rika,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s12/12/181100054", 256, TRUE);
 	OutputLine(NULL, "そんなこと、あるわけがないのです…。」",
-		   NULL, " That can't be happening....\"", Line_Normal);
+		   NULL, " tu sais bien que c'est absolument impossible...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　確かに圭一は以前の世界の記憶を持っていない。",
-		   NULL, "I know for a fact that he doesn't have those memories.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Hanyû avant raison ; de plus, d'après mes premières observations, Keiichi ne se souvenait de rien.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だけど、……知覚できないくらいに薄っすらとしたものを、心の奥に累積させてはいないだろうか。",
-		   NULL, "But there might be something imperceptible somewhere inside his heart...", Line_Normal);
+		   NULL, "Et pourtant... il avait peut-être quand même gardé des traces, des bribes fugaces au fond de son âme.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　以前の世界での悲しい後悔や悔しさを、心の奥に累積させている…。",
-		   NULL, "He might remember some of the regrets he felt in the previous worlds...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Peut-être que seuls les souvenirs tristes et déchirants restent sous cette forme, passant d'un monde à l'autre ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だからこそ、以前同じことがあった時よりもずっとずっと、「魅音に渡すべき」である気持ちが強かったのではないだろうか…。",
-		   NULL, "That's why he strongly felt he should be giving the doll to Mion this time...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ça expliquerait pourquoi d'un seul coup, il aurait compris ce qu'il avait à faire : parce qu'il l'avait amèrement regretté dans ses autres vies.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そんな圭一のささやかな成長は、数多の世界を生きてきた私にしか知ることができない儚いものだ。",
-		   NULL, "After repeating so many lives, I'm the only one who can even notice this slight growth of his.", Line_WaitForInput);
+		   NULL, "... Mais bon, ce ne sont que conjectures. Conjectures que je suis la seule à pouvoir formuler, étant la seule à avoir conscience de tous les différents mondes...", Line_WaitForInput);
 	OutputLine(NULL, "でも、私はわかる。",
-		   NULL, " But I see it.", Line_WaitForInput);
+		   NULL, " Mais je n'en constatais pas moins un progrès chez lui.", Line_WaitForInput);
 	OutputLine(NULL, "私にはわかる。",
-		   NULL, " It's clearly visible to me.", Line_Normal);
+		   NULL, " C'était indiscutable.", Line_Normal);
 	ClearMessage();
 
 }
