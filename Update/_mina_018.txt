@@ -2759,7 +2759,7 @@
 		   NULL, "— ... Miaou !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500896", 256, TRUE);
 	OutputLine(NULL, "内緒なのですよ☆」",
-		   NULL, " Du poisson ? Où ça ? Où ça ? Éhhééé☆!", Line_Normal);
+		   NULL, " Du poisson ? Où ça ? Où ça ? Nipah☆!", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

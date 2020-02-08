@@ -2003,7 +2003,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　俺の知る梨花ちゃんは、み〜とか、にぱ〜☆とか、幼児言葉でふざける年下の女の子というイメージだ。",
-		   NULL, "La Rika que je connaissais disait des petites choses, elle faisait “Miaou !” ou “Éhhééé☆!”, c'était juste une petite fille, quoi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La Rika que je connaissais disait des petites choses, elle faisait “Miaou !” ou “Nipah☆!”, c'était juste une petite fille, quoi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
