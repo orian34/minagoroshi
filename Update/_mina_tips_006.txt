@@ -43,7 +43,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "・冷蔵庫の掃除をしますので、私物は今夕までに片付けてください。",
-		   NULL, "-- Ce soir, nous faisons nettoyer le frigidaire, n'oubliez pas d'enlever ou de jeter tout ce qui vous appartient avant de quitter le bureau !/", Line_Normal);
+		   NULL, "-- Ce soir, nous faisons nettoyer le frigidaire, n'oubliez pas d'enlever ou de jeter tout ce qui vous appartient avant de quitter le bureau !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
