@@ -115,7 +115,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう、つまりここは、永遠に閉塞した世界ということ。",
-		   NULL, "Si tu veux, c'est un peu monde à jamais refermé sur lui-même.", Line_Normal);
+		   NULL, "Si tu veux, c'est un peu un monde à jamais refermé sur lui-même.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -939,7 +939,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それぞれの世界で、",
-		   NULL, "Nous avons, respectivement, dans chaque monde,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et donc des pièces de l'échiquier apparemment sans rapport les unes aux autres,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -947,7 +947,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "前原圭一が、",
-		   NULL, "Et donc des pièces de l'échiquier apparemment sans rapport les unes aux autres, dans notre cas Keiichi,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "dans notre cas Keiichi,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -1068,7 +1068,7 @@
 	OutputLine(NULL, "竜宮レナという、",
 		   NULL, " et Rena,", Line_WaitForInput);
 	OutputLine(NULL, "特別な繋がりの見えないコマたちが、ランダムな確率で、そのルールに取り込まれる可能性があるということ。",
-		   NULL, " ont chacune une certaine probabilité de se soumettre à cette loi.", Line_Normal);
+		   NULL, " ont chacun une certaine probabilité de se soumettre à cette loi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1282,7 +1282,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうしてこんなにも雛見沢村連続怪死事件に固執をしているのかしら？",
-		   NULL, "Pardon ? Pourquoi ces affaires l'obsèdent-elles à ce point ?", Line_Normal);
+		   NULL, "Pardon ? Pourquoi ces affaires l'obsèdent-il à ce point ?", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -1548,10 +1548,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この雛見沢では、村の仇敵を、オヤシロさまの祟りの名の下に、綿流しの夜にだけは殺してもいい、",
-		   NULL, "Pour faire simple, elle a posé la théorie qu'Oryô Sonozaki avait réussi à faire accepter l'idée que le soir de la purification du coton, on avait le droit de tuer deux ennemis du village au nom de la déesse Yashiro sans être forcément puni. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pour faire simple, elle a posé la théorie qu'Oryô Sonozaki avait réussi à faire accepter l'idée que le soir de la purification du coton, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "という「この晩にだけ殺人を容認する」土壌が、祟りの正体なのではないかという仮説。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "on avait le droit de tuer deux ennemis du village au nom de la déesse Yashiro sans être forcément puni.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2005,12 +2005,12 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…それこそはきっと、",
-		   NULL, " L'un des éléments-clef de la loi Y.", Line_ContinueAfterTyping);
+		   NULL, " L'un des éléments-clef", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "ルールＹの真実のひとつ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " de la loi Y.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/fure2", 1000 );
