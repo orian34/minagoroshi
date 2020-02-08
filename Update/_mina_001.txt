@@ -141,7 +141,7 @@
 		   NULL, "— ... Hanyû ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500002", 256, TRUE);
 	OutputLine(NULL, "　………いたたた…………。",
-		   NULL, "Aïe, ma tête...", Line_WaitForInput);
+		   NULL, " Aïe, ma tête...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500003", 256, TRUE);
 	OutputLine(NULL, "これは一体、",
 		   NULL, " C'est quoi ce bordel ?", Line_Continue);
@@ -1249,12 +1249,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　く、",
-		   NULL, "Merde...", Line_ContinueAfterTyping);
+		   NULL, "Merde", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…………………。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
