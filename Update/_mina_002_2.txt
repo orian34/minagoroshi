@@ -263,10 +263,8 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お休みのキスもする。",
 		   NULL, "Et elle lui roulera une centaine de galoches pour lui dire bonne nuit.", Line_WaitForInput);
-	OutputLine(NULL, "賭けてもいい。",
-		   NULL, " J'en mettrais ma main à couper.", Line_WaitForInput);
-	OutputLine(NULL, "そう顔に書いてあるから間違いない。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "賭けてもいい。そう顔に書いてあるから間違いない。",
+		   NULL, " J'en mettrais ma main à couper.", Line_Normal);
 	ClearMessage();
 
 	ModSetLayerFilter(0, 256, "none");
@@ -293,7 +291,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s12/02/180200024", 256, TRUE);
 	OutputLine(NULL, "「あはははは、圭一くん、百点満点かな、かな！」",
-		   NULL, "— Ahahahahaha ! Keiichi, ça mérite un 2020 !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ahahahahaha ! Keiichi, ça mérite un 20 sur 20 !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
