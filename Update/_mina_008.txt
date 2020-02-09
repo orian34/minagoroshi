@@ -42,7 +42,7 @@
 	FadeOutBGM( 2, 300, FALSE );
 	DrawSceneWithMask( "background/mati_o2", "maskright", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18010", 256, TRUE);
 	OutputLine(NULL, "「なるほどねぇ。",
 		   NULL, "— Hmmm, je vois.", Line_WaitForInput);
@@ -96,7 +96,7 @@
 		   NULL, "T'es sûr que tu pourrais pas nous filer un coup de main ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18014", 256, TRUE);
 	OutputLine(NULL, "「うーーーーーーーん…！！",
 		   NULL, "— Hhhhmmm...", Line_WaitForInput);
@@ -203,7 +203,7 @@
 		   NULL, "— P'tit gars, c'est réglé ! Il va nous filer une tonne de matos !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18018", 256, TRUE);
 	OutputLine(NULL, "「はは、はははははは…。」",
 		   NULL, "— Ahaha, hahaha, haaaa...", GetGlobalFlag(GLinemodeSp));
@@ -401,7 +401,7 @@
 	StartShakingOfAllObjects( 245, 40, 0, 2, 3*2, TRUE );
 	DrawScene( "background/mati_o2", 400 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18019", 256, TRUE);
 	OutputLine(NULL, "「あ、",
 		   NULL, "— Euh...", Line_Continue);
@@ -793,7 +793,7 @@
 		   NULL, " Tu joues au mah jong pendant les heures de travail ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18021", 256, TRUE);
 	OutputLine(NULL, "「いやいや、違うよこれはね…、」",
 		   NULL, "— Non, non non, pas du tout, voyons...", GetGlobalFlag(GLinemodeSp));
@@ -1080,7 +1080,7 @@
 		   NULL, "Nos regards se tournèrent sur le gérant.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18022", 256, TRUE);
 	OutputLine(NULL, "「いやね、お昼に来たお客さんと話してたら、ツバメ返しができるって言うんで見せてもらったんだよ。」",
 		   NULL, "— Eh bien, ce midi, je discutais avec un client, et il m'a dit qu'il savait faire un aller-retour d'hirondelle. Alors je lui ai demandé de me montrer.", Line_Normal);
@@ -1777,7 +1777,7 @@
 
 	DrawScene( "background/mati_o4", 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18023", 256, TRUE);
 	OutputLine(NULL, "「はははは……、一見するとルールを知らない子どもたちが、麻雀牌で遊んでるように見えるんだけどねぇ……、あははは…。」",
 		   NULL, "— Ahahahaha.... Les gens qui ne vous connaissent pas pourraient croire que vous ne savez pas du tout comment jouer au mah jong, on ne dirait pas, comme ça...", GetGlobalFlag(GLinemodeSp));
@@ -2544,7 +2544,7 @@
 		   NULL, " Ahahaha, hahaha, hahahahahahahahaha ! Aaaah haha, ooooh, eh bien ! Aah, la jeunesse !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18024", 256, TRUE);
 	OutputLine(NULL, "「この人なんだよ、さっきお昼に来てツバメ返しを見せてくれた人は。」",
 		   NULL, "— C'est cette personne qui est venue ce midi pour me montrer comment on faisait.", GetGlobalFlag(GLinemodeSp));
@@ -3144,7 +3144,7 @@
 	FadeOutBGM( 0, 300, FALSE );
 	DrawSceneWithMask( "background/mati_o2", "maskleft", 1, 0, 300 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirou</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18025", 256, TRUE);
 	OutputLine(NULL, "「いらっしゃいませ〜。」",
 		   NULL, "— Ah, bonjour monsieur, entrez donc !", GetGlobalFlag(GLinemodeSp));
