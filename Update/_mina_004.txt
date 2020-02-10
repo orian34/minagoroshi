@@ -583,7 +583,7 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "レナも笑っていたので、一緒に笑った。",
-		   NULL, " mais lorsque je vis que Rena aussi, j'eux moins de réticences.", Line_Normal);
+		   NULL, " mais lorsque je vis que Rena aussi, j'eu moins de réticences.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/js4", 300 );
@@ -647,7 +647,7 @@
 	Wait( 3200 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "今頃きっと、…………。",
-		   NULL, " eh bein aujourd'hui...", GetGlobalFlag(GLinemodeSp));
+		   NULL, " eh bien aujourd'hui...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -1387,7 +1387,7 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……こんな短期間でも村人だと認めて受け入れてくれたってことだ。",
-		   NULL, " qu'ils m'avaient acceptés et reconnus comme l'un des leurs, en à peine quelques jours.", Line_Normal);
+		   NULL, " qu'ils m'avaient accepté et reconnu comme l'un des leurs, en à peine quelques jours.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
