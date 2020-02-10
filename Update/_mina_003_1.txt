@@ -1373,7 +1373,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300086", 256, TRUE);
 	OutputLine(NULL, "「ふふ〜ん、実はねぇ、",
-		   NULL, "—  Eh bien en fait...", Line_Continue);
+		   NULL, "— Eh bien en fait...", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 2800 );
 	// (backup) SetValidityOfInput( TRUE );
