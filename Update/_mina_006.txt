@@ -627,9 +627,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが羽入は、あぅあぅ言う以上の反論はできない。",
-		   NULL, "Mais Hanyû savait aussi bien que moi qu'à part me faire une scène, elle ne pourrait pas m'empêcher d'ouvrir les portes du temple. C", Line_WaitForInput);
+		   NULL, "Mais Hanyû savait aussi bien que moi qu'à part me faire une scène, elle ne pourrait pas m'empêcher d'ouvrir les portes du temple.", Line_WaitForInput);
 	OutputLine(NULL, "…結局、全ての主導権は私にある。",
-		   NULL, " 'était moi qui devais prendre une décision.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " C'était moi qui devais prendre une décision.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
