@@ -61,7 +61,7 @@
 		   NULL, " Enfin, vous avez compris !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18012", 256, TRUE);
 	OutputLine(NULL, "　色々とゲームを売ることができたからねぇ。",
-		   NULL, " J'ai fais un bon chiffre d'affaire grâce à vous, l'autre jour.", Line_WaitForInput);
+		   NULL, " J'ai fait un bon chiffre d'affaire grâce à vous, l'autre jour.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/yoshi18013", 256, TRUE);
 	OutputLine(NULL, "協力したいのは山々なんだけど…。」",
 		   NULL, " J'aimerais beaucoup vous aider, mais comment...", Line_Normal);
@@ -2175,7 +2175,7 @@
 		   NULL, " C'est sûr et certain désormais, ce monde-ci est différent des autres.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500429", 256, TRUE);
 	OutputLine(NULL, "もちろんそれは個々には何れもありえることばかりなんだけど、それらがみんな良い方に流れている偶然が奇跡的。」",
-		   NULL, " Bien sûr, tout ce qu'il s'y passe était possible aussi dans les autres mondes, mais la combinaision de toutes ces bonnes choses, c'est vraiment miraculeux.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Bien sûr, tout ce qu'il s'y passe était possible aussi dans les autres mondes, mais la combinaison de toutes ces bonnes choses, c'est vraiment miraculeux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -3691,13 +3691,8 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　強い意志は、運命を強固にする。",
-		   NULL, "... Donc normalement, une volonté de se rebeller contre le Destin devrait pouvoir l'influencer aussi, et brouiller les cartes.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……なら、それに抗おうという意思も強固であるならば、…結果はわからなくなるはずだ。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　強い意志は、運命を強固にする。　……なら、それに抗おうという意思も強固であるならば、…結果はわからなくなるはずだ。",
+		   NULL, "... Donc normalement, une volonté de se rebeller contre le Destin devrait pouvoir l'influencer aussi, et brouiller les cartes.", Line_Normal);
 	ClearMessage();
 
 	FadeOutBGM( 0, 1000, FALSE );
