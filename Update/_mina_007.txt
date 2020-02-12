@@ -316,7 +316,7 @@
 		   NULL, "Quand je pense à tout le mal que nous avons eu à nous faire rembourser nos stocks de café ! Il vaudrait mieux les boire si nous ne voulons pas voir cette partie du budget disparaître... N'est-ce pas, Jirô ?", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s12/09/180900153", 256, TRUE);
 	OutputLine(NULL, "　くすくす。」",
-		   NULL, " Éhéhéhéh…", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Éhéhéhéh…", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
