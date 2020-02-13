@@ -227,7 +227,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　羽入も四六時中私と一緒にいるわけではない。",
-		   NULL, "Bien sûr, Hanyû n'était pas avec moi 24h24.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bien sûr, Hanyû n'était pas avec moi 24h sur 24.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -954,17 +954,17 @@
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……その意味を、",
-		   NULL, "Avant que Rika Furude pût comprendre ce que cela signifiait,", Line_ContinueAfterTyping);
+		   NULL, "Avant que Rika Furude pût comprendre", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "古手梨花が理解するより早く、",
-		   NULL, " mes genoux lâchèrent.", Line_ContinueAfterTyping);
+		   NULL, " ce que cela signifiait,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…私の膝が理解した。",
-		   NULL, " A REMOVE", Line_ContinueAfterTyping);
+		   NULL, " mes genoux lâchèrent.", Line_ContinueAfterTyping);
 	SetSpeedOfMessage( FALSE, 0 );
 	OutputLineAll(NULL, "", Line_Normal);
 
@@ -1636,7 +1636,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　個々に見れば常に６分の１の確率でも、……全体を平均的に見れば、幸運の数だけ不運が起こるのは必然なのだ。",
-		   NULL, "Pris chacun séparément, chaque lancer de dés avait la même probabilité, 16. Donc si l'on y réfléchissait un peu, il pouvait y avoir autant de coups malchanceux que de coups chanceux...", Line_Normal);
+		   NULL, "Pris chacun séparément, chaque lancer de dés avait la même probabilité, 1 sur 6. Donc si l'on y réfléchissait un peu, il pouvait y avoir autant de coups malchanceux que de coups chanceux...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/re_tel", 1000 );
