@@ -90,9 +90,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年６月に閉じ込められる。",
-		   NULL, "Même la Mort sera comme une prison pour mon âme.", Line_WaitForInput);
+		   NULL, "Même la Mort", Line_WaitForInput);
 	OutputLine(NULL, "死すらももはや私をこの牢獄から逃さない。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " sera comme une prison pour mon âme.", Line_Normal);
 	ClearMessage();
 
 
@@ -129,7 +129,7 @@
 		   NULL, "Bien sûr, j'en avais vu d'autres au cours de mon existence, et j'en connaissais un rayon en insultes, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……それはとても気楽なことで、羨ましいこと。",
-		   NULL, "mais eux ne m'ont jamais entendue les prononcer.", Line_Normal);
+		   NULL, "mais eux ne m'ont jamais entendu les prononcer.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#68aee5>知恵</color>", NULL, "<color=#68aee5>Cie</color>", NULL, Line_ContinueAfterTyping); }
@@ -845,9 +845,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…メンバーや場所は微妙に違うが、まったく同じやり取りを毎回見てきた。",
-		   NULL, "Ce n'étaient pas les mêmes personnes que la dernière fois qui se chamaillaient -- et surtout, pas le même endroit -- mais c'était toujours plus ou moins la même chose que les autres fois.", Line_WaitForInput);
+		   NULL, "Ce n'étaient pas les mêmes personnes que la dernière fois qui se chamaillaient -- et surtout, pas le même endroit --", Line_WaitForInput);
 	OutputLine(NULL, "……そして今回もまったく同じだ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " mais c'était toujours plus ou moins la même chose que les autres fois.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
