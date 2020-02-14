@@ -880,7 +880,7 @@
 		   NULL, "— D'habitude, dans ce genre de cas, les gens appellent les services de protection de l'enfance.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps2/00/182600018", 540, TRUE);
 	OutputLine(NULL, " 通報して埒が明かなくてその先、ってのはなぁ…。」",
-		   NULL, " — Mais quand les décisions des instances ne sont pas satisfaisantes...", Line_Normal);
+		   NULL, " Mais quand les décisions des instances ne sont pas satisfaisantes...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1352,7 +1352,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300306", 256, TRUE);
 	OutputLine(NULL, "「くっくっく！",
-		   NULL, "— ", Line_WaitForInput);
+		   NULL, "— ...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300307_1", 256, TRUE);
 	OutputLine(NULL, "　私は誰だと思ってんの。市長懇親会メンバーにして市政モニター会員、園崎お魎の代理だよ？",
 		   NULL, " Eh, gamine, tu sais pas qui je suis ? Je suis la représentante d'Oryô Sonozaki, elle-même membre de l'amicale du conseil municipal et du conseil supérieur de la cour régionale des comptes.", Line_WaitForInput);
@@ -1782,7 +1782,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500599", 256, TRUE);
 	OutputLine(NULL, "「……みんなの力を合わせれば、奇跡が起きる。」",
-		   NULL, "—  Si l'on joint nos forces, tous ensemble, alors nous accomplirons un miracle.", Line_Normal);
+		   NULL, "— Si l'on joint nos forces, tous ensemble, alors nous accomplirons un miracle.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
