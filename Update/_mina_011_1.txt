@@ -365,13 +365,8 @@
 	DrawScene( "background/ma_g3", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音が言ってるわけじゃないのに、魅音に言われたかのように勘違いしてつい声を荒げてしまった。",
-		   NULL, "Je savais que ce n'était pas de sa faute à elle, mais ça m'énervait quand même.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　…魅音が少し狼狽したのを感じ取り、俺はすぐに謝る。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　魅音が言ってるわけじゃないのに、魅音に言われたかのように勘違いしてつい声を荒げてしまった。　…魅音が少し狼狽したのを感じ取り、俺はすぐに謝る。",
+		   NULL, "Je savais que ce n'était pas de sa faute à elle, mais ça m'énervait quand même.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
