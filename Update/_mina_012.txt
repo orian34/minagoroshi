@@ -410,13 +410,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そしてその薄い部屋の真ん中にカウンターがあって、向こうとこちら側を分断する形になっていた。",
-		   NULL, "De l'autre côté, une femme d'environ la quarantaine était assise.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De l'autre côté, un homme d'environ la quarantaine était assis.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　相談員の女性はその向こうに座り、どうぞと席を勧める。",
-		   NULL, "Elle nous invita à nous asseoir.", Line_WaitForInput);
+		   NULL, "Il nous invita à nous asseoir.", Line_WaitForInput);
 	OutputLine(NULL, "…でも、席は２人分しかなかった。",
 		   NULL, " Le problème, c'est qu'il n'y avait de la place que pour deux personnes.", Line_Normal);
 	ClearMessage();
@@ -447,7 +447,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相談員</color>", NULL, "<color=#f5e6d3>Conseiller</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/181200001", 256, TRUE);
 	OutputLine(NULL, "「申し訳ございませんね。",
-		   NULL, "— Je suis vraiment désolée,", Line_WaitForInput);
+		   NULL, "— Je suis vraiment désolé,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/181200002", 256, TRUE);
 	OutputLine(NULL, "普通はご両親が２人でお見えになることが多いので。」",
 		   NULL, " mais d'habitude, les gens viennent soit seuls, soit en couple, lorsque ce sont les parents.", GetGlobalFlag(GLinemodeSp));
@@ -1063,7 +1063,7 @@
 		   NULL, "— Les faits du passé ne vous regardent pas, je n'en discuterai donc pas plus avant.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps2/00/181200030", 540, TRUE);
 	OutputLine(NULL, "児童のために総合的に判断しています。」",
-		   NULL, " Sachez juste que tout est pris en compte dans la décision. ", Line_Normal);
+		   NULL, " Sachez juste que tout est pris en compte dans la décision.", Line_Normal);
 	ClearMessage();
 
 
@@ -1143,7 +1143,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……俺たちはひとまずそこで間を置き、向こうの出方を伺った。",
-		   NULL, "... Il s'ensuivit un silence, pendant lequel nous attendîmes nerveusement la réaction de la femme de l'autre côté du bureau.", Line_Normal);
+		   NULL, "... Il s'ensuivit un silence, pendant lequel nous attendîmes nerveusement la réaction de l'homme de l'autre côté du bureau.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相談員</color>", NULL, "<color=#f5e6d3>Conseiller</color>", NULL, Line_ContinueAfterTyping); }
@@ -1347,14 +1347,6 @@
 	ModPlayVoiceLS(4, 3, "ps2/03/180300362", 540, TRUE);
 	OutputLine(NULL, "　紳士の対応をしてる内になんとかしないと大変なことになるなんて、脅迫しに来る人がいるくらいなんだからさー。」",
 		   NULL, "Il doit y avoir pas mal de monde qui veulent exercer des pressions sur eux, et les gens ne sont pas toujours honnêtes comme nous.", Line_Normal);
-	ClearMessage();
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　魅音の話によると、児童相談所というのはものすごくトラブルが多いところらしく、",
-		   NULL, "A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "詩音みたいな感情的な人間が押し掛けてくることは珍しいことではないらしい。",
-		   NULL, " A REMOVE", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1565,10 +1557,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……これで雛見沢に帰って知恵先生に話したら、…教育委員会経由でうまく話がまとまりました！",
-		   NULL, "Surtout qu'en rentrant à Hinamizawa, nous ne risquions pas de trouver la maîtresse avec le sourire, à nous attendre pour nous dire qu'elle avait tout réglé d'un coup de baguette magique...", Line_WaitForInput);
-	OutputLine(NULL, "…なんてご都合主義なハッピーエンドってことは絶対ないだろう…。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　……これで雛見沢に帰って知恵先生に話したら、…教育委員会経由でうまく話がまとまりました！…なんてご都合主義なハッピーエンドってことは絶対ないだろう…。",
+		   NULL, "Surtout qu'en rentrant à Hinamizawa, nous ne risquions pas de trouver la maîtresse avec le sourire, à nous attendre pour nous dire qu'elle avait tout réglé d'un coup de baguette magique...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
