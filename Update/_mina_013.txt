@@ -263,16 +263,10 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　ざわざわざわざわ！！",
+	OutputLine(NULL, "　ざわざわざわざわ！！　クラス中が大きなざわめきに包まれる。そうだそれでいい！",
 		   NULL, "La classe se mit à bourdonner avec les murmures agités des élèves.", Line_WaitForInput);
-	OutputLine(NULL, "　クラス中が大きなざわめきに包まれる。",
-		   NULL, " A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "そうだそれでいい！",
-		   NULL, " A REMOVE", Line_WaitForInput);
-	OutputLine(NULL, "　俺が大騒ぎすればするほど、自然と彼らも大きな声で話をできるようになる。",
-		   NULL, " Plus ça allait, plus ils murmuraient fort, jusqu'à parler vraiment à voix haute, crier, presque.", Line_WaitForInput);
-	OutputLine(NULL, "ヒートアップってヤツだ！",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　俺が大騒ぎすればするほど、自然と彼らも大きな声で話をできるようになる。ヒートアップってヤツだ！",
+		   NULL, " Plus ça allait, plus ils murmuraient fort, jusqu'à parler vraiment à voix haute, crier, presque.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして俺が地を出せば出すほど、みんなも感情を出しやすくなるんだ！！",
 		   NULL, "Et dans ces conditions, il était facile de les prendre par les sentiments !", Line_Normal);
@@ -554,7 +548,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a17d6b>富田</color>", NULL, "<color=#a17d6b>Tomita</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps2/00/182400013", 540, TRUE);
 	OutputLine(NULL, "「はい！",
-		   NULL, "— ", Line_WaitForInput);
+		   NULL, "— ...", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps2/00/182400014", 540, TRUE);
 	OutputLine(NULL, "　問題となるのは児童相談所側の認識の甘さだと思います。",
 		   NULL, " Eh bien, le problème, c'est que les fonctionnaires ne se rendent pas compte du problème, n'est-ce pas ?", Line_WaitForInput);
