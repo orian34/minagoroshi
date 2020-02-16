@@ -1626,16 +1626,11 @@
 		   NULL, " Nous avons l'intention de nous battre jusqu'à ce qu'ils changent leur décision.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps2/01/180101007", 540, TRUE);
 	OutputLine(NULL, "継続は力なりって言いますし、…俺たちにはこれしか戦う方法が残ってないんで。」",
-		   NULL, " La force est dans la continuité, c'est comme l'eau d'un fleuve. Et puis, c'est la seule chose que nous pouvons faire.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+		   NULL, " La force est dans la continuité, c'est comme l'eau d'un fleuve. Et puis, c'est la seule chose que nous pouvons faire.", Line_Normal);
+	ClearMessage();
 
 	DisableWindow();
 	ModDrawCharacter(0, 11, "sprite/oisi1_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　継続は力なり、のところで大石さんは、近頃の若者にしては実に感心だと笑ってくれるのだった。",
-		   NULL, "A REMOVE", Line_Normal);
-	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps2/11/180700163", 540, TRUE);
@@ -2448,30 +2443,24 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/180700251", 256, TRUE);
 	OutputLine(NULL, "……知ってるかどうかわかりませんが、この村では、未だにダム戦争の戦犯である北条家に恨みを持つ人間が少なくありません。",
-		   NULL, "Elle va savoir que cette histoire fait des problèmes. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle va savoir que cette histoire fait des problèmes. Je ne sais pas si tu es au courant, mais dans ce village, il y a encore beaucoup de gens qui éprouvent de la haine envers les Hôjô, à cause de leur attitude pendant la guerre du barrage. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/180700252", 256, TRUE);
 	OutputLine(NULL, "オヤシロさまの祟り以降、園崎本家からは、一切北条家に関わるなという大号令が出ていますしね。",
-		   NULL, "Je ne sais pas si tu es au courant, mais dans ce village, il y a encore beaucoup de gens qui éprouvent de la haine envers les Hôjô, à cause de leur attitude pendant la guerre du barrage.", Line_WaitForInput);
+		   NULL, "Depuis qu'ils sont morts à cause de la malédiction de la déesse Yashiro, le clan Sonozaki a donné l'ordre de ne plus jamais se mêler de leurs affaires.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/180700253", 256, TRUE);
 	OutputLine(NULL, "………このままだと蛇が出てきかねませんよ、ということです。」",
-		   NULL, " Depuis qu'ils sont morts à cause de la malédiction de la déesse Yashiro, le clan Sonozaki a donné l'ordre de ne plus jamais se mêler de leurs affaires.", Line_Normal);
+		   NULL, " Donc si tu continues à battre le buisson, tu vas finir par vraiment tomber sur une vipère.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101042", 256, TRUE);
 	OutputLine(NULL, "「……その蛇が出て来るとどうなるんですか。」",
-		   NULL, "Donc si tu continues à battre le buisson, tu vas finir par vraiment tomber sur une vipère.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— ... Et elle me fera quoi, cette vipère ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/180700254", 256, TRUE);
-	OutputLine(NULL, "「さぁて…、どうなるんでしょうねぇ……。」",
-		   NULL, "— ... Et elle me fera quoi, cette vipère ?", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　大石さんはそこで意味深に区切ると、吸わないうちにだいぶ短くなってしまった煙草を咥えた。",
@@ -2890,7 +2879,7 @@
 		   NULL, "— Éhhéhhéhhéhhé !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/180700282", 256, TRUE);
 	OutputLine(NULL, "　いえね、実は私もそういうのがあります。",
-		   NULL, " Pour tout t'avouer, je suis exactement dans le même cas de toi.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Pour tout t'avouer, je suis exactement dans le même cas que toi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
@@ -2995,11 +2984,6 @@
 	OutputLine(NULL, "「そうっすよね。行くか戻るかうろうろしてるなんて、男の見せる態度じゃないです！」",
 		   NULL, "— Ouais, un vrai mec n'est pas là pour se tâter et faire des allers-retours sans savoir se décider !", Line_Normal);
 	ClearMessage();
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　大石さんは、男はそうでなくてはならない！っと強く応えてくれた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
 	PlaySE( 0, "s_Down", 56, 64 );
