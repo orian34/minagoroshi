@@ -29,9 +29,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　対するは相談員と係長、そして所長。",
-		   NULL, "Pour nous recevoir, il y avait là une secrétaire, le chef de service de la veille, et le grand patron.", Line_WaitForInput);
+		   NULL, "Pour nous recevoir, il y avait là une secrétaire, le chef de service de la veille,", Line_WaitForInput);
 	OutputLine(NULL, "この三日で明らかに対応が変わってきている。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " et le grand patron.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -835,7 +835,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　この世界はいつもと同じでどうせまたうまく行かない。",
-		   NULL, "(´ Ce monde se finira mal, comme tous les autres.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "« Ce monde se finira mal, comme tous les autres.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1106,7 +1106,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　前回の世界でレナが学校を占拠した時。",
-		   NULL, "La dernière fois, lorsque Rena avait pris l'école en otage...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La dernière fois, lorsque Rena avait prise l'école en otage...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1585,12 +1585,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　悟史の部屋を片付けるなんて脅迫に屈しず、",
-		   NULL, "En même temps, je ne pouvais pas me permettre de lui demander d'ignorer les menaces qui pesaient sur les affaires de son frère.", Line_ContinueAfterTyping);
+		   NULL, "En même temps, je ne pouvais pas me permettre de lui demander d'ignorer les menaces", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "………どうか助けを求めてくれ…。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " qui pesaient sur les affaires de son frère.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
