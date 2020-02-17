@@ -579,9 +579,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも……。",
-		   NULL, "Le problème étant de savoir si nos efforts et nos volontés étaient reconnus par l'intéressée, ou non.", Line_WaitForInput);
+		   NULL, "Le problème étant", Line_WaitForInput);
 	OutputLine(NULL, "これ以上を必死になっても、届くかどうかはわからない。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " de savoir si nos efforts et nos volontés étaient reconnus par l'intéressée, ou non.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -952,7 +952,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300457", 256, TRUE);
 	OutputLine(NULL, "「…………もう少し、…時間がいるんだよ……。」",
-		   NULL, "— ... Je crois que tout simpement, il lui faut encore un peu de temps...", Line_Normal);
+		   NULL, "— ... Je crois que tout simplement, il lui faut encore un peu de temps...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1300 );
@@ -1016,7 +1016,7 @@
 	SetValidityOfInput( TRUE );
 	SetSpeedOfMessage( TRUE, 128 );
 	OutputLine(NULL, "…そして異常だった。",
-		   NULL, " et proprement surreáliste.", Line_Normal);
+		   NULL, " et proprement surréaliste.", Line_Normal);
 	ClearMessage();
 	SetSpeedOfMessage( FALSE, 0 );
 
