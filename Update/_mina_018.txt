@@ -2083,7 +2083,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f3ceb3>喜一郎</color>", NULL, "<color=#f3ceb3>Kiichirô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 18, "ps3/s12/18/183300093", 256, TRUE);
 	OutputLine(NULL, "「鬼婆さまのＯＫサインが出たのさ。",
-		   NULL, "— Ma mère a donné son accord et sa bénédiction.", Line_WaitForInput);
+		   NULL, "— Elle a donné son accord et sa bénédiction.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 18, "ps3/s12/18/183300094", 256, TRUE);
 	OutputLine(NULL, "だから圭一くん、あんたの好きなようにやっていいんだって。」",
 		   NULL, " Keiichi, tu es libre de faire comme bon te semble.", GetGlobalFlag(GLinemodeSp));
