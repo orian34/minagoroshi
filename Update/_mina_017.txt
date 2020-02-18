@@ -470,7 +470,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　と年寄りから声が挙がる。",
-		   NULL, "Une voix dans la salle pooussa une exclamation :", Line_WaitForInput);
+		   NULL, "Une voix dans la salle poussa une exclamation :", Line_WaitForInput);
 	OutputLine(NULL, "だが、そのあとをすぐに詩音が引き継いだ。",
 		   NULL, " Mais juste après ça, Shion prit la parole et poursuivit.", Line_Normal);
 	ClearMessage();
@@ -890,10 +890,7 @@
 		   NULL, "— “Elle a cherché le dialogue par tous les moyens légaux et pacifiques avec le gouvernement et ses sbires de la Société Générale Électrique”.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101329", 256, TRUE);
 	OutputLine(NULL, "って、何だこりゃ。",
-		   NULL, " La vache, ses sbires ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101330", 256, TRUE);
-	OutputLine(NULL, "その電源会社ってとこ、雛見沢町会の間違いじゃねえのか？",
-		   NULL, " A REMOVE ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La vache, ses sbires ? ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101331", 256, TRUE);
 	OutputLine(NULL, "　しかしカイライって難しい単語だよな、ここにいる連中も意味がわかってねぇんじゃないか？",
