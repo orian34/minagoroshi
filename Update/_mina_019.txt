@@ -2120,7 +2120,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さんざんケチがついて、その挙句の果てにはこの泣き虫の小娘だ。",
-		   NULL, "En plus, il se retrouvait avec cette gamine avare et chuineuse.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En plus, il se retrouvait avec cette gamine avare et chouineuse.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3808,9 +3808,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　とは言いつつも。",
-		   NULL, "En son for intérieur, le préfet était pourtant bien surpris de voir l'Impératrice Sonozaki faire le déplacement simplement pour faire accélérer le traitement d'un dossier pour la protection d'une mineure.", Line_WaitForInput);
+		   NULL, "En son for intérieur,", Line_WaitForInput);
 	OutputLine(NULL, "市長は、ひとりの少女の一時保護だけで園崎天皇が直々に市長室まで足を運ぶとは思わなかった。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, " le préfet était pourtant bien surpris de voir l'Impératrice Sonozaki faire le déplacement simplement pour faire accélérer le traitement d'un dossier pour la protection d'une mineure.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -5595,7 +5595,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 2, "ps3/s12/02/180200688", 256, TRUE);
 	OutputLine(NULL, "「沙都子ちゃんの家の前に、予め警察の人がいてくれたってことなのかな。」",
-		   NULL, "— Ce qui voudrait qu'il avait déjà placé des hommes devant la maison de Satoko ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ce qui voudrait dire qu'il avait déjà placé des hommes devant la maison de Satoko ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
