@@ -277,7 +277,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 12, "ps3/s12/12/281100013", 256, TRUE);
 	OutputLine(NULL, "「………梨花はとてもよくがんばりました。",
-		   NULL, "— ... Rika, tu as fait beaucoup de choses, tu t'es vraiment donné du mal.", Line_WaitForInput);
+		   NULL, "— ... Rika, tu as fait beaucoup de choses, tu t'es vraiment donnée du mal.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 12, "ps3/s12/12/281100014", 256, TRUE);
 	OutputLine(NULL, "そして今年の綿流しは、僕が生きてきた中でも一番の楽しいお祭りでした。",
 		   NULL, " Et cette année, ce fut la plus belle fête de la purification de toute ma vie.", Line_WaitForInput);
@@ -1143,7 +1143,7 @@
 		   NULL, " Et j'ai pas l'impression qu'il soit super gourmand.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/280100066", 256, TRUE);
 	OutputLine(NULL, "どうやったら幸せになれるかを延々、３段も考察してるヤツなんだぜ。真剣に考えてるんだ。」",
-		   NULL, " Et puis regarde, il a dédié trois strophes à la questions ! Il y a réfléchi vraiment sérieusement, il s'est bien creusé la tête.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Et puis regarde, il a dédié trois strophes à la question ! Il y a réfléchi vraiment sérieusement, il s'est bien creusé la tête.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
