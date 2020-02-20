@@ -900,7 +900,7 @@
 		   NULL, " C'est mon oncle Saburô, il est député de région.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/280300025", 256, TRUE);
 	OutputLine(NULL, "こっちは市議会議員をされてる健叔父さん。」",
-		   NULL, " Quant à lui, c'est mon oncle Takeshi, il est député de disctrict.", Line_Normal);
+		   NULL, " Quant à lui, c'est mon oncle Takeshi, il est député de district.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>園崎県議</color>", NULL, "<color=#f5e6d3>Représentant des Sonozaki</color>", NULL, Line_ContinueAfterTyping); }
