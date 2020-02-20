@@ -2415,7 +2415,7 @@
 		   NULL, " Enfin, ENFIN, le spectacle va commencer.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s12/09/280900224", 256, TRUE);
 	OutputLine(NULL, "くすくすくすくす！」",
-		   NULL, " Ahahaha, ahahaha, ahahahahahaha _!", Line_Normal);
+		   NULL, " Ahahaha, ahahaha, ahahahahahaha !", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
