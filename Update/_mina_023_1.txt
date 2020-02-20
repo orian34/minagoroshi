@@ -299,10 +299,10 @@
 	OutputLine(NULL, "　それが、その場所に予めパトカーが配置されているだけで、",
 		   NULL, "Mais la présence des policiers avait provoqué un changement.", Line_WaitForInput);
 	OutputLine(NULL, "不変と思われた富竹の死に場所が変わるということは、",
-		   NULL, " Ce qui prouvait l'existence d'une entité pensante qui n'avait pas apprécié la présence des policiers.", Line_ContinueAfterTyping);
+		   NULL, " Ce qui prouvait l'existence d'une entité pensante", Line_ContinueAfterTyping);
 	Wait( 1000 );
 	OutputLine(NULL, "……パトカーを嫌う意思が運命に介在した証拠だ。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " qui n'avait pas apprécié la présence des policiers.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -602,7 +602,7 @@
 		   NULL, "— Pour identifier les corps des grands brûlés, on procède à une comparaison des empreintes dentaires, c'est le plus efficace.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700128", 256, TRUE);
 	OutputLine(NULL, "ただ、うちの鑑識のジジイが言うにはそれでも１００％じゃないと言う。",
-		   NULL, " Mais notre médecin-légiste m'a dit que ce n'était pas fiable à 100%_. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Mais notre médecin-légiste m'a dit que ce n'était pas fiable à 100%. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700129", 256, TRUE);
 	OutputLine(NULL, "……まぁ、それよりおかしいのが岐阜県警鑑識の死亡時刻なんです。",
