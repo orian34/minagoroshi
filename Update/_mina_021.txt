@@ -1558,7 +1558,7 @@
 		   NULL, "— Hauuu !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 2, "ps3/s12/02/280200029", 256, TRUE);
 	OutputLine(NULL, "　ナ、ナースプレイって何だろ、何だろ！！」",
-		   NULL, " De quoi vous parlez, hein ? de quoi vous parlez ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, " De quoi vous parlez, hein ? De quoi vous parlez ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
