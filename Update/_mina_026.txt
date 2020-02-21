@@ -1730,7 +1730,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　対する成田空港にも対テロ専門部隊として警視庁第６機動隊が組織され、こちらは七中隊と名を変えていく。",
-		   NULL, "Pour ne pas être en reste, l'aéroport de Narita se doterait de la sixième unité anti-émeutes, la rebaptisant au passage “compagnie n°  sept”.", Line_Normal);
+		   NULL, "Pour ne pas être en reste, l'aéroport de Narita se doterait de la sixième unité anti-émeutes, la rebaptisant au passage “compagnie n°sept”.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -3744,7 +3744,7 @@
 		   NULL, "— Il faut aussi penser aux policiers en civil.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 3, "ps3/s12/03/280300083", 256, TRUE);
 	OutputLine(NULL, "本家のツケで寿司でも頼むかねぇ。」",
-		   NULL, " Je vais faire commannder du sushi pour eux, ce sera sur la facture du clan.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Je vais faire commander du sushi pour eux, ce sera sur la facture du clan.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -3755,9 +3755,9 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　みんなお腹が空いているようだった。",
-		   NULL, "Nous devions tous avoir vraiment très faim, en fait...", Line_WaitForInput);
+		   NULL, "Nous devions tous avoir vraiment très faim,", Line_WaitForInput);
 	OutputLine(NULL, "…ならそれは警官たちも同じだろう。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " en fait...", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/hu_r1", 300 );
