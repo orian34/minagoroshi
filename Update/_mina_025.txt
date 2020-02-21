@@ -123,13 +123,10 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/280500158", 256, TRUE);
 	OutputLine(NULL, "「……くすくす。これで沙都子は今晩、怖くて梨花の手を握ってないと寝られないのです。」",
-		   NULL, "— Ahahaha... Avec ça, elle aura tellement peur ce soir qu'elle devra encore une fois te tenir la main pour s'endormir.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "— Ahahaha... Avec ça, elle aura tellement peur ce soir qu'elle devra encore une fois me tenir la main pour s'endormir.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/280500159", 256, TRUE);
 	OutputLine(NULL, "「……くすくすくすくす。」",
-		   NULL, "— … Ahahaha.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " … Ahahaha.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -312,12 +309,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そんな当り前のことを、理解したり、挫けたり。",
-		   NULL, "C'était quelque chose qui tombait sous le sens, mais à force de le découvrir, de l'oublier, de le redécouvrir, à force de tergiverser entre ma place en tant qu'actrice de la pièce et celle de spectatrice impartiale, eh bien, je n'étais arrivée à rien, et je prenais maintenant le retour de bâton.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'était quelque chose qui tombait sous le sens, mais à force de le découvrir, de l'oublier, de le redécouvrir, à force de tergiverser entre ma place en tant qu'actrice de la pièce et celle de spectatrice impartiale,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らの立場を、舞台の上の役者なのか舞台の下の傍観者なのか、はっきりしなかったことのツケだ。",
-		   NULL, "A REMOVE", Line_Normal);
+		   NULL, "eh bien, je n'étais arrivée à rien, et je prenais maintenant le retour de bâton.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -458,10 +455,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……そういう目線で見れば、私が宿題をやってないと騒ぎ、",
-		   NULL, "Ce qui rendait mon agitation et mes tourments plutôt ridicules, d'ailleurs.", Line_WaitForInput);
-	OutputLine(NULL, "今から少しでもやるのと開き直ってやらないのはどちらがいいかなんて言っているのはとても滑稽だ。",
-		   NULL, " A REMOVE", GetGlobalFlag(GLinemodeSp));
+	OutputLine(NULL, "　……そういう目線で見れば、私が宿題をやってないと騒ぎ、今から少しでもやるのと開き直ってやらないのはどちらがいいかなんて言っているのはとても滑稽だ。",
+		   NULL, "Ce qui rendait mon agitation et mes tourments plutôt ridicules, d'ailleurs.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -654,12 +649,12 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、残された世界がどんな風になって続いていくかなんて、",
-		   NULL, "Je ne m'étais jamais penchée sur le sort des autres, de ceux qui me survivraient, et de leur quotidien après ma mort.", Line_ContinueAfterTyping);
+		   NULL, "Je ne m'étais jamais penchée sur le sort des autres,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…真剣に考えたことは一度もなかった。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " de ceux qui me survivraient, et de leur quotidien après ma mort.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1228,13 +1223,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　止め処なく溢れる涙がもう抑えられなくて。",
-		   NULL, "Incapable de retenir les larmes qui me débordaient des yeux, je saisis l'oreiller de Satoko, que je n'avais pas encore rangé, je le serrai fort contre moi, et me mis à pleurer à chaudes larmes.", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　……私はまだ畳んでいない布団の、沙都子の枕を抱いて泣いた。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　止め処なく溢れる涙がもう抑えられなくて。　……私はまだ畳んでいない布団の、沙都子の枕を抱いて泣いた。",
+		   NULL, "Incapable de retenir les larmes qui me débordaient des yeux, je saisis l'oreiller de Satoko, que je n'avais pas encore rangé, je le serrai fort contre moi, et me mis à pleurer à chaudes larmes.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1300,13 +1290,8 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　悲しくて悔しくて。",
-		   NULL, "Emplie de peine et de dépit, je restai longuement prostrée, pleurant toutes les larmes de mon corps dans l'oreiller à peine tiède de Satoko...", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　私は沙都子の枕を抱いてずっと泣いていた……。",
-		   NULL, "A REMOVE", Line_Normal);
+	OutputLine(NULL, "　悲しくて悔しくて。　私は沙都子の枕を抱いてずっと泣いていた……。",
+		   NULL, "Emplie de peine et de dépit, je restai longuement prostrée, pleurant toutes les larmes de mon corps dans l'oreiller à peine tiède de Satoko...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
