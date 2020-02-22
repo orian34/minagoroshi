@@ -885,7 +885,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　義理を重んじて戦うか、本当の敵を刻み込むために敢えて逃げ出すかッ…！！",
-		   NULL, "Soit je reste fidèle à une amie et nous nous battons, soit je prends la fuite en espérant pouvoir vaincre mon véritable ennemi dans ma prochaine incarnation… -A : Laisser Satoko crever pour garder mes souvenirs -B : Retourner pour aider Satoko et perdre mes souvenirs", Line_Normal);
+		   NULL, "Soit je reste fidèle à une amie et nous nous battons, soit je prends la fuite en espérant pouvoir vaincre mon véritable ennemi dans ma prochaine incarnation…", Line_Normal);
 	ClearMessage();
 
 	SetValidityOfInput( FALSE );
@@ -1903,12 +1903,12 @@
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "圭一は自分の胸の前に、",
-		   NULL, " et il remarqua alors un truc bizarre qui flottait devant lui.", Line_ContinueAfterTyping);
+		   NULL, " et il remarqua alors un truc bizarre", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "不思議なものが浮かんでいるのに気が付いた。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " qui flottait devant lui.", Line_Normal);
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1926,12 +1926,12 @@
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "多分、",
-		   NULL, " était malheureusement probablement la bonne réponse.", Line_ContinueAfterTyping);
+		   NULL, " était malheureusement", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 700 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "それの正体だった。",
-		   NULL, " A REMOVE", Line_Normal);
+		   NULL, " probablement la bonne réponse.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
@@ -2768,7 +2768,7 @@
 		   NULL, " Malheureusement, tu ne la verras pas.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 9, "ps3/s12/09/280900291", 256, TRUE);
 	OutputLine(NULL, "オヤシロさまの怒りがこれからこの村に下るのは。",
-		   NULL, " La colère de la déesse Yashiro s'abattre sur le village. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, " La colère de la déesse Yashiro va s'abattre sur le village. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s12/09/280900292", 256, TRUE);
 	OutputLine(NULL, "それは私が起こす。",
@@ -2978,7 +2978,7 @@
 	Wait( 900 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…ブロッコリ。」",
-		   NULL, " Le brocoli !", Line_Continue);
+		   NULL, " le brocoli !", Line_Continue);
 	OutputLineAll(NULL, "", Line_Normal);
 
 	ClearMessage();
@@ -3230,10 +3230,8 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　猿ぐつわをするつもりのようだった。",
-		   NULL, "Incapable de fermer la bouche, je dus rester là, pendant que la salive montait peu à peu, puis se mit à déborder.", Line_WaitForInput);
-	OutputLine(NULL, "口が満足に閉じられず、よだれが口の中から溢れる。",
-		   NULL, " A REMOVE", Line_Normal);
+	OutputLine(NULL, "　猿ぐつわをするつもりのようだった。口が満足に閉じられず、よだれが口の中から溢れる。",
+		   NULL, "Incapable de fermer la bouche, je dus rester là, pendant que la salive montait peu à peu, puis se mit à déborder.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "background/ymo2", "maskright", 1, 0, 300 );
@@ -3296,15 +3294,9 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自ら動く、喋る。",
 		   NULL, "Je ne pouvais plus rien faire.", Line_WaitForInput);
-	OutputLine(NULL, "意思を示す。",
+	OutputLine(NULL, "意思を示す。　それを奪われたというのは、私が人としての権利を奪われたのと同じだ。",
 		   NULL, " On m'avait privé de la parole et de ma liberté de mouvement, j'avais perdu un peu de mon humanité, en fait.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
-
-
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
-	OutputLine(NULL, "　それを奪われたというのは、私が人としての権利を奪われたのと同じだ。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……今や私は古手梨花という名の人間ではない。",
@@ -4657,7 +4649,7 @@
 	OutputLine(NULL, "　うん、と。",
 		   NULL, "Hanyû fit un petit oui de la tête.", Line_WaitForInput);
 	OutputLine(NULL, "羽入は確かに頷いてくれた…。",
-		   NULL, " — D'accord...", Line_Normal);
+		   NULL, "\n— D'accord...", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
