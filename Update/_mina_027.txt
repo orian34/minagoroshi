@@ -123,7 +123,7 @@
 		   NULL, " Je ne sais pas trop, ça doit être un truc avec des extrémistes religieux, je ne vois rien d'autre, et encore, même ça c'est tiré par les cheveux.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700224", 256, TRUE);
 	OutputLine(NULL, "沼の底がどうなってるのか楽しみです。」",
-		   NULL, " Je me demande bien qu'elle histoire elle va sortir des marais vaseux de Hinamizawa...", Line_Normal);
+		   NULL, " Je me demande bien quelle histoire elle va sortir des marais vaseux de Hinamizawa...", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask("black", "maskleft", 0, 0, 300 );
@@ -344,7 +344,7 @@
 		   NULL, "— Pourtant, j'arrête pas de te le dire,", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700245", 256, TRUE);
 	OutputLine(NULL, "刑事は四六時中、目を皿にしてろってことです。",
-		   NULL, " un bon flic doit ouvrir l'œil, 24h24.", Line_WaitForInput);
+		   NULL, " un bon flic doit ouvrir l'œil, 24h sur 24.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700246", 256, TRUE);
 	OutputLine(NULL, "……何やってんだろうな。",
 		   NULL, " Mais ça me dit toujours pas ce qu'elle fait ici.", Line_WaitForInput);
@@ -374,7 +374,7 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/vtp_okeijia_2001", 256, TRUE);
 	OutputLine(NULL, "「こちら興宮ＳＰ、感度良好でーす。」",
-		   NULL, "— Ici le Central d'Okinomiya, je vous reçois 55", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Ici le Central d'Okinomiya, je vous reçois 5 sur 5", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2151,10 +2151,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子はさっきまであんなにも眠そうだったのに、この神社の周りにはいろいろなトラップが仕掛けてあり、",
-		   NULL, "Elle avait été si fatiguée à peine quelques minutes auparavant, mais maintenant, elle m'expliquait avec assurance que de très nombreux pièges étaient posés un peu partout autour des bâtiments du temple, et que nous saurions immédiatement si des gens essayaient de pénétrer de nuit dans le sanctuaire. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle avait été si fatiguée à peine quelques minutes auparavant, mais maintenant, elle m'expliquait avec assurance que de très nombreux pièges étaient posés un peu partout autour des bâtiments du temple, ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "境内を堂々と通ってこない怪しげな侵入者は必ず気取れるようになっていると力説してくれた。",
-		   NULL, "A REMOVE", GetGlobalFlag(GLinemodeSp));
+		   NULL, "et que nous saurions immédiatement si des gens essayaient de pénétrer de nuit dans le sanctuaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
