@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -8,235 +8,235 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花は、自分が初めて家族の存在を知った時、自分を４人家族だと信じて疑わなかった。",
-		   NULL, "Rika Furude always thought that there were four members in her family.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Lorsque Rika Furude naquit et qu'elle comprit le concept de la famille, elle pensa naïvement qu'ils étaient quatre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　当り前のように見える家族、",
-		   NULL, "She could clearly see all of us,", Line_ContinueAfterTyping);
+		   NULL, "Tous les jours, elle voyait autour d'elle trois personnes :", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "父、",
-		   NULL, " her father,", Line_ContinueAfterTyping);
+		   NULL, " son père,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "母、",
-		   NULL, " her mother,", Line_ContinueAfterTyping);
+		   NULL, " sa mère,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 500 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "そして僕。",
-		   NULL, " and me.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " et moi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　生まれたばかりの梨花は、僕が自分にしか見えない存在だとは夢にも思わなかっただろう。",
-		   NULL, "She had no idea that I was invisible to anyone else but her.", Line_Normal);
+		   NULL, "Comme elle me regardait tous les jours, elle ne comprenait pas que j'étais invisible et qu'elle était la seule à savoir que j'étais là.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕の容姿は人間のそれとは違う。",
-		   NULL, "My appearance is a little different from human beings.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il y a un autre problème : je ne ressemble pas à un être humain.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人の姿を形作っても角だけが隠せない。",
-		   NULL, "I may otherwise look like a person, but I can't hide my horns.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je peux modifier mon apparence pour leur ressembler, en gros, mais il m'est impossible de cacher mes cornes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、どう微笑もうとも、自分が人間の仲間ではないことは明白なのだ。",
-		   NULL, "So it's obvious that I'm not human.", Line_Normal);
+		   NULL, "Même lorsque je souris, il est évident que je ne suis pas humaine.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、生まれたばかりの梨花が、当り前の光景として僕の姿を見たなら、",
-		   NULL, "I'd hoped that because Rika has seen me since she was a baby,", Line_WaitForInput);
+		   NULL, "À sa naissance, lorsque je me suis rendu compte qu'elle pouvait me voir, je me suis dit qu'avec un peu de chance,", Line_WaitForInput);
 	OutputLine(NULL, "この醜い角のことも気にしないでくれるのではないだろうか。",
-		   NULL, " she wouldn't be bothered by my ugly horns at all.", Line_Normal);
+		   NULL, " elle considèrerait que mon apparence était normale et n'aurait pas peur de moi.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/sora5", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その淡い期待は実った。",
-		   NULL, "And that hope came true.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et ce mince espoir porta ses fruits.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛（ヒヨコ）が生まれて最初に見たものを自分の親だと信じ込むように、",
-		   NULL, "Just as chicks believe whatever they see first is their parent,", Line_WaitForInput);
+		   NULL, "Tout comme les poussins s'imaginent que la première créature qu'ils voient en arrivant au monde est leur mère,", Line_WaitForInput);
 	OutputLine(NULL, "梨花も何の疑問も持たずに僕を家族だと信じてくれた。",
-		   NULL, " Rika accepted me as part of her family as a matter of course.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Rika me considéra comme un membre de sa famille, sans jamais en douter.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　角が生えていてもだ。",
-		   NULL, "Even though I have these horns.", Line_Normal);
+		   NULL, "Même en voyant les grosses cornes sur ma tête.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、梨花が僕を家族だと信じてくれた日から、僕と梨花は一番の家族で仲良しになった。",
-		   NULL, "Rika and I have been close ever since the day she accepted me as her family member.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi depuis le jour où elle m'a acceptée dans sa famille, nous sommes devenues très soudées.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花にとっては両親より身近な遊び相手であり、",
-		   NULL, "I became closer to her than her parents.", Line_WaitForInput);
+		   NULL, "J'étais plus proche de Rika que ses parents, surtout parce que je pouvais jouer avec elle.", Line_WaitForInput);
 	OutputLine(NULL, "僕にとっては、思い出せないくらいに長い時間を経た久し振りの交流相手。",
-		   NULL, " I couldn't even remember the last time I was able to communicate with someone.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Pour moi, c'était extraordinaire. Je n'avais plus eu quelqu'un avec qui je pouvais parler depuis tellement longtemps...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕たちは常に一緒に過ごしたっけ。",
-		   NULL, "We spent all day together.", Line_Normal);
+		   NULL, "Alors, j'ai passé tout mon temps avec elle.", Line_Normal);
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ただ、家族、とりわけ母親は僕の存在を強く否定した。",
-		   NULL, "But her family, especially her mother, denied my existence.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sauf que malheureusement, sa mère insistait beaucoup pour nier mon existence.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花にとって当り前な家族である僕の存在をあまりに何度も強く否定したため、",
-		   NULL, "Since her mother so strongly denied me,", Line_WaitForInput);
+		   NULL, "Et comme Rika pouvait me voir, et m'avait toujours vue, toute sa vie, elle ne comprenait pas ce que sa mère avait comme problème.", Line_WaitForInput);
 	OutputLine(NULL, "…梨花は母親との距離を開くようになっていった。",
-		   NULL, " Rika and her mother became distant.", Line_Normal);
+		   NULL, " Et en grandissant, les choses ont empiré.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　子どもたちが母親と遊ぶ中で学んでいくべきことを、梨花は学ばなくなってしまった。",
-		   NULL, "Rika didn't learn certain things that many children learn from their mothers.", Line_Normal);
+		   NULL, "Rika cessa peu à peu d'apprendre les choses selon la course naturelle des choses, de mère en fille.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、僕が母親であるべきだと思い、昔から伝わる色々なことや知恵、習い事を教えてあげた。",
-		   NULL, "That's why I taught her instead.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est pourquoi j'ai décidé de tenir ce rôle, et que je lui ai appris des tas de choses, des traditions, comment se tenir à table, comment parler poliment, ce genre de choses.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…………皮肉なのは、それがどういうわけか余計、母親に嫌われたことだったのだが。",
-		   NULL, "......It's kind of ironic how that made her mother resent Rika even more.", Line_Normal);
+		   NULL, "... Mais évidemment, cela eut pour effet d'énerver encore plus sa mère biologique.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そう言えば、自分の呼び方でずいぶん母親と喧嘩をしていたっけ。",
-		   NULL, "Rika used to fight with her mother a lot about how she talked.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il me semble aussi que Rika se fit disputer de nombreuses fois pour la manière dont elle parlait d'elle-même.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花が自分を“私”と呼ばず“ボク”と呼ぶのは僕のせいの可能性が高い。",
-		   NULL, "I guess she picked up some bad habits from me.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle disait « je » non pas comme les petites filles de son époque, mais comme moi. Le problème étant qu'à mon époque, quand moi, j'ai appris à parler, les petites filles et les petits garçons parlaient de la même façon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あの頃の梨花は、母親と仲が悪いことを除けば、ごく普通の少女だったのだ。",
-		   NULL, "Besides the fact that she didn't get along with her mother, Rika was a pretty normal girl.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais en dehors de ses disputes fréquentes avec sa mère, Rika était une petite fille comme toutes les autres.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　沙都子とそっくりな雰囲気。",
-		   NULL, "She was just like Satoko.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle était exactement comme Satoko.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　野山を駆け巡り、いたずらが大好きな元気な少女だった。",
-		   NULL, "She loved running around in the woods, and doing mischievous things.", Line_Normal);
+		   NULL, "Elle courait à travers les champs et les montagnes, elle faisait des bêtises, bref, c'était une petite fille pleine de vie et de fougue.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "background/aka2", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……………だが、昭和５８年６月。",
-		   NULL, "However, in June, 1983...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... ... Mais en juin 1983...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…梨花は命を奪われた。",
-		   NULL, "Rika's life was taken.", Line_Normal);
+		   NULL, "Rika perdit la vie.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　僕たちは、梨花の成長と共に人生を満喫し、謳歌する以上の幸せは願っていない。",
-		   NULL, "All we want is a happy life for Rika.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mon seul souhait était de célébrer l'hymne jubilatoire de la vie, en accompagnant Rika à travers toutes les joies et les étapes de son existence.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…僕の力は、それに至るための道筋を探るだけだ。",
-		   NULL, "...My power only allows us to search for the path leading to that.", Line_Normal);
+		   NULL, "Mes pouvoirs se limitent à chercher un chemin qui pourrait lui permettre d'aller plus loin.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　確かに、何度繰り返しても悲しい運命は覆せない。",
-		   NULL, "It's awful to repeat the same tragedy over and over again.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il est vrai que malgré tous mes efforts, le Destin n'a pu être évité pour l'instant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それは確かに悲しいことだけれども、",
-		   NULL, "...Although it's devastating......", Line_WaitForInput);
+		   NULL, "Et il est vrai que c'est une expérience terrible et déchirante.", Line_WaitForInput);
 	OutputLine(NULL, "………落ちてしまい、這い上がることのできない井戸の底に楽しみを見出すのだって、悪いことじゃない。",
-		   NULL, " we can still find happiness within this endless world.", Line_Normal);
+		   NULL, " Mais tomber au fond d'un puits et chercher à s'amuser malgré le mauvais sort, ce n'est pas un crime.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手梨花の人生は確かに運命の袋小路に埋もれ、悲惨の一言に尽きる。",
-		   NULL, "Rika Furude's destiny is a tragic dead end.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La vie de Rika Furude est arrivée dans une impasse. On peut la décrire comme étant une tragédie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、…僕は梨花と、本来の梨花の寿命以上の時間を一緒に居られることに、ささやかな喜びも感じていたのだった。",
-		   NULL, "But I'm secretly enjoying the fact that I get to spend more time with her than what normal people can enjoy.", Line_Normal);
+		   NULL, "Mais elle et moi avons fini par trouver du réconfort en vivant l'une près de l'autre, encore et encore, depuis bien plus longtemps que ne l'indique son enveloppe charnelle.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もちろん、梨花と一緒なだけじゃない。",
-		   NULL, "It's not just Rika.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Bien sûr, il n'y a pas que Rika.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　問い掛けには応えてくれないけれど、",
-		   NULL, "They may not see or hear me,", Line_ContinueAfterTyping);
+		   NULL, "Ils ne peuvent pas répondre à mes appels,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…沙都子や魅音、レナや圭一なんかの大騒ぎと一緒に居られるのはとても楽しいこと。",
-		   NULL, " but being with Satoko, Mion, Rena, and Keiichi is also very fun.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " mais j'apprécie aussi la présence de Satoko, Mion, Rena et Keiichi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それに加わることはできないけれど、",
-		   NULL, "I can never be one of them,", Line_ContinueAfterTyping);
+		   NULL, "Je ne peux pas me joindre à eux, mais...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 600 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…でも、",
-		   NULL, " but...", Line_ContinueAfterTyping);
+		   NULL, " mais...", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "一緒だったのだ。",
-		   NULL, " I can still be by their side.", Line_Normal);
+		   NULL, " nous sommes ensemble, unis.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

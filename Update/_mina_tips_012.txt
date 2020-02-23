@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -8,61 +8,61 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神の子は自らが三日の後に復活すると予言しました。",
-		   NULL, "The son of God promised that he would be resurrected within three days.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Le fils de Dieu avait prédit sa propre résurrection. Il reviendrait d'entre les morts après trois jours.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　罪人たちは兵にて墓を封じ、その体が蘇ることがないよう監視しましたが、それはとても愚かしいことでした。",
-		   NULL, "Sinful men guarded his grave to make sure he would not wake up, but that was foolish of them.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors les pécheurs firent obstruer sa tombe avec d'immenses pierres, et firent monter la garde par les soldats, mais tout cela était futile.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　復活とは肉体が蘇ることではなく、その心と教えが蘇ることだからです。",
-		   NULL, "He meant that his spirit and his lessons would be resurrected, not his physical shell.", Line_Normal);
+		   NULL, "Car sa résurrection n'était pas celle de son corps, mais celle de son enseignement dans le cœur des hommes.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　肉体の死を恐れるな。",
-		   NULL, "Do not be afraid of physical death.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne crains pas la mort de ta dépouille charnelle.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らの貢献が揺ぎ無いなら、必ず自分は蘇る。",
-		   NULL, "If you achieve great things, you will live again.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si tu portes une foi inébranlable en tes découvertes, alors tu ressusciteras.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、自分は死を超越し永遠の生を得るのである。",
-		   NULL, "You will surpass death, and become immortal.", Line_Normal);
+		   NULL, "Et, ce faisant, tu obtiendras la vie éternelle.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして悪魔は、神の子を断崖に連れて行き、飛び降りるように言いました。",
-		   NULL, "A demon took the son of God to a cliff, and told him to jump off.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Alors le diable emmena le fils de Dieu au bord d'un précipice, et tenta de le convaincre de se jeter en contrebas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らが神の子を名乗るなら、神は奇跡にてその身を守るはずだと言うのです。",
-		   NULL, "He claimed that if he was really a son of God, a miracle would help him survive.", Line_Normal);
+		   NULL, "Si vous êtes le fils de Dieu, il protègera grâce à ses miracles votre corps de tout heurt.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを試すことは即ち、神を試すということです。",
-		   NULL, "He tried to challenge the Lord.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tenter de faire cela revient à tenter Dieu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　神は人を試しますが、人が神を試してはなりません。",
-		   NULL, "The Lord challenges humans, but humans may not challenge the Lord.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Dieu peut tenter les hommes, mais les hommes doivent se garder de tenter leur Dieu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode) == 0) { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -70,40 +70,40 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　試すことは疑うことです。",
-		   NULL, "To challenge is to suspect.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Car tenter revient à douter.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　疑いは悪魔の囁きに耳を貸し、あなたを堕落させるでしょう。",
-		   NULL, "Suspicion will speak words of evil into your ears, and it will make you falter.", Line_Normal);
+		   NULL, "Et le doute tendra l'oreille aux murmures de Satan, et t'entraînera dans les abysses.", Line_Normal);
 	ClearMessage();
 
 	PlaySE( 0, "s_page", 56, 64 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らの成果を疑うな。",
-		   NULL, "Do not doubt your own achievements.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne doute jamais du fruit de ton labeur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らの人生を疑うな。",
-		   NULL, "Do not doubt your own life.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne doute jamais des décisions prises dans ta vie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自らの貢献を疑うな。",
-		   NULL, "Do not doubt your contributions.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ne doute jamais de ce que tu as contribué.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして自分の実績を人が評価することを試してはならない。",
-		   NULL, "Do not let others criticize your achievements.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et surtout, ne tente pas d'obtenir la vaine gloire des hommes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを試すということは、自らの人生を疑うのと同じことなのだ。",
-		   NULL, "That is the same as doubting your own life.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Car tenter de l'obtenir signifie jeter le doute sur toute ta vie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -111,7 +111,7 @@ void main()
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　Hifumi．T ",
-		   NULL, "                                   Hifumi. T", Line_Normal);
+		   NULL, " Hifumi T", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

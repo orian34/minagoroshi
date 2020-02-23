@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -11,63 +11,63 @@ void main()
 	PlayBGM( 0, "Mati", 56, 0 );
 
 	ClearMessage();
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100001", 256, TRUE);
 	OutputLine(NULL, "「そうですか。裏に、町会も、その鬼ヶ淵死守同盟とかいう恫喝団体もいないとわかれば、これで安心でしょう。",
-		   NULL, "\"I see... We're good as long as we know that the town council and the Onigafuchi Guardians aren't involved.", Line_WaitForInput);
+		   NULL, "— Je vois. Si ni l'association de Hinamizawa, ni l'autre groupe dont vous m'avez parlé ne tirent les ficelles, alors c'est plutôt rassurant.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100002", 256, TRUE);
 	OutputLine(NULL, "北条沙都子さんの件は、特別扱いせずに慎重に対応してください。」",
-		   NULL, " Please take care of Satoko Houjou-san's case without worrying about it too much.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Vous pouvez continuer à traiter le dossier de Satoko Hôjô avec toute la prudence nécessaire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>原山</color>", NULL, "<color=#f5e6d3>Harayama</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442900001", 256, TRUE);
 	OutputLine(NULL, "「はい。雛見沢の総意でないとわかればこちらも落ち着いて処理ができます。」",
-		   NULL, "\"I will. I'm glad to know that the whole village isn't backing them.\"", Line_Normal);
+		   NULL, "— Oui, très bien. Disons que tant que nous savons que cette plainte ne reflète pas l'avis du village entier, cela nous permet de nous concentrer sur notre travail sans crainte.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100003", 256, TRUE);
 	OutputLine(NULL, "「しかし、私は好きになれませんね。裏に誰がいようがいなかろうが、常に公平な対応をするのが公務員です。",
-		   NULL, "\"I wouldn't agree with them if they were, though. No matter who is pulling the strings, we must treat every case equally. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "— Vous savez, je n'aime pas ces méthodes. Nous sommes des fonctionnaires de l'État, nous nous devons d'être loyaux envers le peuple et de ne faire aucune discrimination. Nous ne pouvons pas mettre en pratique une justice à deux vitesses, simplement parce que l'un ou l'autre groupe a proféré des menaces. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100004", 256, TRUE);
 	OutputLine(NULL, "恫喝がまかり通るようなことがあったという先例を残したから、雛見沢は特別扱いだという妙なルールができてしまったのではないですか？」",
-		   NULL, "This whole odd rule that we have to give Hinamizawa special treatment is only due to the precedent set when we let threats influence us before.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'ai l'impression que la règle ici est qu'il faut traiter les gens de Hinamizawa avec des égards bien particuliers...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>原山</color>", NULL, "<color=#f5e6d3>Harayama</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442900002", 256, TRUE);
 	OutputLine(NULL, "「……まぁ、確かに所長の仰るとおりだとは思いますが、……一応ですね、その…。」",
-		   NULL, "\"...Well, you're absolutely right, sir... but...\"", Line_Normal);
+		   NULL, "— ... Vous savez, en théorie, c'est vous qui avez raison, mais en pratique, c'est une autre paire de manches...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100005", 256, TRUE);
 	OutputLine(NULL, "「わざわざ自治の係長が、連合町会が背景にいないことを確認してくれたんですから、うちの職員も厳粛に事務を進めてください。",
-		   NULL, "\"Please continue to work on this case. The manager from the municipal government assured us that the town council has nothing to do with this petition. ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
+		   NULL, "— C'est quand même un monde qu'un homme de votre calibre doive s'abaisser à faire ce genre de vérifications. Mais au moins, nos fonctionnaires peuvent désormais travailler en paix. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100006", 256, TRUE);
 	OutputLine(NULL, "雛見沢だからどうすべきかとお伺いを立てること自体がすでに公務員の心構えとして問題です。係長も、その辺をよく職員に教えてくれなければ困ります。」",
-		   NULL, "It's a problem that our organization is so afraid of one tiny community. As a manager, you should think about that a little.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais vous savez, je pense que votre attitude est très problématique, elle n'est pas digne d'un bon fonctionnaire. Je compte sur vous pour ne pas donner ces mauvaises habitudes aux autres employés, cela ne faciliterait vraiment pas mon travail ici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>原山</color>", NULL, "<color=#f5e6d3>Harayama</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442900003", 256, TRUE);
 	OutputLine(NULL, "「はい、申し訳ございません…。とにかく、裏に村がいないとわかれば安心です。」",
-		   NULL, "\"Yes, I'm sorry... Anyway, I'm glad to hear that the village isn't supporting them...\"", Line_Normal);
+		   NULL, "— Oui, bien sûr, je suis vraiment désolé, je ne devrais pas. Enfin, au moins, nous savons qu'il n'a aucun piston, c'est très rassurant.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chief</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100007", 256, TRUE);
 	OutputLine(NULL, "「裏に村がいるとわかっても、対応を焦るべきではありません。何があろうとも！",
-		   NULL, "\"You must act the same way even if the village does support them. No matter who is behind the scenes!", Line_WaitForInput);
+		   NULL, "— Qu'il ait du piston ou pas, cela ne change strictement rien ! Je me moque de savoir qui est intéressé par ce dossier, il sera traité avec la même diligence que tous les autres.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100008", 256, TRUE);
 	OutputLine(NULL, "　北条沙都子さんの件は慎重に対応してください。",
-		   NULL, " Please be very careful with Satoko Houjou's case.", Line_WaitForInput);
+		   NULL, " La situation de Satoko Hôjô sera jugée avec la plus grande prudence.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/442100009", 256, TRUE);
 	OutputLine(NULL, "くれぐれも異例の措置は取らないよう、担当に念を押しておいてくださいよ。」",
-		   NULL, " Don't try to give her any special treatment, you understand?\"", Line_Normal);
+		   NULL, " Et faites bien comprendre à la personne en charge du dossier qu'il ne faut surtout pas créer de précédent !", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

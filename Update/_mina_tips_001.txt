@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -10,105 +10,105 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　先立つ不幸を許せ。",
-		   NULL, "I'm sorry for leaving you like this.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Pardonne-moi pour les difficultés qui vont bientôt joncher le chemin de ta vie.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　余命幾ばくもなく、薄れる意識の中でいつが己の死する時かもわからず旅立つよりは、自らの足で死出の旅路に踏み出したい気持ちをどうかわかってほしい。",
-		   NULL, "I just need you to understand I'd rather take my own life than be fearful of how many days I have left to live.", Line_Normal);
+		   NULL, "J'ai préféré emprunter la voie menant au royaume des morts de mon propre accord, plutôt que d'attendre le jour du départ dans un corps fatigué, à peine conscient, constamment dans la crainte. J'espère que tu comprendras cette décision.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そのお陰でこうして文を残せる。",
-		   NULL, "That's why I'm writing this letter to you.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "C'est un peu grâce à cela que j'ai l'occasion de te laisser ce message.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　無意味な延命に寝惚けた意識の中で死を迎え、何も残すことができない恐怖に私は耐えられないのだ。",
-		   NULL, "I can't stand the fear of being unable to leave behind a will while my life is prolonged, even as I lose my consciousness.", Line_Normal);
+		   NULL, "Je ne peux plus supporter la peur d'être emporté sans avoir rien pu laisser derrière moi, dans un moment de faiblesse, à lutter inutilement contre la maladie.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、結局、私は何も残せなかった。",
-		   NULL, "In the end, there's nothing I can leave behind for you.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais au bout du compte, malgré mes efforts, je ne laisserai rien derrière moi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の積み上げてきた人生も誇るべき実績も結晶も、何もこの世には残せなかった。",
-		   NULL, "I was unable to leave any of my achievements to this world.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Malgré la somme de temps et de connaissances que j'ai accumulés de mon vivant, il n'est rien qui les cristallisât et que je pusse léguer en héritage pour prouver ma valeur en ce monde.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私の死後に忘れ去られるのではなく、私が存命している内から忘れ去られた。",
-		   NULL, "I was forgotten before I was dead.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais ce n'est pas ma mort qui poussera les gens à m'oublier, comme le veut la marche naturelle des choses ; non, c'est de mon vivant que mon existence a commencé à disparaître des mémoires.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それを見ながらこの世を去らねばならぬ苦痛は筆舌に尽くし難い。",
-		   NULL, "I leave this world a humiliated man, knowing that I had no appreciation from anyone.", Line_Normal);
+		   NULL, "Il m'est difficile de coucher sur le papier le ressentiment qui m'habite alors que je m'apprête à rencontrer la faucheuse.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お前は祖父を越えなさい。",
-		   NULL, "You must do better than me.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je t'ordonne de faire mieux que moi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祖父の至れなかった先へ至りなさい。",
-		   NULL, "You must achieve something that your grandfather was never able to achieve.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ton grand-père a chu sur le chemin ; puisses-tu arriver sans encombres à ton but.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　分野は何でも構わない。",
-		   NULL, "I don't mind what field you choose.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Peu importe la matière ou le domaine.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　後世に名前を残しなさい。",
-		   NULL, "You must leave your mark on this world.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Fais en sorte de laisser ton nom dans l'Histoire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それが無理なら偉業や成果を残しなさい。",
-		   NULL, "You must leave behind your achievements.", Line_Normal);
+		   NULL, "Si cela te semble impossible, alors tente de réaliser des choses extraordinaires.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人の身である以上、私もお前もやがては死ぬ。",
-		   NULL, "You will eventually die someday.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nous ne sommes que des êtres humains. Toi et moi sommes condamnés à mourir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人の身である以上、やがては焼かれて灰になる。",
-		   NULL, "You will eventually turn to ashes.", Line_WaitForInput);
+		   NULL, "Et n'étant que des êtres humains, la crémation emportera nos corps vers l'Autre Monde.", Line_WaitForInput);
 	OutputLine(NULL, "肉の身は灰となるのが定めなのだ。",
-		   NULL, " As a human being, that's your inevitable fate.", Line_Normal);
+		   NULL, " Nous sommes poussière, et nous redeviendrons poussière.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だが、お前が優れた偉業を残し名を残したなら、灰となっても永遠に生き続ける。",
-		   NULL, "But if you achieve a great success, you will live forever even after you depart.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais si tu parviens à faire une grande découverte, ou à réaliser de grandes choses, alors même lorsque tu seras redevenue poussière, les gens parleront de toi, à tout jamais.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　人の身を失いても生き続ける時、人はそれを神と呼ぶ。",
-		   NULL, "Those who live beyond their deaths are called gods.", Line_Normal);
+		   NULL, "Et lorsque tu vivras à travers eux, par-delà la mort, alors tu seras devenue l'égale d'un Dieu.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　祖父もそうなりたかったが至れなかった。",
-		   NULL, "I wished to become one, but I was unable to do so.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Moi aussi, j'eus la folie d'essayer de devenir un dieu, mais mon entreprise a échoué.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お前は神になりなさい。",
-		   NULL, "So in my place, you must become a god someday.", Line_Normal);
+		   NULL, "Ne suis pas les pas de ton grand-père ; deviens un dieu.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

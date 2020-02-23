@@ -1,4 +1,4 @@
-void main()
+﻿void main()
 {
 	EnableJumpingOfReturnIcon();
 
@@ -8,203 +8,203 @@ void main()
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……梨花の知りたかった答えはこれで出揃ったようね。",
-		   NULL, "...I guess Rika finally managed to assemble all the pieces to her puzzle.", Line_Normal);
+		   NULL, "... On dirait bien que la réponse que tu attendais tant est arrivée sur un beau plateau d'argent, Rika.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　でも、この記憶が持ち越されるかは別の問題ね。",
-		   NULL, "But we don't know yet if her memories will pass on to her next life.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Mais bien sûr, cela ne veut pas forcément dire que tu réussiras à te souvenir de ces informations cruciales dans ta prochaine incarnation.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花は死の直前の記憶を遡って失う。",
-		   NULL, "Rika always loses the memory of her death.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Généralement, Rika perd les derniers souvenirs qui précèdent directement sa mort.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　だから、このカケラを教訓として活かせるかは大いに疑問だけれど。",
-		   NULL, "I don't know if she can retain the memories of what she's discovered.", Line_Normal);
+		   NULL, "C'est pourquoi je me demande si réellement, tu pourras tirer des leçons de ce monde que nous venons de quitter.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どう？",
-		   NULL, "What did you think?", Line_WaitForInput);
+		   NULL, "Alors, et toi ?", Line_WaitForInput);
 	OutputLine(NULL, "　あなたも楽しかった？",
-		   NULL, " Did you have fun?", Line_Normal);
+		   NULL, " Est-ce que tu t'es bien amusée ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　このカケラを見てしまえば、もうカケラの積み木遊びなんて退屈なだけでしょう。",
-		   NULL, "Once you find out the answers, collecting them isn't so fun anymore...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "J'imagine que maintenant que tu as vu ce qu'il y avait dans ce fragment, empiler les autres cubes de souvenirs ne t'intéressera plus...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そうでもない？",
-		   NULL, "You don't agree...?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Pardon ? Pas forcément ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうね。",
-		   NULL, "I see.", Line_WaitForInput);
+		   NULL, "Hmmm, pourquoi pas.", Line_WaitForInput);
 	OutputLine(NULL, "古いカケラをもう一度積み木遊びしてみると、別のものが見えて楽しいかもしれないわね。",
-		   NULL, " You still might find something different by examining some old Fragments.", Line_Normal);
+		   NULL, " Peut-être qu'en réempilant les anciens fragments, tu pourras y redécouvrir certaines choses.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どうせここでの時間は無限なのだし。",
-		   NULL, "After all, the time we have here is endless.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "De toute façon, nous avons toute l'Éternité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分で何かの遊びを見つけない限り、ここには何もないのだから。",
-		   NULL, "We have to find something to play with, because there's nothing to do here.", Line_Normal);
+		   NULL, "Tant que tu n'auras rien trouvé pour t'occuper, il n'y aura rien d'autre ici.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　箱遊びも、箱の中身を知ってしまえばもう何の楽しみもない。",
-		   NULL, "For me, playing with these Fragments stops being fun when I find out what's inside.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Tu te souviens du jeu des boîtes ? Quand on connaît le contenu de toutes les boîtes, ce jeu devient particulièrement barbant.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それでもなお、箱遊びが楽しめるのだとしたら、あなたはなかなか殊勝だと思うわ。",
-		   NULL, "...But if you can tell me how to have fun with them even so, that makes you pretty smart.", Line_Normal);
+		   NULL, "Si malgré tout tu réussis à y trouver ton compte, c'est que tu es sacrément spéciale dans ta tête...", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　え？",
-		   NULL, "What?", Line_WaitForInput);
+		   NULL, "Quoi ?", Line_WaitForInput);
 	OutputLine(NULL, "　私はどういう遊びをしているのか？",
-		   NULL, " You want to know what I play with?", Line_Normal);
+		   NULL, " Comment je m'amuse ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　遊びというよりは、退屈しのぎね。",
-		   NULL, "I don't play. I'm just killing time.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je ne m'amuse pas, moi, je trompe mon ennui, ce n'est pas la même chose.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私は、梨花たちの世界がどこでどうなっていたら理想的な世界へ至れたかを想像するのが好きよ。",
-		   NULL, "I like to imagine what Rika could've done, in order to achieve the future she hopes for.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce que j'aime faire, c'est imaginer ce qui devrait changer dans le monde de Rika et de ses amis pour pouvoir atteindre le monde idéal.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　彼らが至れたら素敵だろうと思う世界のカケラを、自分なりの解釈で作ってみているの。",
-		   NULL, "I like to imagine a world that would've been happy for all of them.", Line_Normal);
+		   NULL, "En fait, je crée un fragment qui me paraît représenter au mieux l'idée que je me fais d'un monde parfait.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　今回のカケラで、世界の構造をほとんどわかったでしょう？",
-		   NULL, "You've found out how these worlds are set up by looking at the previous ones, right?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense qu'avec le fragment que nous venons de quitter, tu as pu apprendre quelles étaient les grandes lignes directrices qui servaient à former le monde, non ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その上で、どこで誰がどう立ち回っていたら、梨花は鷹野に負けなかったのかを想像することが、最近の私のお気に入りの遊びよ。",
-		   NULL, "I like to analyze what would need to change in order for Rika to win against Takano.", Line_Normal);
+		   NULL, "En ce moment, j'aime bien imaginer quels détails auraient dû changer à quel moment pour permettre à Rika d'éviter les tragédies.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どんなカケラか見たいって？",
-		   NULL, "You want to see what's on my mind?", Line_Normal);
+		   NULL, "Quoi, tu veux voir mon fragment de monde parfait ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　くすくす、残念ね。",
-		   NULL, "Hee hee, too bad.", Line_WaitForInput);
+		   NULL, "Hmpfhfhfhf, non, non, non,", Line_WaitForInput);
 	OutputLine(NULL, "あなたには見せてあげないわ。",
-		   NULL, " I'm not showing that to you.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " désolée, mais je ne te le montrerai pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その世界ではね、",
-		   NULL, "In that world,", Line_WaitForInput);
+		   NULL, "Tout ce que je peux te dire,", Line_WaitForInput);
 	OutputLine(NULL, "梨花たちは見事、苦難に打ち勝ち、",
-		   NULL, " Rika and her friends survived their struggle,", Line_WaitForInput);
+		   NULL, " c'est que dans ce fragment, Rika et ses amis vainquent tous les obstacles et empêchent le Destin de se réaliser.", Line_WaitForInput);
 	OutputLine(NULL, "運命を覆して昭和５８年６月を越えるのよ。",
-		   NULL, " and broke through the fate of June 1983.", Line_Normal);
+		   NULL, " Ce qui leur permet de découvrir ce qu'il y a après le mois de juin 1983.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自己満足のようなカケラだから、恥ずかしくてとても見せられないけれどもね。",
-		   NULL, "It's just my imagination. It's not for me to share with you...", Line_Normal);
+		   NULL, "Tu sais, c'est un fragment que j'ai façonné uniquement pour satisfaire ma vanité personnelle. Je serais bien trop gênée si tu devais le découvrir.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…でも、梨花がこれから作ってくれるカケラの方が、もっともっと輝いてくれるに違いない。",
-		   NULL, "I'm sure the world that Rika is about to create is better than anything in my imagination.", Line_Normal);
+		   NULL, "Mais je suis sûre que les mondes que tu créeras toi avec les fragments seront bien plus intéressants et resplendissants.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　仮に、昭和５８年６月１９日に閉じ込められてしまっても。",
-		   NULL, "Even if she's stuck on June 19th in 1983...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Et même si d'aventure tu devais être piégée au 19 juin 1983...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それはそれで、梨花のひとつの世界の終焉としてこの上なく輝かしいカケラとなるでしょうし。",
-		   NULL, "I'm sure this now-ended world will remain one of Rika's brightest fragments either way.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Je pense que malgré cela, tu devrais pouvoir réussir à créer une fin magnifique.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どんなに苦難があったにせよ、",
-		   NULL, "No matter how much she struggles,", Line_WaitForInput);
+		   NULL, "Et quelles que soient les épreuves qui t'attendront,", Line_WaitForInput);
 	OutputLine(NULL, "もしもそれを乗り越えられたなら、もっともっと輝くカケラになるでしょうし。",
-		   NULL, " if she actually overcomes her fate, it will be the most brilliant Fragment of her story.", Line_Normal);
+		   NULL, " si jamais tu réussis à toutes les surmonter, alors ce fragment sera le plus éblouissant de tous.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私が描くどんな物語より、梨花が自ら紡ぐ物語の方がよっぽど素晴らしいものになるでしょうね。",
-		   NULL, "I'm sure the life Rika lives makes for a better story than my boring imagination.", Line_Normal);
+		   NULL, "Et puis même, n'importe quelle histoire que tu auras tissée toi-même avec les fils et les fragments du Destin vaudra mieux que mes créations personnelles.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花はどうしたかって…？",
-		   NULL, "You want to know what happened to Rika...?", Line_Normal);
+		   NULL, "Comment ? Quelle fut la décision de Rika dans le dernier monde ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　結局、羽入と一緒にもう一度世界をやり直す決心をしたみたいよ。",
-		   NULL, "She made a decision to redo her life once again with Hanyuu.", Line_Normal);
+		   NULL, "Eh bien, en fin de compte, on dirait qu'elle a décidé de reprendre son voyage avec Hanyû et de recommencer dans un nouveau monde.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分に与えられた人生を精一杯足掻く。",
-		   NULL, "She is trying to live her life with all her might.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle a appris une grande leçon, cette fois-ci.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それが自分の美学だと、知ったみたいだから。",
-		   NULL, "That's what she learned from this world.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Elle sait que la chose honorable à faire pour elle, c'est se défendre bec et ongles, comme une furie, sans jamais laisser tomber.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　次のカケラはもう始まってるわ。",
-		   NULL, "Her next life has already begun.", Line_Normal);
+		   NULL, "D'ailleurs, le prochain fragment a déjà commencé.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　どんな世界なのかしらね。",
-		   NULL, "I do wonder what that life is like.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je me demande bien quel monde il contient.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これから見に行ってみるつもり。",
-		   NULL, "I'm going there now to check.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je pense aller bientôt le visiter et regarder un peu à quoi il ressemble.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたも一緒に見に行く…？",
-		   NULL, "Do you want to come with me...?", Line_Normal);
+		   NULL, "Tu veux venir avec moi ?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
