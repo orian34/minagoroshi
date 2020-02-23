@@ -1698,7 +1698,7 @@
 		   NULL, " nous sommes en train d'acheminer des bus spécifiquement équipés contre les attaques au gaz. Et puis, nous avons aussi des hélicoptères !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps2/00/forcee28003", 540, TRUE);
 	OutputLine(NULL, "必ず助かりますから！」",
-		   NULL, " Ne vous en faites, nous vous sortirons de là !", Line_Normal);
+		   NULL, " Ne vous en faites pas, nous vous sortirons de là !", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
