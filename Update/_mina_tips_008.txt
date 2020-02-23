@@ -53,22 +53,22 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000003", 256, TRUE);
 	OutputLine(NULL, "「あれはですね、一応、先生からの借り物になっておりまして。一応、値段を調べたんですが、国産だと２０万くらいするらしいんですよ。",
-		   NULL, "— Bah, vous savez, c'était un cadeau, hein, je ne suis pas sûr d'en retrouver un aussi bon.", Line_WaitForInput);
+		   NULL, "— Bah, vous savez, c'était un cadeau, hein, je ne suis pas sûr d'en retrouver un aussi bon. Mais j'avais un peu regardé à l'époque, un bon parasol de par chez nous coûte 200 000 Yens.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000004", 256, TRUE);
 	OutputLine(NULL, "中国製によく似たものがありまして、こっちなら８万円くらいで何とか買えそうでして…。」",
-		   NULL, " Mais j'avais un peu regardé à l'époque, un bon parasol de par chez nous coûte 200 000 Yens.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On trouve aussi des modèles faits en Chine, qui sont très ressemblants, mais moins bons. Ceux-là coûtent dans les 80 000 Yens.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300048", 256, TRUE);
 	OutputLine(NULL, "「別に中国製でもどこ製でも構わんぎゃあ、お呼びする先生に失礼んならんとよ、よぅ選んどくれぇな。」",
-		   NULL, "On trouve aussi des modèles faits en Chine, qui sont très ressemblants, mais moins bons. Ceux-là coûtent dans les 80 000 Yens.", Line_Normal);
+		   NULL, "— Ohff, vous savez, moi, qu'ils sortent de Chine ou de la lune, j'm'en fous, hein, mais faudrait pas que les invités se sentent insultés, c'est tout.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000005", 256, TRUE);
 	OutputLine(NULL, "「一応ですね、今、その８万の傘の方を取り寄せさせていただいております。届きましたら、顧問にも一度見ていただきまして、それで判断ということではいかがでしょうか…。」",
-		   NULL, "— Ohff, vous savez, moi, qu'ils sortent de Chine ou de la lune, j'm'en fous, hein, mais faudrait pas que les invités se sentent insultés, c'est tout.", Line_Normal);
+		   NULL, "— C'est déjà commandé. Vous voudrez probablement finaliser vôtre choix après l'avoir examiné en mains propres.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
@@ -204,7 +204,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……つまり、裏にお魎がいないということは、この陳情は特別扱いする必要はないということだ。",
-		   NULL, "Donc, si Oryô Sonozaki n'était pas au courant, le dossier n'avait pas besoin d'être traité en urgence.@", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Donc, si Oryô Sonozaki n'était pas au courant, le dossier n'avait pas besoin d'être traité en urgence.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
