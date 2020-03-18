@@ -3908,7 +3908,7 @@
 	ClearMessage();
 
 	SetSpeedOfMessage( TRUE, 128 );
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/bada18001", 256, TRUE);
 	OutputLine(NULL, "「だぁッっとったぁああんがなあぁ！！",
 		   NULL, "— Boh eh cômô qu'c'est sale con !?", Line_WaitForInput);
@@ -3936,7 +3936,7 @@
 		   NULL, " Je m'interposai entre les six.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/bada18003", 256, TRUE);
 	OutputLine(NULL, "「ん？",
 		   NULL, "— Quoi ?", Line_WaitForInput);
@@ -4047,7 +4047,7 @@
 		   NULL, " Z'allez pas en faire tout un fromage.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Delinquent</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>不良</color>", NULL, "<color=#f5e6d3>Délinquant</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/badb18001", 256, TRUE);
 	OutputLine(NULL, "「な、何だよてめぇは！！",
 		   NULL, "— Et qu'essyt'prend, ducon, on t'a sonné ?", Line_WaitForInput);

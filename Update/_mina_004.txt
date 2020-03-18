@@ -1234,7 +1234,7 @@
 		   NULL, "Nous entendîmes une voix de femme, mais elle ne semblait pas seule.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Villageoise</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/woma18001", 256, TRUE);
 	OutputLine(NULL, "「あんれぇ？",
 		   NULL, "— Hein ?", Line_WaitForInput);
@@ -1314,7 +1314,7 @@
 
 	DrawScene( "background/js4", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Villageoise</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/woma18003", 256, TRUE);
 	OutputLine(NULL, "「あー、前原くん、あんた叩き売りの司会を引き受けてくれたんねー？！",
 		   NULL, "— Aaah, tiens, Maebara ? Il paraît que tu as dit oui pour cette histoire de commissaire-priseur ?", Line_WaitForInput);
@@ -1356,7 +1356,7 @@
 		   NULL, " On peut s'attendre à des merveilles !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Villageoise</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/woma18006", 256, TRUE);
 	OutputLine(NULL, "「すったらん、叩き売りはちゃあんと来んないかんね！」",
 		   NULL, "— Oh bah alors là, faudra pas louper ça !", GetGlobalFlag(GLinemodeSp));
@@ -1411,7 +1411,7 @@
 	ClearMessage();
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Woman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>女</color>", NULL, "<color=#f5e6d3>Villageoise</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/woma18007", 256, TRUE);
 	OutputLine(NULL, "「魅音ちゃんはどうするん。",
 		   NULL, "— Tu fais quoi, Mion ?", Line_WaitForInput);

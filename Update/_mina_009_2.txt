@@ -416,7 +416,7 @@
 		   NULL, "Saloperie, va, mais quels poumons rikikis ! Je pouvais pas mourir plus vieille, aussi, moi, merde !", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Housewife</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Femme</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/syuhua18001", 256, TRUE);
 	OutputLine(NULL, "「角のお惣菜屋さんが夕方に売れ残りを安くするでしょ。",
 		   NULL, "— Le magasin à l'angle au bout fait les légumes saumurés pas chers en fin de journée.", Line_WaitForInput);

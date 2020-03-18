@@ -138,7 +138,7 @@
 		   NULL, "Sacré Papa. Il sait parler aux adultes comme il faut, lui.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>司会</color>", NULL, "<color=#f5e6d3>Chairman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>司会</color>", NULL, "<color=#f5e6d3>Président</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/shikai18001", 256, TRUE);
 	OutputLine(NULL, "「それでは各部会ごとに席をわかれ、議題を進めていただきたいと思います。",
 		   NULL, "— Bon, eh bien, choisissez-vous tous une place et creusez-vous la tête sur les thèmes à aborder.", Line_WaitForInput);
@@ -1257,7 +1257,7 @@
 		   NULL, "— Oui, tu as raison, je vais en parler à ta mère en rentrant.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>司会</color>", NULL, "<color=#f5e6d3>Chairman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>司会</color>", NULL, "<color=#f5e6d3>Président</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/shikai18004", 256, TRUE);
 	OutputLine(NULL, "「では、以上で本日を終了します。",
 		   NULL, "— Bien, nous en avons terminé pour aujourd'hui.", Line_WaitForInput);
@@ -1273,7 +1273,7 @@
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/shikai18008", 256, TRUE);
 	OutputLine(NULL, "どうも今日はお疲れ様でした。",
 		   NULL, " Merci d'être venus ce soir ! ", GetGlobalFlag(GLinemodeSp));
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>司会</color>", NULL, "<color=#f5e6d3>Chairman</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>司会</color>", NULL, "<color=#f5e6d3>Président</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/shikai18009", 256, TRUE);
 	OutputLine(NULL, "委員長、終わりの挨拶をお願いします。」",
 		   NULL, "M. le secrétaire, je vous laisse terminer par le protocole.", Line_Normal);

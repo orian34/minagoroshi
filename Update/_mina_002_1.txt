@@ -778,7 +778,7 @@
 		   NULL, "— Oui allô, Irie à l'appareil.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>窓口</color>", NULL, "<color=#f5e6d3>Counter</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>窓口</color>", NULL, "<color=#f5e6d3>Opératrice</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/docwin10001", 256, TRUE);
 	OutputLine(NULL, "『東京から外線です。",
 		   NULL, "— C'est un appel depuis Tôkyô.", Line_WaitForInput);
@@ -804,7 +804,7 @@
 		   NULL, " Faites passer son appel dans mon bureau, je le prendrai depuis mon poste personnel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>窓口</color>", NULL, "<color=#f5e6d3>Counter</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>窓口</color>", NULL, "<color=#f5e6d3>Opératrice</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "『はい。",
 		   NULL, "— Très bien.", Line_WaitForInput);
 	OutputLine(NULL, "ではすみません、そちらの受話器を一度切ってください。』",
@@ -4152,7 +4152,7 @@
 		   NULL, "... Mais mes oreilles purent entendre ses paroles, et je sus ce qu'il avait pris.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Young boy</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Garçon</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/boya18001", 256, TRUE);
 	OutputLine(NULL, "「見ろよこれこれ！！",
 		   NULL, "— Eh les gens, regardez !", Line_WaitForInput);
@@ -4164,7 +4164,7 @@
 		   NULL, " Vous voulez pas qu'on joue à ça ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Young boy</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>少年</color>", NULL, "<color=#f5e6d3>Garçon</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/boyb18001", 256, TRUE);
 	OutputLine(NULL, "「おーーー！！",
 		   NULL, "— Ouah, la vache !", Line_WaitForInput);
