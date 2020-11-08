@@ -368,9 +368,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　たこ焼き、やきそば、カキ氷。あんず飴にソースせんべい、チョコバナナ。",
-		   NULL, "Des beignets de poulpe, des nouilles sautées, de la glace pilée, des beignets de haricots sucrés, des gâteaux salés, des bananes au chocolat...", Line_WaitForInput);
+		   NULL, "Des beignets de poulpe, des nouilles sautées, de la glace pilée, des beignets de haricots sucrés, des gâteaux salés, des bananes au chocolat...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "ヨーヨーすくいに金魚すくい、射的屋と本当にいっぱいあり、それらにたくさんに人々が群がっていた。",
-		   NULL, " Des pêches miraculeuses, des pêches de poissons rouges, des stands de tir, et j'en passe ! Et chaque fois, il y avait foule.", Line_Normal);
+		   NULL, "Des pêches miraculeuses, des pêches de poissons rouges, des stands de tir, et j'en passe ! Et chaque fois, il y avait foule.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1043,10 +1044,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/282600004", 256, TRUE);
 	OutputLine(NULL, "「今後も何かあったら圭一をぜひこき使ってやってください！",
-		   NULL, "— Si jamais vous avez encore des problèmes, n'hésitez pas à demander de l'aide à notre fils, il sert à ça !", Line_WaitForInput);
+		   NULL, "— Si jamais vous avez encore des problèmes, n'hésitez pas à demander de l'aide à notre fils, il sert à ça !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>圭一の父</color>", NULL, "<color=#f5e6d3>Papa de Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/282600005", 256, TRUE);
 	OutputLine(NULL, "　それと引き換えと言っては何ですが、どうですかお嬢さん、ぜひ今度モデルに…！！」",
-		   NULL, " En échange, si je puis dire, jeune demoiselle, je vous serais extrêmement reconnaissant si vous pouviez passer me voir un de ces jours dans mon atelier, seule si po--", Line_Normal);
+		   NULL, "En échange, si je puis dire, jeune demoiselle, je vous serais extrêmement reconnaissant si vous pouviez passer me voir un de ces jours dans mon atelier, seule si po--", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

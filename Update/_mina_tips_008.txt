@@ -38,22 +38,26 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300044", 256, TRUE);
 	OutputLine(NULL, "「いいんねいいんね。こちらこそ文化祭りの時は世話んなったんね。",
-		   NULL, "— Bah, c'est rien, va. C'était pour dire merci, vous aviez aidé avec la fête de la culture.", Line_WaitForInput);
+		   NULL, "— Bah, c'est rien, va. C'était pour dire merci, vous aviez aidé avec la fête de la culture.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300045", 256, TRUE);
 	OutputLine(NULL, "野点傘の件、ありがとよぅ。",
-		   NULL, " Oh, merci pour le grand parasol en bambou, d'ailleurs.", Line_WaitForInput);
+		   NULL, "Oh, merci pour le grand parasol en bambou, d'ailleurs.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300046", 256, TRUE);
 	OutputLine(NULL, "あれ、一本いくらくらいすんかんね。",
-		   NULL, " Combien qu'il a coûté, donc ?", Line_WaitForInput);
+		   NULL, "Combien qu'il a coûté, donc ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300047", 256, TRUE);
 	OutputLine(NULL, "すったら毎年使うもんなんだから自治で一本、買っといてくらんとよ。」",
-		   NULL, " Non parce qu'on en a besoin tous les ans, mine de rien.", Line_Normal);
+		   NULL, "Non parce qu'on en a besoin tous les ans, mine de rien.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000003", 256, TRUE);
 	OutputLine(NULL, "「あれはですね、一応、先生からの借り物になっておりまして。一応、値段を調べたんですが、国産だと２０万くらいするらしいんですよ。",
-		   NULL, "— Bah, vous savez, c'était un cadeau, hein, je ne suis pas sûr d'en retrouver un aussi bon. Mais j'avais un peu regardé à l'époque, un bon parasol de par chez nous coûte 200 000 Yens.", Line_WaitForInput);
+		   NULL, "— Bah, vous savez, c'était un cadeau, hein, je ne suis pas sûr d'en retrouver un aussi bon. Mais j'avais un peu regardé à l'époque, un bon parasol de par chez nous coûte 200 000 Yens.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000004", 256, TRUE);
 	OutputLine(NULL, "中国製によく似たものがありまして、こっちなら８万円くらいで何とか買えそうでして…。」",
 		   NULL, "On trouve aussi des modèles faits en Chine, qui sont très ressemblants, mais moins bons. Ceux-là coûtent dans les 80 000 Yens.", GetGlobalFlag(GLinemodeSp));
@@ -74,10 +78,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300049", 256, TRUE);
 	OutputLine(NULL, "「それから、もう３年、江戸千家が続いとるんね、先生がたまには他の先生もお呼びしないとバランスがようないっちゅうんしゃあ。",
-		   NULL, "— D'ailleurs, ça fait trois ans qu'on invite un maître du thé de l'école Senke d'Edo.", Line_WaitForInput);
+		   NULL, "— D'ailleurs, ça fait trois ans qu'on invite un maître du thé de l'école Senke d'Edo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300050", 256, TRUE);
 	OutputLine(NULL, "表でも裏でもいいから他の先生をちょいと自治の方で来年までに探してもらってもいいかんね。」",
-		   NULL, " Il faudrait penser aux autres, sinon ils vont encore se plaindre. Je suis pas trop regardante, un Senke d'ailleurs ou bien même un de l'école Urasenke, ça me convient, mais pas le même chaque année, quoi.", Line_Normal);
+		   NULL, "Il faudrait penser aux autres, sinon ils vont encore se plaindre. Je suis pas trop regardante, un Senke d'ailleurs ou bien même un de l'école Urasenke, ça me convient, mais pas le même chaque année, quoi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
@@ -122,10 +127,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000011", 256, TRUE);
 	OutputLine(NULL, "「いえ、実はですね。最近、叔父さんと同居を始めたとかでですね、",
-		   NULL, "— Oh, eh bien, à vrai dire, il paraît qu'elle vit à nouveau avec son oncle,", Line_WaitForInput);
+		   NULL, "— Oh, eh bien, à vrai dire, il paraît qu'elle vit à nouveau avec son oncle,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000012", 256, TRUE);
 	OutputLine(NULL, "その叔父さんから虐待を受けているとか、そんな話は顧問のお耳には入っておりますでしょうか。」",
-		   NULL, " mais j'ai reçu des messages indiquant qu'il la battrait, je ne sais pas quoi en penser. Vous n'auriez pas entendu quelque chose à son sujet, par hasard ?", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais j'ai reçu des messages indiquant qu'il la battrait, je ne sais pas quoi en penser. Vous n'auriez pas entendu quelque chose à son sujet, par hasard ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
@@ -140,23 +146,25 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000013", 256, TRUE);
 	OutputLine(NULL, "「いえいえいえ、知らなければ結構なんです。実はですね、そういった旨の陳情が児童相談所に入ったらしいです。",
-		   NULL, "— Ah non mais ce n'est pas grave, je ne vous fais aucun reproche, voyons. C'est juste que l'assistante sociale a été avisée de cela, et je m'en étonnais.", Line_WaitForInput);
+		   NULL, "— Ah non mais ce n'est pas grave, je ne vous fais aucun reproche, voyons. C'est juste que l'assistante sociale a été avisée de cela, et je m'en étonnais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000014", 256, TRUE);
 	OutputLine(NULL, "相談所が言うにはだいぶ強い口調で来られていると、そういう話らしいんです。",
-		   NULL, " Il paraît que des gens seraient venus se plaindre, et très malpolis, en plus de cela ! ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il paraît que des gens seraient venus se plaindre, et très malpolis, en plus de cela ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000015", 256, TRUE);
 	OutputLine(NULL, "それでですね、相談所の係長から、お魎さんのお耳に入ってる話なら取り扱いを急いだほうがいいんじゃないかという話が来まして、」",
 		   NULL, "Et sur ces entrefaits, je me suis dit que si cette histoire vous préoccupait vous aussi, nous devrions peut-être accélérer les procédures, mais...", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300057", 256, TRUE);
 	OutputLine(NULL, "「私ゃあ何も知らんし、全然わからん！　なぁんでわしが北条のバチ当たり娘何ぞに骨を折らんしゃああかんがね！！",
-		   NULL, "— Mais qu'esstu m'chantes avec cette gamine, j'en sais rien, moi, j'y comprends rien à ton charabia ! Et puis d'abord, pourquoi j'irais me soucier de la gamine des Hôjô, c'étaient des culs-terreux, leur gamine peut pas être bien mieux !", Line_WaitForInput);
+		   NULL, "— Mais qu'esstu m'chantes avec cette gamine, j'en sais rien, moi, j'y comprends rien à ton charabia ! Et puis d'abord, pourquoi j'irais me soucier de la gamine des Hôjô, c'étaient des culs-terreux, leur gamine peut pas être bien mieux !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300058", 256, TRUE);
 	OutputLine(NULL, "　園崎家は全然知りませんし関係も何もありゃんせんね！！」",
-		   NULL, " Les Sonozaki sont pas au courant, et pour être franche, ils s'en moquent bien !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Les Sonozaki sont pas au courant, et pour être franche, ils s'en moquent bien !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
@@ -168,16 +176,18 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300059", 256, TRUE);
 	OutputLine(NULL, "「知らん知らん！！！　何の話しゃあね！！",
-		   NULL, "— Meuh non, bien sûr que non, petzouille ! Mais de quoi qu'tu causes !", Line_WaitForInput);
+		   NULL, "— Meuh non, bien sûr que non, petzouille ! Mais de quoi qu'tu causes !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300060", 256, TRUE);
 	OutputLine(NULL, "　公由んところが北条のバチ当たり娘になんぞ肩入れしたらんきゃあ、すったらんなぁんて園崎には話が入らんね、どういうこっちゃあ！！",
-		   NULL, " Kimiyoshi irait pas soutenir une traître, et encore moins sans m'en parler, va !", Line_WaitForInput);
+		   NULL, "Kimiyoshi irait pas soutenir une traître, et encore moins sans m'en parler, va !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300061", 256, TRUE);
 	OutputLine(NULL, "　誰じゃあね、その相談所に陳情したったちゅうんわ！！」",
-		   NULL, " Non mais où va le monde ? Et d'abord, qui est l'imbécile qu'est allé se plaindre !?", Line_Normal);
+		   NULL, "Non mais où va le monde ? Et d'abord, qui est l'imbécile qu'est allé se plaindre !?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>相田</color>", NULL, "<color=#f5e6d3>Aida</color>", "<size=-3>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/443000017", 256, TRUE);
 	OutputLine(NULL, "「クラスメートが何人かいらっしゃった…とまぁ、そういう感じなんですが。……ではこれはクラスの子たちが独自にやったことで、連町も顧問もご存じない、関係ない話という認識でもよろしいでしょうか？」",
 		   NULL, "— Oh, il me semble bien que c'était un groupe d'enfants, des élèves de sa classe. Je vois, c'est donc une action uniquement organisée par les camarades de classe de cette enfant. Ni vous ni les comités n'êtes liés à ce dossier, donc ?", Line_Normal);

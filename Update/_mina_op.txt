@@ -79,9 +79,10 @@
 	Wait( 1200 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "私の妹。",
-		   NULL, " sœurette.", Line_WaitForInput);
+		   NULL, " sœurette.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "弟かもしれないけど、あなたの性別がわからないからわかるまでは妹にしておくわね。",
-		   NULL, " Enfin, tu es peut-être mon frère, mais je ne sais pas si tu es l'un ou l'autre, alors pour l'instant, je vais choisir comme je l'entends. Tu seras donc ma sœur.", Line_Normal);
+		   NULL, "Enfin, tu es peut-être mon frère, mais je ne sais pas si tu es l'un ou l'autre, alors pour l'instant, je vais choisir comme je l'entends. Tu seras donc ma sœur.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -120,9 +121,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　未来は無数の選択肢に紡がれて無限の広がりを見せるはずなのに、",
-		   NULL, "Normalement, le futur part dans tous les sens, constitué d'une infinité de choix successifs liés les uns aux autres, mais...", Line_WaitForInput);
+		   NULL, "Normalement, le futur part dans tous les sens, constitué d'une infinité de choix successifs liés les uns aux autres, mais...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……なぜか私たちの世界は必ず「死」という名の終焉で閉じられてしまう。",
-		   NULL, " Je ne sais pas pourquoi, dans notre monde, tous nos choix se heurtent très rapidement au mur infranchissable de la Mort.", Line_Normal);
+		   NULL, "Je ne sais pas pourquoi, dans notre monde, tous nos choix se heurtent très rapidement au mur infranchissable de la Mort.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -144,12 +146,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうしてこの世界にコロニーが築かれ、",
-		   NULL, "Et lorsque nous aurons créé des colonies entières ici,", Line_ContinueAfterTyping);
+		   NULL, "Et lorsque nous aurons créé des colonies entières ici,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "狭い迷宮世界に興味を失った時が、私たち「古手梨花」が消えてしまう時なのでしょうね。",
-		   NULL, " et que nous aurons définitivement perdu tout intérêt à chercher la sortie du dédale, alors peut-être que réellement, nous autres Rika Furude, nous finirons par disparaître.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "et que nous aurons définitivement perdu tout intérêt à chercher la sortie du dédale, alors peut-être que réellement, nous autres Rika Furude, nous finirons par disparaître.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -645,7 +648,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もし前原圭一が極度の疑心暗鬼の持ち主で、常に世界を曲解する性格の持ち主だったなら、",
 		   NULL, "Si Keiichi Maebara était un paranoïaque un peu fou dans sa tête, toujours à voir le monde comme dans un miroir déformant, alors dans tous les mondes -- dans chacun des fragments de souvenirs avec lesquels tu joues --", Line_WaitForInput);
 
@@ -705,7 +708,7 @@
 		   NULL, "Tu comprends ce que je veux dire ?", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さっきも言ったとおり、複数の世界で毎回異なる事実は、その単一の世界では必然であったとしても、複数の世界から見たら気まぐれな偶然に過ぎないということ。",
 		   NULL, "Ça rejoint ce que je te disais tout à l'heure : les faits et les événements qui changent dans chaque monde peuvent paraître inévitables à l'intérieur d'un même monde, mais vus par le prisme des autres fragments de souvenirs, ils peuvent s'avérer n'être que de simples hasards, caprices du destin.", Line_Normal);
 	ClearMessage();
@@ -751,7 +754,7 @@
 		   NULL, "Mais d'autres humains, dont la conscience serait limitée à un seul et même monde, ne sauraient pas dire si les jeux du club sont dus au hasard ou à une décision planifiée, mûrement réfléchie.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、単一世界の彼らには推理不能な「園崎魅音の心の中」のことも、私たちには推理できるということ。",
 		   NULL, "Ce qui veut dire que même si une personne normale ne peut pas savoir ce qu'il passe par la tête de Mion Sonozaki dans un monde donné, nous, qui avons accès à plusieurs mondes, nous pouvons faire des conjectures à ce sujet.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -802,7 +805,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　一つの世界の記憶しか持たない人間たちにとって、「鬼隠し編」の世界は、前原圭一が原因不明の錯乱を起こし疑心暗鬼の末、友人たちを撲殺した物語でしかない。",
 		   NULL, "Pour les gens n'ayant accès qu'aux souvenirs d'un seul monde, l'histoire d'“Enlevés par les démons” n'est que celle d'un gamin qui tue ses amies à coups de batte de base-ball, le résultat de sa psychose paranoïde, laquelle n'a d'ailleurs aucune explication concrète.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1210,9 +1213,10 @@
 	OutputLine(NULL, "　彼らが凶行に誘われるルールＸと、",
 		   NULL, "Pourtant les lois X et Y n'ont rien en commun --", Line_WaitForInput);
 	OutputLine(NULL, "富竹ジロウたちが殺されるルールＹは異なる独立したもののはずなのに、",
-		   NULL, " le meurtre de Tomitake n'a aucune influence directe sur la sécurité des narrateurs --", Line_WaitForInput);
+		   NULL, " le meurtre de Tomitake n'a aucune influence directe sur la sécurité des narrateurs --", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "彼らはその２つのルールを無理に結びつけようとしたがる。",
-		   NULL, " mais les narrateurs, eux, ne sont pas de cet avis. Ils essaient mordicus de relier ces deux éléments.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "mais les narrateurs, eux, ne sont pas de cet avis. Ils essaient mordicus de relier ces deux éléments.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -1326,7 +1330,7 @@
 		   NULL, "Dans son esprit, qu'il y ait des preuves ou non, il a l'intime conviction que les Sonozaki sont les coupables, depuis le début.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その偏執的な私的見解が、警察の刑事であるという信憑性を得て、各々の世界の哀れな被害妄想者たちに影響を与えていく。",
 		   NULL, "C'est un peu cette obsession maladive qui le pousse à mettre ses théories en avant, et comme il est policier, il peut leur donner un certain poids, une certaine autorité. C'est surtout cela qui, finalement, induit les narrateurs des différents tomes de l'histoire en erreur.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1374,13 +1378,13 @@
 		   NULL, "Quant à Miyo Takano, eh bien, c'est un peu la même chose.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鷹野三四は、鬼ヶ淵村の怪しげな歴史を面白半分に研究して、それを誰かに話して怖がらせることを楽しんでいる、それだけの役割のコマのはず。",
 		   NULL, "Miyo Takano étudie pour s'amuser les anciennes légendes et les vieilles histoires qui se racontent à Hinamizawa. Et surtout, elle adore faire peur aux gens en les racontant à son tour à qui sera assez crédule pour l'écouter parler. C'est son rôle bien à elle, dans cette histoire.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　ところが、大石というコマとの相乗効果で、哀れなルールの犠牲者に、園崎家が主導で村ぐるみの怪しげな陰謀という疑心暗鬼を植え付けてしまう。",
 		   NULL, "Mais le problème est que son petit effet est amplifié par l'action de l'inspecteur Ôishi. Entre ces deux-là, les narrateurs n'ont aucune chance de rester sains d'esprit. Ils finissent tous par succomber au charme de la théorie du complot général ourdi par le village entier.", Line_Normal);
 	ClearMessage();
@@ -1454,7 +1458,7 @@
 	DrawScene( "black", 1000 );
 	DrawScene( "background/flashback/hi1", 1000 );
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その結果、村人たちは、ダム戦争以来、常に裏で園崎家が暗躍していることを疑わなくなった。",
 		   NULL, "Alors forcément, les habitants du village ont fini par s'habituer au fait que probablement, dès qu'il y avait quelque chose de louche, les Sonozaki étaient responsables. Ils ont oublié que le doute faisait partie de la recherche de la vérité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1500,9 +1504,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　それらの事件が「連続」であると解釈しようとすることそのものが、",
-		   NULL, "Mais je pense que le fait de vouloir à tout prix interpréter ces meurtres comme étant “une série” est une erreur.", Line_WaitForInput);
+		   NULL, "Mais je pense que le fait de vouloir à tout prix interpréter ces meurtres comme étant “une série” est une erreur.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "この「全てを園崎本家が黒幕であろうと信じてしまうルールＺ」に囚われた結果である可能性も出てきてしまうわけだから。",
-		   NULL, " Après tout, la loi Z stipule que le clan des Sonozaki tire les ficelles dans l'ombre, et cette loi pousse les gens à voir dans ces différents incidents une série.", Line_Normal);
+		   NULL, "Après tout, la loi Z stipule que le clan des Sonozaki tire les ficelles dans l'ombre, et cette loi pousse les gens à voir dans ces différents incidents une série.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1567,7 +1572,7 @@
 		   NULL, " un peu comme si le lieu en lui-même poussait au crime.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　単一世界の人間は、例えば強盗事件について、犯人の生い立ちから事件に至るまでのプロセスを分析したがるけど、この着想はそれとは違う。",
 		   NULL, "Dans un monde normal, lorsque par exemple il y a un braquage de banque, les gens cherchent à expliquer le geste en recréant le parcours du braqueur, pour trouver l'élément qui aurait pu le pousser à l'acte. Mais ici, c'est un peu différent encore.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -1580,9 +1585,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　つまり、強盗犯Ａはたまたま事件を起こしただけで、",
-		   NULL, "Nous pourrions donc dire que notre braqueur de banque, appelons-le A, a juste fait un braquage comme ça, sans raison particulière.", Line_WaitForInput);
+		   NULL, "Nous pourrions donc dire que notre braqueur de banque, appelons-le A, a juste fait un braquage comme ça, sans raison particulière.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "貧困な環境は、ひょっとしたら強盗犯Ｂ、",
-		   NULL, " Mais par contre, la pauvreté ambiante de la ville a motivé B à braquer une banque,", Line_ContinueAfterTyping);
+		   NULL, "Mais par contre, la pauvreté ambiante de la ville a motivé B à braquer une banque,", Line_ContinueAfterTyping);
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
@@ -1604,9 +1610,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　まぁ、単一世界でもこの考えには至れるんだけど、",
-		   NULL, "Ce n'est pas une théorie si compliquée que ça, finalement, même les gens vivant dans un monde unique peuvent l'appréhender,", Line_WaitForInput);
+		   NULL, "Ce n'est pas une théorie si compliquée que ça, finalement, même les gens vivant dans un monde unique peuvent l'appréhender,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "生贄主義が横行してるから、Ａに対して社会的リンチを加えるだけで、Ａを生み出した「環境」は見て見ぬふりをするのが通例ね。",
-		   NULL, " mais comme nous vivons dans des sociétés où il nous faut toujours un responsable sur qui rejeter la faute, il arrive très souvent que le braqueur se prenne un lynchage moral par la collectivité, et que tout le monde fasse comme si d'un seul coup, on ne voyait plus les problèmes liés à l'environnement en lui-même.", Line_Normal);
+		   NULL, "mais comme nous vivons dans des sociétés où il nous faut toujours un responsable sur qui rejeter la faute, il arrive très souvent que le braqueur se prenne un lynchage moral par la collectivité, et que tout le monde fasse comme si d'un seul coup, on ne voyait plus les problèmes liés à l'environnement en lui-même.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1632,9 +1639,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　あなたにわかるように言えば、",
-		   NULL, "Je vais te la refaire en des termes que tu comprendras.", Line_WaitForInput);
+		   NULL, "Je vais te la refaire en des termes que tu comprendras.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "多くの世界で起こされる惨劇の犯人とは、前原圭一や園崎詩音などの「個人」ではなく「環境」、",
-		   NULL, " Le coupable des tragédies qui se déroulent dans les différents mondes, ce n'est ni Keiichi Maebara, ni Shion Sonozaki, ni même Rena Ryûgû, mais c'est l'environnement dans lequel ils vivent qui est le vrai responsable --", Line_WaitForInput);
+		   NULL, "Le coupable des tragédies qui se déroulent dans les différents mondes, ce n'est ni Keiichi Maebara, ni Shion Sonozaki, ni même Rena Ryûgû, mais c'est l'environnement dans lequel ils vivent qui est le vrai responsable --", Line_WaitForInput);
 	OutputLine(NULL, "つまり「ルールＸ」こそが真の犯人であるということ。",
 		   NULL, " la fameuse loi X qui les pousse à la paranoïa.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2024,9 +2032,10 @@
 	OutputLine(NULL, "……その土壌を支えるルールＺや、",
 		   NULL, "mais honnêtement, je suis sûre qu'entre elle, la loi Z qui a trait au village en lui-même,", Line_WaitForInput);
 	OutputLine(NULL, "全ての世界で共通する明白な「悪意」ルールＹが、",
-		   NULL, " et la loi Y qui a trait, si l'on peut dire, au “méchant” de l'histoire,", Line_WaitForInput);
+		   NULL, " et la loi Y qui a trait, si l'on peut dire, au “méchant” de l'histoire,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "本当の意味でこの雛見沢という舞台を支配する法則となっていると思うの。",
-		   NULL, " tu devrais pouvoir expliquer tous les événements étranges de Hinamizawa.", Line_Normal);
+		   NULL, "tu devrais pouvoir expliquer tous les événements étranges de Hinamizawa.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2080,12 +2089,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雛見沢に土壌として存在する、何があっても園崎家の暗躍となり、",
-		   NULL, "C'est à cause d'elle qu'à Hinamizawa, systématiquement, les Sonozaki sont dans le coup, et que donc forcément, le moindre accident bizarre passe pour être la malédiction de la déesse Yashiro.", Line_ContinueAfterTyping);
+		   NULL, "C'est à cause d'elle qu'à Hinamizawa, systématiquement, les Sonozaki sont dans le coup, et que donc forcément, le moindre accident bizarre passe pour être la malédiction de la déesse Yashiro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "何があっても祟りだと曲解される風土は、間接的に全ての元凶かもしれないからだ。",
-		   NULL, " En fait, c'est la cause de tous les malentendus et de tout le reste.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "En fait, c'est la cause de tous les malentendus et de tout le reste.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -2266,12 +2276,13 @@
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "最後には錯乱を起こし、",
-		   NULL, " Elle finira sûrement par devenir folle", Line_ContinueAfterTyping);
+		   NULL, " Elle finira sûrement par devenir folle", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "古手梨花という精神を喪失するだろう。",
-		   NULL, " et par oublier volontairement tous les souvenirs de ses existences en tant que simple mortelle.", Line_Normal);
+		   NULL, "et par oublier volontairement tous les souvenirs de ses existences en tant que simple mortelle.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2287,12 +2298,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　記憶のカケラという玩具も次第に薄れて消え、",
-		   NULL, "Puis, progressivement, les fragments de souvenirs avec lesquels nous jouons disparaîtront eux aussi...", Line_ContinueAfterTyping);
+		   NULL, "Puis, progressivement, les fragments de souvenirs avec lesquels nous jouons disparaîtront eux aussi...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 800 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……本当に漆黒に包まれた後、永遠とも思える時間の中では、私たちは互いの存在さえ忘れ、真の意味での死を迎えるに違いない。",
-		   NULL, " et nous finirons englouties dans un monde d'une noirceur absolue, oubliant jusqu'à l'existence l'une de l'autre, et nous finirons, après plusieurs éternités, par atteindre un stade de non-conscience, puis de non-existence.", Line_Normal);
+		   NULL, "et nous finirons englouties dans un monde d'une noirceur absolue, oubliant jusqu'à l'existence l'une de l'autre, et nous finirons, après plusieurs éternités, par atteindre un stade de non-conscience, puis de non-existence.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -112,7 +112,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いずれもとても素晴らしい推理で、中には劇中よりも考察が深く、それを正解にしてしまいたいと思ったことも何度かあるくらいです（苦笑）。",
 		   NULL, "Certaines déductions étaient plus intéressantes que mon histoire elle-même, et certains ont inventés des solutions super tordues, je dois dire, parfois tellement bien pensées que je me suis demandé si je ne pourrais pas les utiliser à la place des miennes...", Line_Normal);
 	ClearMessage();
@@ -135,9 +135,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　昭和５８年当時はどうだったかはさて置き、",
-		   NULL, "Je ne sais pas quelle était la réalité des centres de protection de l'enfance en 1983, et à vrai dire, ce n'est pas mon propos.", Line_WaitForInput);
+		   NULL, "Je ne sais pas quelle était la réalité des centres de protection de l'enfance en 1983, et à vrai dire, ce n'est pas mon propos.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "今日の児童福祉行政はとても親身で、劇中で描かれたような意地悪なものでは断じてありません。",
-		   NULL, " Par contre, je connais bien les centres tels qu'ils sont aujourd'hui. Je peux vous assurer que les choses ne se passent pas du tout comme dans ce que j'ai écrit ici.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Par contre, je connais bien les centres tels qu'ils sont aujourd'hui. Je peux vous assurer que les choses ne se passent pas du tout comme dans ce que j'ai écrit ici.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -145,9 +146,10 @@
 	OutputLine(NULL, "　劇中、演出上の都合で意地悪っぽく描きましたが、",
 		   NULL, "Dans l'histoire, il me fallait des fonctionnaires vraiment révoltants, parce que ça servait à renforcer certains liens entre les personnages et les lecteurs,", Line_WaitForInput);
 	OutputLine(NULL, "今日の行政は常に心強い、",
-		   NULL, " mais dans la réalité,", Line_WaitForInput);
+		   NULL, " mais dans la réalité,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "住民の一番最初の味方であることを最後にお伝えさせてください。",
-		   NULL, " je vous assure que ces fonctionnaires-là sont, presque plus que d'autres, j'allais dire, au service de la nation et à l'écoute du public. Que les choses soient claires, ils sont vraiment là pour vous aider. Juste histoire de mettre les points sur les i, quoi.", Line_Normal);
+		   NULL, "je vous assure que ces fonctionnaires-là sont, presque plus que d'autres, j'allais dire, au service de la nation et à l'écoute du public. Que les choses soient claires, ils sont vraiment là pour vous aider. Juste histoire de mettre les points sur les i, quoi.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }

@@ -137,7 +137,7 @@
 		   NULL, "Il me semble aussi que Rika se fit disputer de nombreuses fois pour la manière dont elle parlait d'elle-même.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　梨花が自分を“私”と呼ばず“ボク”と呼ぶのは僕のせいの可能性が高い。",
 		   NULL, "Elle disait « je » non pas comme les petites filles de son époque, mais comme moi. Le problème étant qu'à mon époque, quand moi, j'ai appris à parler, les petites filles et les petits garçons parlaient de la même façon.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
