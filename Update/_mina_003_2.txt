@@ -19,10 +19,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100230", 256, TRUE);
 	OutputLine(NULL, "　みんなの弁当を突っつく時、いちいち中身を改めてたら失礼だもんな。",
-		   NULL, "Et puis, je vais pas non plus passer vos repas au peigne fin avant de me servir quand vous m'en proposez, ce serait très malpoli.", Line_WaitForInput);
+		   NULL, "Et puis, je vais pas non plus passer vos repas au peigne fin avant de me servir quand vous m'en proposez, ce serait très malpoli.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100231", 256, TRUE);
 	OutputLine(NULL, "針を混ぜるなんて危ない悪戯なんて絶対するわけがないって思うから、そんな下らないトラウマなんか気にしないで食べてるんだよ。」",
-		   NULL, " Et d'abord, je sais que vous n'êtes pas du genre à cacher des aiguilles dans la nourriture, c'est trop dangereux. Alors du coup, je me sers sans me soucier de ma peur.", Line_Normal);
+		   NULL, "Et d'abord, je sais que vous n'êtes pas du genre à cacher des aiguilles dans la nourriture, c'est trop dangereux. Alors du coup, je me sers sans me soucier de ma peur.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -226,13 +227,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100236", 256, TRUE);
 	OutputLine(NULL, "「あははは…、当り前だよな。",
-		   NULL, "— Hahahahaha ! Ouais, je sais.", Line_WaitForInput);
+		   NULL, "— Hahahahaha ! Ouais, je sais.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100237", 256, TRUE);
 	OutputLine(NULL, "魅音は確かに、大人しくお見舞いを持ってくるようなヤツじゃない。",
-		   NULL, " Je veux dire, t'es pas du genre à venir comme une jeune fille en fleur toute dévouée.", Line_WaitForInput);
+		   NULL, "Je veux dire, t'es pas du genre à venir comme une jeune fille en fleur toute dévouée.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100238", 256, TRUE);
 	OutputLine(NULL, "タバスコを入れるとか、そういう冗談はやるかもしれないが、間違っても針なんて混ぜない。",
-		   NULL, " Si tu ramènes quelque chose, tu le fourres au tabasco ou tu mets de la harissa dedans, je sais pas, moi. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Si tu ramènes quelque chose, tu le fourres au tabasco ou tu mets de la harissa dedans, je sais pas, moi. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180100239", 256, TRUE);
 	OutputLine(NULL, "…シャレになることとならないことのけじめははっきり付けてる。",
@@ -542,19 +545,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500213", 256, TRUE);
 	OutputLine(NULL, "「わかりましたです。",
-		   NULL, "— ... ... Bon, d'accord, très bien.", Line_WaitForInput);
+		   NULL, "— ... ... Bon, d'accord, très bien.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500214", 256, TRUE);
 	OutputLine(NULL, "……圭一。",
-		   NULL, " Keiichi, je...", Line_WaitForInput);
+		   NULL, "Keiichi, je...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500215", 256, TRUE);
 	OutputLine(NULL, "しつこくてごめんなさいなのです。",
-		   NULL, " Désolée d'avoir insisté.", Line_WaitForInput);
+		   NULL, "Désolée d'avoir insisté.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500216", 256, TRUE);
 	OutputLine(NULL, "……もしも針が出てきたら、それはきっと圭一の勘違いなのですよ……。",
-		   NULL, " Mais si jamais vous en trouvez une, fermez les yeux et concentrez-vous. Vous verrez bien que ce n'est que votre imagination qui vous joue des tours.", Line_WaitForInput);
+		   NULL, "Mais si jamais vous en trouvez une, fermez les yeux et concentrez-vous. Vous verrez bien que ce n'est que votre imagination qui vous joue des tours.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 5, "ps3/s12/05/180500217", 256, TRUE);
 	OutputLine(NULL, "魅ぃが混ぜたなんて、絶対に思わないであげてくださいなのです。」",
-		   NULL, " Mii n'est vraiment pas du genre à faire des mauvaises blagues dangereuses.", Line_Normal);
+		   NULL, "Mii n'est vraiment pas du genre à faire des mauvaises blagues dangereuses.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }

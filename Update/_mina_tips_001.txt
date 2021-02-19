@@ -14,7 +14,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　余命幾ばくもなく、薄れる意識の中でいつが己の死する時かもわからず旅立つよりは、自らの足で死出の旅路に踏み出したい気持ちをどうかわかってほしい。",
 		   NULL, "J'ai préféré emprunter la voie menant au royaume des morts de mon propre accord, plutôt que d'attendre le jour du départ dans un corps fatigué, à peine conscient, constamment dans la crainte. J'espère que tu comprendras cette décision.", Line_Normal);
 	ClearMessage();

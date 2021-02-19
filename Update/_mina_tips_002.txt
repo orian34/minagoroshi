@@ -110,9 +110,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　古手家に伝わる古い古文書に出て来る奇跡の話が、全て事実でそれが羽入を指すなら、",
-		   NULL, "Si tous les vieux écrits transmis dans la lignée des Furude disent vrai et réfèrent tous à des miracles accomplis par Hanyû,", Line_WaitForInput);
+		   NULL, "Si tous les vieux écrits transmis dans la lignée des Furude disent vrai et réfèrent tous à des miracles accomplis par Hanyû,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "羽入は太古の昔、少なくない人々と交流しその力を示せた。",
-		   NULL, " alors cela signifie qu'autrefois, elle a pu communiquer et interagir avec de nombreuses personnes.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "alors cela signifie qu'autrefois, elle a pu communiquer et interagir avec de nombreuses personnes.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

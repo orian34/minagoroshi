@@ -142,9 +142,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　鉄平は押入れの中身を全て引っ張り出して、天井の板を外してみたり、",
-		   NULL, "Teppei ouvrit le placard mural, en jeta tout le contenu sur le mur d'en face, il enleva certaines plaques du plafond.", Line_WaitForInput);
+		   NULL, "Teppei ouvrit le placard mural, en jeta tout le contenu sur le mur d'en face, il enleva certaines plaques du plafond.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "タンスの引き出しを全て引っ張りだして中身をぶちまけ、引き出し全てを引っこ抜いてまで調べた。",
-		   NULL, " Il ouvrit et jeta tous les tiroirs des commodes, les perça pour être sûr qu'ils n'avaient pas de double-fond.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il ouvrit et jeta tous les tiroirs des commodes, les perça pour être sûr qu'ils n'avaient pas de double-fond.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -267,19 +268,23 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000014", 256, TRUE);
 	OutputLine(NULL, "「…何言うてんな。わしゃあ荒らすんと違う。",
-		   NULL, "— Mais j'ai pas dit que j'allais tout casser.", Line_WaitForInput);
+		   NULL, "— Mais j'ai pas dit que j'allais tout casser.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000015", 256, TRUE);
 	OutputLine(NULL, "この部屋をな？",
-		   NULL, " Tu vois cette chambre ?", Line_WaitForInput);
+		   NULL, "Tu vois cette chambre ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000016", 256, TRUE);
 	OutputLine(NULL, "　ちょいとお掃除しようちゅうとんしゃあな。",
-		   NULL, " Je veux la ranger, c'est pas la même chose.", Line_WaitForInput);
+		   NULL, "Je veux la ranger, c'est pas la même chose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000017", 256, TRUE);
 	OutputLine(NULL, "いないヤツのために部屋を残しとく義理なんかあらんね。",
-		   NULL, " Y a pas besoin de garder une chambre impeccable pour quelqu'un qu'est pas là.", Line_WaitForInput);
+		   NULL, "Y a pas besoin de garder une chambre impeccable pour quelqu'un qu'est pas là.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 21, "ps3/s20/21/442000018", 256, TRUE);
 	OutputLine(NULL, "だからちょいとお片付けをするだけなんね。」",
-		   NULL, " Je veux ranger tout ce qu'il y a dedans.", Line_Normal);
+		   NULL, "Je veux ranger tout ce qu'il y a dedans.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
@@ -349,14 +354,16 @@
 	OutputLine(NULL, "「その代わり、わしを怒らせたら知らんぞ。",
 		   NULL, "— Par contre, que ce soit clair une bonne fois pour toutes :", Line_WaitForInput);
 	OutputLine(NULL, "悟史なんて帰ってこないヤツのために部屋を残しとく謂れはないんだからのぉ！",
-		   NULL, " si tu me mets en colère, je rentre et je jette tout dehors.", Line_WaitForInput);
+		   NULL, " si tu me mets en colère, je rentre et je jette tout dehors.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　お前が帰ってこんようになったり、他所様にわしが虐めてるなんてことを言いよったら、",
-		   NULL, " On n'a pas besoin d'avoir toute une chambre de prise juste pour Monsieur, alors qu'on ne sait même pas s'il rentrera ou pas, c'est du gâchis !", Line_Continue);
+		   NULL, "On n'a pas besoin d'avoir toute une chambre de prise juste pour Monsieur, alors qu'on ne sait même pas s'il rentrera ou pas, c'est du gâchis !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#ddc16b>鉄平</color>", NULL, "<color=#ddc16b>Teppei</color>", NULL, Line_ContinueAfterTyping); }
 	// (backup) SetValidityOfInput( FALSE );
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…この部屋、大変なことになってまうん、よう肝に刻んどれえ。",
-		   NULL, " Alors si tu ne reviens pas de l'école ou si tu tiens pas ta schnabel, eh ben tu peux dire adieu à cette pièce, t'as compris ?", Line_WaitForInput);
+		   NULL, "Alors si tu ne reviens pas de l'école ou si tu tiens pas ta schnabel, eh ben tu peux dire adieu à cette pièce, t'as compris ?", Line_WaitForInput);
 	OutputLine(NULL, "わぁったな？！」",
 		   NULL, " Je te le dirai pas une deuxième fois, Satoko !", Line_Normal);
 	ClearMessage();

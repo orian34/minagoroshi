@@ -339,7 +339,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-3>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　これを身をもって経験したせいか、最近は突然の事故で死んだ人が、自分の死に気付かず、幽霊となって彷徨うというのが理解できるようになった。",
 		   NULL, "D'ailleurs, maintenant que cela m'est arrivé une paire de fois, je conçois tout à fait que certaines personnes errent sur cette terre sans que leur âme ne puisse trouver le repos -- lorsque la Mort vous happe sans crier gare, il est très difficile de vraiment réaliser ce qu'il vous arrive.", Line_Normal);
 	ClearMessage();
@@ -1066,13 +1066,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s12/04/180400006", 256, TRUE);
 	OutputLine(NULL, "「何ですの圭一さん。",
-		   NULL, "— Eh bien alors, très cher ?", Line_WaitForInput);
+		   NULL, "— Eh bien alors, très cher ?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s12/04/180400007", 256, TRUE);
 	OutputLine(NULL, "何か梨花に悪いことでもしたんじゃありませんの？！",
-		   NULL, " Qu'avez-vous donc encore fait à notre chère Rika ? Allons, vous cachez forcément quelque crime en votre seing, ne faites pas l'innocent !", Line_WaitForInput);
+		   NULL, "Qu'avez-vous donc encore fait à notre chère Rika ? Allons, vous cachez forcément quelque crime en votre seing, ne faites pas l'innocent !", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s12/04/180400008", 256, TRUE);
 	OutputLine(NULL, "　自分の胸によく聞いてごらんなさいですわよー！！」",
-		   NULL, " Demandez-vous donc ce qui vous vaut un regard si inquisiteur ! Questionnez votre conscience !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Demandez-vous donc ce qui vous vaut un regard si inquisiteur ! Questionnez votre conscience !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1330,12 +1332,13 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　私たちを閉じ込めているのは、出口があるかもしれない迷宮なんて親切なものでなく、",
-		   NULL, "Je sais que ce n'est pas un labyrinthe gentil qui nous retient prisonnière.", Line_ContinueAfterTyping);
+		   NULL, "Je sais que ce n'est pas un labyrinthe gentil qui nous retient prisonnière.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	OutputLine(NULL, "……そもそも出口など設けられていない、単なる輪っかなのかもしれない。",
-		   NULL, " Ce n'est pas que nous nous perdons dans le dédale, c'est surtout qu'il n'a pas été construit avec une sortie. C'est un grand anneau sans issue, qui tourne sur lui-même...", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Ce n'est pas que nous nous perdons dans le dédale, c'est surtout qu'il n'a pas été construit avec une sortie. C'est un grand anneau sans issue, qui tourne sur lui-même...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 

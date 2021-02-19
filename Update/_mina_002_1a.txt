@@ -304,9 +304,10 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　……そんな圭一のささやかな成長は、数多の世界を生きてきた私にしか知ることができない儚いものだ。",
-		   NULL, "... Mais bon, ce ne sont que conjectures. Conjectures que je suis la seule à pouvoir formuler, étant la seule à avoir conscience de tous les différents mondes...", Line_WaitForInput);
+		   NULL, "... Mais bon, ce ne sont que conjectures. Conjectures que je suis la seule à pouvoir formuler, étant la seule à avoir conscience de tous les différents mondes...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "でも、私はわかる。",
-		   NULL, " Mais je n'en constatais pas moins un progrès chez lui.", Line_WaitForInput);
+		   NULL, "Mais je n'en constatais pas moins un progrès chez lui.", Line_WaitForInput);
 	OutputLine(NULL, "私にはわかる。",
 		   NULL, " C'était indiscutable.", Line_Normal);
 	ClearMessage();

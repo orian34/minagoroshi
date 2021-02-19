@@ -61,16 +61,19 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700077", 256, TRUE);
 	OutputLine(NULL, "「えぇ。",
-		   NULL, "— Oui.", Line_WaitForInput);
+		   NULL, "— Oui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700078", 256, TRUE);
 	OutputLine(NULL, "……ちょっと尋常じゃない死に方でしてね。",
-		   NULL, " Et il n'est pas mort d'une manière très naturelle.", Line_WaitForInput);
+		   NULL, "Et il n'est pas mort d'une manière très naturelle.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700079", 256, TRUE);
 	OutputLine(NULL, "薬物か何かで錯乱状態だったんじゃないかと思います。",
-		   NULL, " Il a eu des hallucinations, il y a sûrement une drogue ou un médicament qui peut expliquer ça.", Line_WaitForInput);
+		   NULL, "Il a eu des hallucinations, il y a sûrement une drogue ou un médicament qui peut expliquer ça.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700080", 256, TRUE);
 	OutputLine(NULL, "自分で自分の喉を掻き破るというショッキングな亡くなり方でした。」",
-		   NULL, " Mais il est mort en se tranchant lui-même la gorge, avec ses propres ongles, c'est quand même bien tarabiscoté.", Line_Normal);
+		   NULL, "Mais il est mort en se tranchant lui-même la gorge, avec ses propres ongles, c'est quand même bien tarabiscoté.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -104,13 +107,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700081", 256, TRUE);
 	OutputLine(NULL, "「彼女についても残念なご連絡があります。",
-		   NULL, "— J'ai aussi de mauvaises nouvelles à son sujet.", Line_WaitForInput);
+		   NULL, "— J'ai aussi de mauvaises nouvelles à son sujet.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700082", 256, TRUE);
 	OutputLine(NULL, "岐阜の山中で焼死体で発見されました。",
-		   NULL, " Elle a été retrouvée, calcinée, dans les hauteurs des montagnes de Gifu.", Line_WaitForInput);
+		   NULL, "Elle a été retrouvée, calcinée, dans les hauteurs des montagnes de Gifu.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700083", 256, TRUE);
 	OutputLine(NULL, "死体の状況から、多分、絞殺された後に焼かれたんじゃないかと思っているのですが。",
-		   NULL, " D'après l'état du corps, nous pensons qu'elle a été étranglée, déplacée, puis ensuite seulement brûlée. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "D'après l'état du corps, nous pensons qu'elle a été étranglée, déplacée, puis ensuite seulement brûlée. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700084", 256, TRUE);
 	OutputLine(NULL, "どちらにせよ気の毒な話です。」",
@@ -132,13 +137,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700085", 256, TRUE);
 	OutputLine(NULL, "「いやいやまさかまさか。",
-		   NULL, "— Non, non, bien sûr que non, voyons.", Line_WaitForInput);
+		   NULL, "— Non, non, bien sûr que non, voyons.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700086", 256, TRUE);
 	OutputLine(NULL, "疑うとしたらこの一点だけです。",
-		   NULL, " Le seul point sur lequel vous êtes suspecte, c'est sur votre histoire d'hier.", Line_WaitForInput);
+		   NULL, "Le seul point sur lequel vous êtes suspecte, c'est sur votre histoire d'hier.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700087", 256, TRUE);
 	OutputLine(NULL, "あの人ごみの中で、小耳に挟めるようなところでこんな物騒な話をする人がいるわけがない。」",
-		   NULL, " Je refuse de croire que vous ayez pu entendre des informations aussi précises et aussi exactes par pure chance, au milieu du vacarme de la foule d'hier soir.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Je refuse de croire que vous ayez pu entendre des informations aussi précises et aussi exactes par pure chance, au milieu du vacarme de la foule d'hier soir.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -377,13 +384,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700110", 256, TRUE);
 	OutputLine(NULL, "「あの真っ暗な中、森の中を突き進んでパトを迂回したなんてできる芸当ではありません。",
-		   NULL, "— Je voudrais bien vous y voir, vous, à vélo, dans la nuit noire, passer en pleine forêt en évitant les rares sentiers praticables.", Line_WaitForInput);
+		   NULL, "— Je voudrais bien vous y voir, vous, à vélo, dans la nuit noire, passer en pleine forêt en évitant les rares sentiers praticables.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700111", 256, TRUE);
 	OutputLine(NULL, "だとしたら、パトに気付かれずに街道を抜けるしか考えられない。",
-		   NULL, " Ou bien alors, il est passé par la route, normalement, mais sans se faire remarquer par mes hommes.", Line_WaitForInput);
+		   NULL, "Ou bien alors, il est passé par la route, normalement, mais sans se faire remarquer par mes hommes.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700112", 256, TRUE);
 	OutputLine(NULL, "…………古手さん。",
-		   NULL, " ... Mademoiselle Furude. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... Mademoiselle Furude. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700113", 256, TRUE);
 	OutputLine(NULL, "鷹野とホトケの関係について教えていただけませんか。」",
@@ -500,10 +509,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700121", 256, TRUE);
 	OutputLine(NULL, "「ありがとうございます。",
-		   NULL, "— Je vous en serais infiniment reconnaissant.", Line_WaitForInput);
+		   NULL, "— Je vous en serais infiniment reconnaissant.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700122", 256, TRUE);
 	OutputLine(NULL, "村の内部に詳しい方、それも御三家の頭首でオヤシロさまの生まれ変わりの協力がいただければ鬼に金棒ですよ。」",
-		   NULL, " Il me fallait quelqu'un avec une grande connaissance du village pour ça. Mais en plus, j'obtiens l'aide du chef de l'un des clans fondateurs ! Et en plus, vous êtes la réincarnation de la déesse Yashiro, ce n'est pas rien ! C'est franchement inespéré, vous serez sûrement d'une efficacité redoutable !", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Il me fallait quelqu'un avec une grande connaissance du village pour ça. Mais en plus, j'obtiens l'aide du chef de l'un des clans fondateurs ! Et en plus, vous êtes la réincarnation de la déesse Yashiro, ce n'est pas rien ! C'est franchement inespéré, vous serez sûrement d'une efficacité redoutable !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -530,10 +540,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700123", 256, TRUE);
 	OutputLine(NULL, "「私ゃ、もしあなたからタレコミ、おっと、お告げを聞いていなかったら。",
-		   NULL, "— Vous savez, si vous ne m'aviez pas fait part de vos fuites, enfin, excusez-moi, je voulais dire, de votre prophétie,", Line_WaitForInput);
+		   NULL, "— Vous savez, si vous ne m'aviez pas fait part de vos fuites, enfin, excusez-moi, je voulais dire, de votre prophétie,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700124", 256, TRUE);
 	OutputLine(NULL, "多分きっと、富竹と鷹野はともに犠牲者で、オヤシロさまの祟りの５年目ってことになったんだろうと思い込んだと思います。",
-		   NULL, " eh bien, j'aurais tout simplement pensé que nos deux improbables tourtereaux avaient été choisis pour être les victimes de la cinquième année. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "eh bien, j'aurais tout simplement pensé que nos deux improbables tourtereaux avaient été choisis pour être les victimes de la cinquième année. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700125", 256, TRUE);
 	OutputLine(NULL, "ですが、こうなってくるとどうも違う。",
@@ -641,13 +652,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700136", 256, TRUE);
 	OutputLine(NULL, "……死亡時刻の鑑定なんかより、死体の歯型鑑定の方がよっぽど精度が高いですからね。",
-		   NULL, "Mais quand ils ont vu que les empreintes dentaires concordaient, ils se sont dit que leur médecin-légiste avaient fait une erreur, et ils ont modifié leur rapport d'autopsie en conséquence.", Line_WaitForInput);
+		   NULL, "Mais quand ils ont vu que les empreintes dentaires concordaient, ils se sont dit que leur médecin-légiste avaient fait une erreur, et ils ont modifié leur rapport d'autopsie en conséquence.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700137", 256, TRUE);
 	OutputLine(NULL, "まぁ、現場にはたまにある話です。",
-		   NULL, " Enfin, on entend souvent ce genre d'histoires dans mon métier, vous savez.", Line_WaitForInput);
+		   NULL, "Enfin, on entend souvent ce genre d'histoires dans mon métier, vous savez.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700138", 256, TRUE);
 	OutputLine(NULL, "ですが、鷹野が犯人かもしれないって目で見てみると、こいつぁ、鷹野の死体じゃない可能性が出てきます。」",
-		   NULL, " Mais si l'on part sur l'hypothèse que c'est Miyo Takano la coupable, alors d'un seul coup, on comprend que peut-être qu'en fait, le corps retrouvé à Gifu n'est pas le sien.", Line_Normal);
+		   NULL, "Mais si l'on part sur l'hypothèse que c'est Miyo Takano la coupable, alors d'un seul coup, on comprend que peut-être qu'en fait, le corps retrouvé à Gifu n'est pas le sien.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -662,10 +675,11 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700139", 256, TRUE);
 	OutputLine(NULL, "「焼死体の鑑定は基本的に歯型以外は絶望的です。",
-		   NULL, "— Vous savez, pour identifier un corps calciné, sans empreinte dentaire, vous pouvez oublier, c'est quasiment impossible.", Line_WaitForInput);
+		   NULL, "— Vous savez, pour identifier un corps calciné, sans empreinte dentaire, vous pouvez oublier, c'est quasiment impossible.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", "<size=-4>", Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700140", 256, TRUE);
 	OutputLine(NULL, "例えば、これは推理小説的な荒技ですが、興宮のデンタルクリニックに残されていた『鷹野三四』の歯型のカルテ、",
-		   NULL, " On pourrait imaginer un truc tarabiscoté, comme dans les romans policiers à deux balles. On pourrait dire qu'en fait, le dossier médical de Miyo Takano serait un faux, ou tout du moins que son empreinte dentaire serait une fausse, qui serait destinée à nous mener à ce faux cadavre, alors là, oui, c'est possible. ", GetGlobalFlag(GLinemodeSp));
+		   NULL, "On pourrait imaginer un truc tarabiscoté, comme dans les romans policiers à deux balles. On pourrait dire qu'en fait, le dossier médical de Miyo Takano serait un faux, ou tout du moins que son empreinte dentaire serait une fausse, qui serait destinée à nous mener à ce faux cadavre, alors là, oui, c'est possible. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700141", 256, TRUE);
 	OutputLine(NULL, "これが、巧妙な手口で捏造されていたら、誤認もありえる。",
@@ -682,13 +696,15 @@
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700143", 256, TRUE);
 	OutputLine(NULL, "警察組織内では往々にして、初動時の鑑定ミスが後々まで尾を引くことが少なくない。",
-		   NULL, "La plupart des dossiers dans lesquels la Justice doit présenter ses excuses à un accusé mis à tort en prison en contiennent,", Line_WaitForInput);
+		   NULL, "La plupart des dossiers dans lesquels la Justice doit présenter ses excuses à un accusé mis à tort en prison en contiennent,", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700144", 256, TRUE);
 	OutputLine(NULL, "伝説的な冤罪事件のほとんどはこれに起因します。",
-		   NULL, " certains cas sont légendaires.", Line_WaitForInput);
+		   NULL, "certains cas sont légendaires.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700145", 256, TRUE);
 	OutputLine(NULL, "………私ゃどうやら、その可能性が拭えない気がする。」",
-		   NULL, " ... Mais moi, je pense qu'on ne peut pas écarter cette possibilité.", Line_Normal);
+		   NULL, "... Mais moi, je pense qu'on ne peut pas écarter cette possibilité.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }

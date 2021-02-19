@@ -181,7 +181,7 @@
 		   NULL, "Ce n'est peut-être lié qu'à une probabilité.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", "<size=-4>", Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　圭一が、魅音に渡すのは恥ずかしいからレナに渡そうという気持ちが「弱いもの」であったなら、時にはこのような結果になる可能性もあるだろう。",
 		   NULL, "On peut comparer l'inexorabilité du Destin à la résolution d'une volonté. Si la “faiblesse” de Keiichi lui faisait choisir Rena, “parce qu'il prendrait trop la honte à la donner à Mion”, alors forcément, cela impliquait l'existence d'un autre choix, lorsque Keiichi aurait plus de volonté.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
