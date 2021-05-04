@@ -301,7 +301,7 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "background/kuruma4", "maskleft", 1, 0, 300 );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8f6d8f>熊谷</color>", NULL, "<color=#8f6d8f>Kumadani</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 19, "ps3/s12/19/283100035", 256, TRUE);
@@ -321,6 +321,7 @@
 	OutputLine(NULL, "そこにはワゴン車が１台路肩に停車していた。",
 		   NULL, " Son collègue y vit une camionnette, stationnée bien sur le côté.", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 1, "yoru", 28, 0, 1 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1129,7 +1130,8 @@
 	StartShakingOfWindow( 248, 40, 0, 2, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 2, 4*2, TRUE );
 	PlaySE( 0, "wa_003", 56, 64 );
-	PlayBGM( 1, "yabaisemi", 56, 0 );
+	ModPlayBGM( 1, "yabaisemi", 56, 0, 0 );
+	ModPlayBGM( 2, "semi_r", 56, 0, 1 );
 
 
 	SetSpeedOfMessage( TRUE, 128 );
@@ -1170,6 +1172,7 @@
 	DrawScene( "white", 1000 );
 	DrawScene( "black", 3000 );
 	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>興宮ＰＳ</color>", NULL, "<color=#f5e6d3>Commissariat d'Okinomiya</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/vtp_okeijia_2004", 256, TRUE);
@@ -1420,7 +1423,8 @@
 	Wait( 3000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "background/hu_r1", "maskup", 1, 0, 300 );
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
+	ModPlayBGM( 0, "yoru", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　もう８時も過ぎた。",
@@ -1740,7 +1744,8 @@
 		   NULL, "— ... Allô, ici Rika Furude.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
+	ModPlayBGM( 0, "yoru", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>小宮山</color>", NULL, "<color=#f5e6d3>Komiyama</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/komi28001", 256, TRUE);
@@ -2420,5 +2425,5 @@
 	ClearMessage();
 
 	DrawScene( "black", 1000 );
-	FadeOutBGM( 0, 1000, TRUE );
+	ModFadeOutBGM( 0, 1000, TRUE, 0 );
 }

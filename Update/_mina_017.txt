@@ -2939,11 +2939,12 @@
 	OutputLine(NULL, "運命を打ち破る力と言うのは、今回はいけるかも知れないなんていうちょっとの幸運の重なりなんかとは比べ物にならないくらいに圧倒的なのね…。」",
 		   NULL, "Ça n'a rien à voir avec une accumulation éreintante de petits coups de chance. C'est quelque chose de... complètement différent.", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 300, TRUE, 1 );
 
 	DisableWindow();
 	PlaySE( 0, "wa_033", 56, 64 );
 	DrawScene( "white", 1000 );
 
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, TRUE );
+	ModFadeOutBGM( 0, 1000, TRUE, 0 );
 }

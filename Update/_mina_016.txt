@@ -1081,8 +1081,9 @@
 	ClearMessage();
 
 	DrawScene( "white", 1000 );
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 28, 0, 1 );
 	DrawSceneWithMask( "background/ke5", "maskc", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1213,7 +1214,7 @@
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 0, 1000, FALSE );
 	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, FALSE );
+	ModFadeOutBGM( 2, 1000, FALSE, 0 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
 	SetValidityOfInput( TRUE );
@@ -1575,7 +1576,8 @@
 	ClearMessage();
 
 	DisableWindow();
-	PlayBGM( 1, "higurashi", 56, 0 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 0 );
+	ModPlayBGM( 1, "higurashi", 28, 0, 1 );
 	DrawScene( "background/sora2", 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1929,7 +1931,7 @@
 	ClearMessage();
 
 	DrawScene( "background/sora6", 400 );
-	PlayBGM( 1, "higurashi", 56, 0 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　実際はこのまま行ってもちょっと早過ぎる。",
@@ -2032,7 +2034,7 @@
 		   NULL, "Apparemment, il y avait déjà des gens qui attendaient.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 1, 2000, FALSE );
+	ModFadeOutBGM( 1, 2000, FALSE, 0 );
 	ModSetLayerFilter(2, 256, "none");
 	ModDrawCharacter(2, 3, "sprite/me1b_wink_a1_", "1", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawSceneWithMask( "background/js4_02", "maskleft", 1, 0, 2000 );
@@ -2275,7 +2277,8 @@
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
+	ModPlayBGM( 1, "higurashi", 28, 0, 1 );
 	ModSetLayerFilter(1, 256, "night");
 	ModDrawCharacter(1, 22, "sprite/tie_1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
 	ModSetLayerFilter(2, 256, "night");
@@ -2361,6 +2364,7 @@
 	OutputLine(NULL, "な、だよな魅音。」",
 		   NULL, " N'est-ce pas, Mion ?", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 1000, FALSE, 1 );
 
 	DisableWindow();
 	ModDrawCharacter(0, 22, "sprite/tie_3_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
@@ -3556,6 +3560,7 @@
 	ClearMessage();
 
 	FadeOutBGM( 0, 300, FALSE );
+	ModPlayBGM( 1, "higurashi", 28, 0, 1 );
 	ModDrawCharacter(0, 2, "sprite/re1a_komaru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/jys1", 1000 );
 
@@ -3772,6 +3777,7 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
+	ModFadeOutBGM( 1, 1000, FALSE, 1 );
 	ModDrawCharacterWithFiltering(2, 2, "sprite/re1a_okoru_a1_", "0", "maskright", 1, 160, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 	PlayBGM( 0, "omake_01", 56, 0 );
 
@@ -4478,8 +4484,9 @@
 	ClearMessage();
 
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, TRUE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModFadeOutBGM( 1, 1000, TRUE, 0 );
+	ModFadeOutBGM( 0, 1000, TRUE, 1 );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask( "tips/gettip_mina016", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

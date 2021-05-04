@@ -1,8 +1,9 @@
 ﻿void main()
 {
 
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 2, "semi", 28, 0, 1 );
 	DrawScene( "white", 1000 );
 	DrawSceneWithMask( "background/sora5", "maskm1", 1, 0, 1300 );
 
@@ -22,6 +23,7 @@
 	OutputLine(NULL, "　なるほど道理だ。",
 		   NULL, "Et ce n'était pas stupide, comme idée.", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 2, 300, FALSE, 1 );
 
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
 	PlayBGM( 0, "Cafe", 56, 0 );
@@ -38,8 +40,8 @@
 	ClearMessage();
 
 	DrawSceneWithMask( "black", "maskright", 1, 0, 300 );
-	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	DrawSceneWithMask( "background/mati_o2", "maskright", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>善郎</color>", NULL, "<color=#f5e6d3>Yoshirô</color>", NULL, Line_ContinueAfterTyping); }
@@ -1719,6 +1721,7 @@
 	OutputLine(NULL, "　グワッシャ！！",
 		   NULL, "*klrr*", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 0, "Cafe", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　力の加減が間違ったのかもしれない。",
@@ -1732,7 +1735,7 @@
 
 	ModDrawCharacter(0, 4, "sprite/sa2a_akireru_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawScene( "background/mati_o4", 1000 );
-	PlayBGM( 0, "Cafe", 56, 0 );
+	ModPlayBGM( 0, "Cafe", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#fcdb77>沙都子</color>", NULL, "<color=#fcdb77>Satoko</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 4, "ps3/s12/04/180400141", 256, TRUE);
@@ -2345,7 +2348,8 @@
 		   NULL, "— Tiens, tiens, mais qu'est-ce qu'ils fabriquent ?", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "3", 56, 0 );
+	ModPlayBGM( 0, "3", 56, 0, 0 );
+	ModPlayBGM( 0, "BIGBEAR", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　野太い声が突然聞こえてきた。",
@@ -4081,7 +4085,8 @@
 
 	DisableWindow();
 	FadeBustshotWithFiltering( 2, "mask00" , 0, FALSE, 0, 0, 400, TRUE );
-	PlayBGM( 1, "higurashi", 56, 0 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　その時、三人組の後ろから、ぬっと作業服姿の男が二人現れ、三人組の肩を叩いた。",

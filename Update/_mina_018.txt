@@ -1,7 +1,8 @@
 ﻿void main()
 {
 
-	PlayBGM( 0, "B_Dive", 56, 0 );
+	ModPlayBGM( 0, "B_Dive", 56, 0, 0 );
+	ModPlayBGM( 0, "pros", 56, 0, 1 );
 	DrawSceneWithMask( "background/moon", "maskc", 1, 0, 1300 );
 
 	ClearMessage();
@@ -1596,7 +1597,7 @@
 		   NULL, "Je pense qu'il serait temps de donner l'ordre d'en finir avec les discriminations que nous avons eues envers elle. Vous ne pensez pas ?", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 300, FALSE );
+	ModFadeOutBGM( 0, 300, FALSE, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryô</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s12/17/182300036", 256, TRUE);
@@ -1607,7 +1608,7 @@
 		   NULL, " Qu'j'en ai à foutre, moi, qu'elle aille s'faire voir !", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "deadend", 56, 0 );
+	ModPlayBGM( 0, "deadend", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101496", 256, TRUE);
@@ -1830,7 +1831,8 @@
 	SetValidityOfInput( TRUE );
 	FadeOutBGM( 0, 1000, FALSE );
 	DrawScene( "black", 1000 );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
+	ModPlayBGM( 1, "yoru", 28, 0, 1 );
 	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2115,6 +2117,7 @@
 	OutputLine(NULL, "　鬼婆は怒ってました？」",
 		   NULL, " Mémé était pas trop en colère ?", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 3000, FALSE, 1 );
 
 	DisableWindow();
 	ModDrawCharacterWithFiltering(1, 18, "sprite/ki_def_", "0", "maskleft", 1, -240, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
@@ -2710,6 +2713,7 @@
 
 	DrawScene( "black", 3000 );
 	DrawScene( "background/moon", 1000 );
+	ModPlayBGM( 1, "yoru", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そして、俺たちは帰路につく。",
@@ -2876,8 +2880,9 @@
 	FadeOutBGM( 0, 3000, FALSE );
 	FadeOutBGM( 1, 3000, FALSE );
 	DrawScene( "background/jyt1", 3000 );
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 28, 0, 1 );
 	DrawScene( "background/jt1", 3000 );
 	SetValidityOfInput( FALSE );
 	Wait( 3000 );
@@ -3346,7 +3351,7 @@
 	ClearMessage();
 
 	FadeOutBGM( 1, 300, FALSE );
-	FadeOutBGM( 2, 300, FALSE );
+	ModFadeOutBGM( 2, 300, FALSE, 0 );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>所長</color>", NULL, "<color=#f5e6d3>Chef</color>", NULL, Line_ContinueAfterTyping); }
@@ -3521,8 +3526,9 @@
 		   NULL, " Eh bien alors, sur ce, je vais vous laisser ! Passez encore une bonne journée.", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　チン。",
@@ -3607,7 +3613,8 @@
 
 	CallScript( "&eyeCampblack" );
 	FadeOutBGM( 0, 1000, FALSE );
-	FadeOutBGM( 1, 1000, FALSE );
-	FadeOutBGM( 2, 1000, TRUE );
+	ModFadeOutBGM( 1, 1000, FALSE, 0 );
+	ModFadeOutBGM( 2, 1000, TRUE, 0 );
+	ModFadeOutBGM( 1, 1000, TRUE, 1 );
 
 }

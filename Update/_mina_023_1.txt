@@ -1,8 +1,9 @@
 ﻿void main()
 {
 
-	PlayBGM( 1, "semi", 56, 0 );
-	PlayBGM( 2, "suzume", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 2, "suzume", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 28, 0, 1 );
 	DrawSceneWithMask( "white", "maskm1", 1, 0, 1300 );
 	DrawSceneWithMask( "background/kuruma2", "maskup", 1, 0, 1300 );
 
@@ -287,8 +288,10 @@
 	OutputLine(NULL, "「配置場所よりももっとずっと興宮寄りの水田地帯の路肩です。」",
 		   NULL, "— Dans un fossé près des rizières, bien plus en direction d'Okinomiya.", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 300, FALSE, 1 );
 
-	PlayBGM( 0, "msys17", 56, 0 );
+	ModPlayBGM( 0, "msys17", 56, 0, 0 );
+	ModPlayBGM( 0, "z02_kyousou", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…毎回見付かる富竹の死体の場所と違う。",

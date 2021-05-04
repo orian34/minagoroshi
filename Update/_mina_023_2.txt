@@ -6,7 +6,8 @@
 	FadeOutBGM( 1, 1000, FALSE );
 	FadeOutBGM( 2, 1000, FALSE );
 	DrawScene( "white", 2000 );
-	PlayBGM( 0, "higurashi", 56, 0 );
+	ModPlayBGM( 0, "higurashi", 56, 0, 0 );
+	ModPlayBGM( 0, "higurashi", 28, 0, 1 );
 	DrawScene( "background/sora2", 1000 );
 	SetValidityOfInput( FALSE );
 	Wait( 1000 );

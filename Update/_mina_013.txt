@@ -1185,7 +1185,8 @@
 	Wait( 1000 );
 	SetValidityOfInput( TRUE );
 	DrawSceneWithMask( "white", "maskright", 1, 0, 300 );
-	PlayBGM( 1, "semi", 56, 0 );
+	ModPlayBGM( 1, "semi", 56, 0, 0 );
+	ModPlayBGM( 1, "semi", 28, 0, 1 );
 	DrawScene( "background/sora", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -2285,7 +2286,8 @@
 	SetValidityOfInput( FALSE );
 	Wait( 1500 );
 	SetValidityOfInput( TRUE );
-	PlayBGM( 1, "higurashi", 56, 0 );
+	ModPlayBGM( 1, "higurashi", 56, 0, 0 );
+	ModPlayBGM( 1, "higurashi", 28, 0, 1 );
 	DrawSceneWithMask( "background/sora", "maskm1", 1, 0, 1300 );
 	SetValidityOfInput( FALSE );
 	Wait( 2000 );
@@ -2517,6 +2519,7 @@
 	OutputLine(NULL, "みんながこうして全員で協力してくれたのは、俺の演説に感動したからじゃなくて、そういう団結の土壌があったからなんだな…。」",
 		   NULL, "Ce n'est pas parce que je suis un beau parleur que les autres sont venus m'aider, c'est parce que c'est engrainé en eux...", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 400, FALSE, 1 );
 
 	DrawScene( "black", 1000 );
 
@@ -2720,6 +2723,8 @@
 	OutputLine(NULL, "「じゃあ、今日よりももっと大勢で行けばいいってことかな、かな！」",
 		   NULL, "— Alors, il suffira de retourner demain avec plus de monde !", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
+	ModPlayBGM( 0, "G_Tactics", 56, 0, 1 );
 
 	DrawSceneWithMask( "background/gr1", "maskleft", 1, 0, 300 );
 
@@ -3853,7 +3858,7 @@
 	DisableWindow();
 	PlaySE( 0, "wa_036", 56, 64 );
 	DrawSceneWithMask( "white", "maskc", 7, 0, 1300 );
-	FadeOutBGM( 0, 1300, FALSE );
+	ModFadeOutBGM( 0, 1300, FALSE, 0 );
 	DrawScene( "black", 1300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
@@ -3866,7 +3871,7 @@
 	PlaySE( 0, "s_tataku", 56, 64 );
 	ModDrawCharacter(2, 23, "sprite/kameda1b_odoroki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
 	DrawScene( "background/res5", 50 );
-	PlayBGM( 0, "G_Tactics", 56, 0 );
+	ModPlayBGM( 0, "G_Tactics", 56, 0, 0 );
 	StartShakingOfWindow( 248, 40, 0, 0, 4*2, FALSE );
 	StartShakingOfAllObjects( 248, 40, 0, 0, 4*2, TRUE );
 
@@ -4212,7 +4217,8 @@
 	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(0, 23, "sprite/kameda1a_niyari_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );
 	DrawSceneWithMask( "background/res1", "maskright", 7, 0, 300 );
-	PlayBGM( 0, "3", 56, 0 );
+	ModPlayBGM( 0, "3", 56, 0, 0 );
+	ModPlayBGM( 0, "g_tactics", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5a5e5e>亀田</color>", NULL, "<color=#5a5e5e>Kameda</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 23, "ps3/s12/23/182800040", 256, TRUE);
@@ -4697,7 +4703,8 @@
 	OutputLine(NULL, "「…………これが、運命を打ち破ろうとする力なの…。」",
 		   NULL, "— ... Alors c'est ça, la force de ceux qui tentent de vaincre le Destin...", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 1000, TRUE, 1 );
 
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, TRUE );
+	ModFadeOutBGM( 0, 1000, TRUE, 0 );
 }

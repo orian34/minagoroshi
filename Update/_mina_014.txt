@@ -1,7 +1,8 @@
 ﻿void main()
 {
 
-	PlayBGM( 0, "yoru", 56, 0 );
+	ModPlayBGM( 0, "yoru", 56, 0, 0 );
+	ModPlayBGM( 0, "yoru", 28, 0, 1 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -1343,7 +1344,7 @@
 	ClearMessage();
 
 	DrawScene( "background/moon", 1000 );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　平日だってのに、これから飲みに行こうというタフな人たちもいるみたいだ。",
@@ -1647,6 +1648,7 @@
 	OutputLine(NULL, "「相談所への陳情ですか？」",
 		   NULL, "— Vous allez encore porter plainte ?", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 1, "yoru", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps2/01/180101005", 540, TRUE);
@@ -2672,7 +2674,8 @@
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
 	ModDrawCharacter(2, 11, "sprite/oisi1_2_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
+	ModPlayBGM( 1, "yoru", 28, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s12/11/180700264", 256, TRUE);
@@ -2737,7 +2740,8 @@
 		   NULL, "Me dites pas que Satoko valait moins que les sourires de mes voisins, quand même ?", Line_Normal);
 	ClearMessage();
 
-	PlayBGM( 0, "msys23", 56, 0 );
+	ModPlayBGM( 0, "msys23", 56, 0, 0 );
+	ModPlayBGM( 0, "g_tactics", 56, 0, 1 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　そうさ、俺は赤い炎でなくてはならない。",
@@ -3089,7 +3093,8 @@
 	ClearMessage();
 
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, FALSE );
+	ModFadeOutBGM( 0, 1000, FALSE, 0 );
+	ModFadeOutBGM( 0, 1000, TRUE, 1 );
 	SetValidityOfSkipping( FALSE );
 	DrawSceneWithMask( "tips/gettip_mina014", "mask1900", 7, 0, 400 );
 	Wait( 5000 );

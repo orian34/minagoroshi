@@ -3,7 +3,8 @@
 
 	PlaySE( 0, "wa_038", 56, 64 );
 	DrawSceneWithMask( "background/ka1_01", "maskc", 1, 0, 300 );
-	PlayBGM( 0, "msys06", 56, 0 );
+	ModPlayBGM( 0, "msys06", 56, 0, 0 );
+	ModPlayBGM( 0, "it_moves", 56, 0, 1 );
 
 	ClearMessage();
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
@@ -285,9 +286,9 @@
 		   NULL, "Sur ces mots, la plupart des personnes présentes se levèrent et prirent chacun leurs documents, puis, après avoir brièvement regardé l'heure, quittèrent la salle.", Line_Normal);
 	ClearMessage();
 
-	FadeOutBGM( 0, 1300, FALSE );
+	ModFadeOutBGM( 0, 1300, FALSE, 0 );
 	DrawSceneWithMask( "black", "maskdown", 1, 0, 1300 );
-	PlayBGM( 1, "yoru", 56, 0 );
+	ModPlayBGM( 1, "yoru", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…時計はもう２４時を指そうとしている。",
@@ -360,6 +361,7 @@
 	OutputLine(NULL, "全て飲みきった方が、予算請求には都合がいいでしょうから。」",
 		   NULL, " C'est vraiment plus facile de redemander le même budget lorsqu'il est effectivement utilisé au cours de l'exercice.", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 0, 1300, FALSE, 1 );
 
 	DisableWindow();
 	ModDrawCharacter(0, 10, "sprite/iri2_warai_", "2", -240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, FALSE );
@@ -821,6 +823,7 @@
 
 	DisableWindow();
 	FadeOutBGM( 0, 300, FALSE );
+	ModPlayBGM( 1, "yoru", 28, 0, 1 );
 	ModDrawCharacter(2, 8, "sprite/tomi2_def_", "0", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#945c44>富竹</color>", NULL, "<color=#945c44>Tomitake</color>", NULL, Line_ContinueAfterTyping); }
@@ -1154,11 +1157,11 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	DisableWindow();
-	FadeOutBGM( 1, 300, FALSE );
+	ModFadeOutBGM( 1, 300, FALSE, 0 );
 	DrawBustshot(5, "white", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 30, 200, TRUE );
 	PlaySE( 0, "s_Kyupiin", 56, 64 );
 	FadeBustshot( 5, FALSE, 0, 0, 0, 0, 400, TRUE );
-	PlayBGM( 0, "3", 56, 0 );
+	ModPlayBGM( 0, "3", 56, 0, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 9, "ps3/s12/09/180900194", 256, TRUE);
@@ -1232,7 +1235,8 @@
 	OutputLine(NULL, "あははははは……。」",
 		   NULL, " Ahahahaha...", Line_Normal);
 	ClearMessage();
+	ModFadeOutBGM( 1, 300, TRUE, 1 );
 
 	CallScript( "&eye" );
-	FadeOutBGM( 0, 1000, TRUE );
+	ModFadeOutBGM( 0, 1000, TRUE, 0 );
 }

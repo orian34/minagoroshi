@@ -823,6 +823,7 @@
 		   NULL, "Je pris un glaçon en bouche, que je croquai avec mes molaires. La sensation était délicieuse.", Line_Normal);
 	ClearMessage();
 
+	ModFadeOutBGM( 0, 300, FALSE, 1 );
 	DrawSceneWithMask( "background/moon", "maskup", 1, 0, 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -842,6 +843,7 @@
 	OutputLine(NULL, "………どうして梨花が、必ず昭和５８年に殺されるか、ですね？」",
 		   NULL, "... Tu veux savoir pourquoi Rika se fait toujours tuer en juin 1983, c'est bien ça ?", Line_Normal);
 	ClearMessage();
+	ModPlayBGM( 0, "instict", 56, 0, 1 );
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
