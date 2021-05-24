@@ -63,7 +63,7 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それに気付いた、洗濯物を干していた主婦が声をかける。",
-		   NULL, "Une femme qui pendait son linge le remarqua et lui adressa la parole.", Line_Normal);
+		   NULL, "Un voisin qui pendait son linge le remarqua et lui adressa la parole.", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
@@ -81,7 +81,7 @@
 		   NULL, "— Oui, oh ça oui !", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/manb18009", 256, TRUE);
 	OutputLine(NULL, "　こんな暑いと茹だっちまってかなわねぇよ。",
-		   NULL, " Par c'temps-là ma p'tite dame, je bous là-d'sous.", Line_WaitForInput);
+		   NULL, " Par c'temps-là, je bous là-d'sous.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s12/00/manb18010", 256, TRUE);
 	OutputLine(NULL, "えっへっへ！」",
 		   NULL, " Hahaha !", Line_Normal);
