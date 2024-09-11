@@ -4275,14 +4275,17 @@
 		   NULL, "Une fois les enfants partis, une grosse camionnette blanche démarra pour les suivre. À son bord se trouvaient deux ouvriers.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>鶯</color>", NULL, "<color=#f5e6d3>Bouscarle Chanteuse</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob7b6000", 256, TRUE);
 	OutputLine(NULL, "『鶯より白鷺、Ｒは安全圏へ脱出。",
 		   NULL, "— Aigrette, ici Bouscarle Chanteuse. R est entrée dans la zone de sécurité.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob7b6001", 256, TRUE);
 	OutputLine(NULL, "引き続き警護されたし。』",
 		   NULL, " Nous vous confions la suite des opérations.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>白鷺</color>", NULL, "<color=#f5e6d3>Aigrette</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob7c6000", 256, TRUE);
 	OutputLine(NULL, "『白鷺了解。』",
 		   NULL, "— Ici Aigrette, c'est compris.", Line_Normal);
 	ClearMessage();

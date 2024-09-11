@@ -122,15 +122,15 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700222", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6164", 256, TRUE);
 	OutputLine(NULL, "「公由家には臭い話は聞いてないんだけどなぁ…。",
 		   NULL, "— Oui, mais les Kimiyoshi sont réglos.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700223", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6165", 256, TRUE);
 	OutputLine(NULL, "やっぱり、村には信仰を軸にした狂信的な勢力が隠れてるってのかなぁ…。",
 		   NULL, "Je ne sais pas trop, ça doit être un truc avec des extrémistes religieux, je ne vois rien d'autre, et encore, même ça c'est tiré par les cheveux.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700224", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6166", 256, TRUE);
 	OutputLine(NULL, "沼の底がどうなってるのか楽しみです。」",
 		   NULL, "Je me demande bien quelle histoire elle va sortir des marais vaseux de Hinamizawa...", Line_Normal);
 	ClearMessage();
@@ -195,7 +195,7 @@
 	OutputLine(NULL, "あるいは、古手梨花が話してくれると一番うれしいんですがね、なっはっは。",
 		   NULL, "Si Rika Furude pouvait justement nous en raconter plus là-dessus, ce serait un hasard bien pratique pour nous. Éhhéhhéhhé !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700233", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6175", 256, TRUE);
 	OutputLine(NULL, "……熊ちゃんも今回の岐阜の件で、決め付ける捜査がどれだけ冤罪を生み出してきたか、よくわかったでしょう。」",
 		   NULL, "... En tout cas, Nounours, j'espère que cette histoire t'aura appris à ne pas bâcler les enquêtes, parce que ça peut mener loin dans les fausses accusations.", Line_Normal);
 	ClearMessage();
@@ -210,15 +210,15 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700234", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6176", 256, TRUE);
 	OutputLine(NULL, "「結局、最後まで間違いは認めてませんからねぇ。",
 		   NULL, "— Surtout que même mis devant les faits, il n'a rien voulu reconnaître, tu as vu ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700235", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6177", 256, TRUE);
 	OutputLine(NULL, "岐阜県警はあくまでもあの死体は鷹野三四だったで通すつもりのようです。",
 		   NULL, "Je parie qu'ils vont camper sur leurs positions et déclarer que ce corps est bien celui de Miyo Takano.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700236", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6178", 256, TRUE);
 	OutputLine(NULL, "でもうちは鷹野三四生存で行きますよ。",
 		   NULL, "Mais dans nos rapports, elle sera toujours présentée comme vivante. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -1394,9 +1394,12 @@
 	OutputLine(NULL, "神を欺くことなどできない、知られるのは宿命だったのよ。",
 		   NULL, " On ne peut pas tromper un dieu, donc forcément, le Destin lui a été révélé. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s12/09/280900245", 256, TRUE);
-	OutputLine(NULL, "古手梨花をあっさり暗殺などできるわけがなかった。　…くすくす、いいわよ梨花ちゃん。",
-		   NULL, "J'aurais dû me douter qu'il serait absolument impossible de tuer Rika Furude sans se faire démasquer. Ahahahaha, d'accord, Rika, très bien, comme tu voudras.", Line_Normal);
+	ModPlayVoiceLS(4, 9, "org/s12/09/280900245a_org", 256, TRUE);
+	OutputLine(NULL, "古手梨花をあっさり暗殺などできるわけがなかった。",
+		   NULL, "J'aurais dû me douter qu'il serait absolument impossible de tuer Rika Furude sans se faire démasquer.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/s12/09/280900245b_org", 256, TRUE);
+	OutputLine(NULL, "　…くすくす、いいわよ梨花ちゃん。",
+		   NULL, " Ahahahaha, d'accord, Rika, très bien, comme tu voudras.", Line_Normal);
 	ClearMessage();
 
 	DrawScene( "black", 400 );

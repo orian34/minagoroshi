@@ -2279,15 +2279,15 @@
 	PlayBGM( 0, "Nazo", 56, 0 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700148", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6137", 256, TRUE);
 	OutputLine(NULL, "「もしもし、大石です。",
 		   NULL, "— Oui, allô ? Ici Ôishi.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700149", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6138", 256, TRUE);
 	OutputLine(NULL, "お待たせしてすみませんでしたねぇ。",
 		   NULL, "Je suis désolé de vous avoir fait attendre.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700150", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6139", 256, TRUE);
 	OutputLine(NULL, "ちょいと今から岐阜に行ってこようとしてたところでした。",
 		   NULL, "Je pensais justement partir pour Gifu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -2297,10 +2297,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 5, "ps3/s12/05/280500204", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika6069", 256, TRUE);
 	OutputLine(NULL, "「……岐阜。",
 		   NULL, "— ... À Gifu ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 5, "ps3/s12/05/280500205", 256, TRUE);
+	ModPlayVoiceLS(4, 5, "org/rika6070", 256, TRUE);
 	OutputLine(NULL, "鷹野の死体のことですか。」",
 		   NULL, " Alors, vous allez vérifier le corps de Takano ?", Line_Normal);
 	ClearMessage();
@@ -2551,10 +2551,10 @@
 	DrawSceneWithMask( "background/ke2", "maskleft", 1, 0, 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700182", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6149", 256, TRUE);
 	OutputLine(NULL, "「私たちも岐阜のわからずや共を締め落としたら、すぐに雛見沢へ行きましょう。",
 		   NULL, "— Et nous, on va aller tirer les oreilles des imbéciles de Gifu, et on repart immédiatement pour Hinamizawa !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700183", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6150", 256, TRUE);
 	OutputLine(NULL, "ちょいとハードな出張スケジュールになりましたよぅ？」",
 		   NULL, " Ça va être chaud pour faire toute cette route en une après-midi, mais il faudra bien essayer...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

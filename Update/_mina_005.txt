@@ -510,6 +510,7 @@
 
 	DrawSceneWithMask( "black", "maskup", 1, 0, 1300 );
 	DrawSceneWithMask( "scene/304a", "maskup", 1, 0, 1300 );
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/moon", "maskup", 1, 0, 1300 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　グラスを片手に、再び窓辺に戻る。",
@@ -1726,12 +1727,10 @@
 	ModDrawCharacterWithFiltering(0, 12, "sprite/ha1_def2_", "0", "maskright", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 5, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s12/12/181100094", 256, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu6000", 256, TRUE);
 	OutputLine(NULL, "「あとは、",
-		   NULL, "— La dernière piste...", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1600 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "— La dernière piste...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 12, "org/hanyu6001", 256, TRUE);
 	OutputLine(NULL, "………狂信的な何者か、なのです。」",
 		   NULL, " serait celle d'un groupe de fanatiques ou de fous furieux, j'imagine.", Line_Normal);
 	ClearMessage();

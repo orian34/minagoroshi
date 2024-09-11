@@ -455,30 +455,30 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101156", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6228", 256, TRUE);
 	OutputLine(NULL, "「みんな、今日は集まってくれてありがとう！！！",
 		   NULL, "— Bonjour tout le monde ! Merci d'être venus aujourd'hui.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s12/01/kei081901", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6229", 256, TRUE);
 	OutputLine(NULL, "　すでに聞いてると思うが、俺たちのクラスメート、北条沙都子が叔父に誘拐同然にさらわれてもう四日目！！",
 		   NULL, " Je pense que vous êtes déjà au courant, mais l'une des filles de notre classe, Satoko Hôjô, a été emmenée de force par son oncle depuis maintenant 4 jours. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", "<size=-3>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/180101158", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6230", 256, TRUE);
 	OutputLine(NULL, "　かつて気の向くままに沙都子を虐め、愛人のところへ一年間も蒸発していた叔父がどうして親権者なんて名乗れるのか！！",
 		   NULL, "Pourquoi est-ce qu'un connard pareil, qui battait sa nièce comme il en avait envie, et qui l'a laissée à la rue pendant toute une année sans se manifester, coulant la vie douce auprès de sa maîtresse, peut-il encore avoir l'autorité parentale ? C'est n'importe quoi ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/180101159", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6231", 256, TRUE);
 	OutputLine(NULL, "　児童相談所は直ちに状況を理解し、沙都子に対する緊急保護を実施するべきである！！",
 		   NULL, "Le centre de protection de l'enfance doit bien comprendre que la situation est dangereuse. Ils doivent immédiatement prendre Satoko sous leur aile !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/180101160", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6232", 256, TRUE);
 	OutputLine(NULL, "　だが児童相談所側は慎重な対応を理由に現状を放置！",
 		   NULL, "Mais sous prétexte de prudence dans la décision, ils ont pour l'instant laissé traîner les choses !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/180101161", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6233", 256, TRUE);
 	OutputLine(NULL, "　沙都子が日々の窒息しそうな環境の中で心をすり潰されていっている急を理解していない！！",
 		   NULL, "Ils ne semblent pas comprendre à quel point Satoko est étouffée dans ce nouvel environnement ! ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/180101162", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6234", 256, TRUE);
 	OutputLine(NULL, "　俺たちはこれより三日目の陳情を決行し、児童相談所に改めて緊急の対応を求めるものであるッ！！！」",
 		   NULL, "Nous sommes déjà venus porter plainte, et aujourd'hui, nous revenons encore une fois demander une réévaluation de l'urgence de la situation !", Line_Normal);
 	ClearMessage();
@@ -721,16 +721,16 @@
 	DrawScene( "background/mati_ji1", 300 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>事務員</color>", NULL, "<color=#f5e6d3>Employé de bureau</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/jimua18017", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob7d6016", 256, TRUE);
 	OutputLine(NULL, "「こ、こんにちは…、今日はどのようなご用件でしょうか…。」",
 		   NULL, "— Euh... Bon--bonjour messieurs dames, que voulez-vous aujourd'hui ?", Line_Normal);
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps3/s12/01/180101166", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6235", 256, TRUE);
 	OutputLine(NULL, "「昨日と同じです。",
 		   NULL, "— La même chose qu'hier.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 1, "ps3/s12/01/kei081902", 256, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6236", 256, TRUE);
 	OutputLine(NULL, "北条沙都子の緊急対応を求めて陳情に参りました！」",
 		   NULL, " Nous sommes venus porter plainte pour exiger la reconnaissance de l'urgence de la situation de Satoko Hôjô !", Line_Normal);
 	ClearMessage();
@@ -837,10 +837,10 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>原山</color>", NULL, "<color=#f5e6d3>Harayama</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/182900052", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/harayama6051", 256, TRUE);
 	OutputLine(NULL, "「本当に申し訳ございません…。",
 		   NULL, "— Je suis vraiment désolé,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/182900053", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/harayama6052", 256, TRUE);
 	OutputLine(NULL, "他のお客様へのご配慮と言うことでご理解をご協力をいただけると助かるのですが…。」",
 		   NULL, " mais pensez aussi un peu aux autres personnes qui voudraient nous voir...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

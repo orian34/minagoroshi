@@ -509,10 +509,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps2/10/181000019", 540, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6000", 256, TRUE);
 	OutputLine(NULL, "「アナフィラキシーショックと同じで、仮に異物が完全に取り除かれても、人体側に過剰な反応を示す体質が作られてしまいます。",
 		   NULL, "— C'est comme un choc anaphylactique. Même si l'allergène disparaît entièrement, le corps continue de produire des anticorps en masse.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s12/10/181000020", 256, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6001", 256, TRUE);
 	OutputLine(NULL, "つまり、」",
 		   NULL, " Et donc si tu veux...", Line_Normal);
 	ClearMessage();
@@ -784,10 +784,10 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>窓口</color>", NULL, "<color=#f5e6d3>Opératrice</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/docwin10001", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob7a6000", 256, TRUE);
 	OutputLine(NULL, "『東京から外線です。",
 		   NULL, "— C'est un appel depuis Tôkyô.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/docwin10002", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob7a6001", 256, TRUE);
 	OutputLine(NULL, "そちらへ回します。』",
 		   NULL, " Je vous le passe.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -798,20 +798,22 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps3/s12/10/181000040_1", 256, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6006", 256, TRUE);
 	OutputLine(NULL, "「あぁ、リサさんですね。",
 		   NULL, "— Ah, oui, Risa ?", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps2/10/181000042", 540, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6007", 256, TRUE);
 	OutputLine(NULL, "もう今年もそんな時期になりましたか。",
 		   NULL, " Oui, il faut dire que nous sommes déjà en pleine saison, le Temps passe tellement vite...", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s12/10/181000040_2", 256, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6008", 256, TRUE);
 	OutputLine(NULL, "電話は所長室で取りますからそっちへ回してください。」",
 		   NULL, " Faites passer son appel dans mon bureau, je le prendrai depuis mon poste personnel.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>窓口</color>", NULL, "<color=#f5e6d3>Opératrice</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob7a6002", 256, TRUE);
 	OutputLine(NULL, "『はい。",
 		   NULL, "— Très bien.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "org/mob7a6003", 256, TRUE);
 	OutputLine(NULL, "ではすみません、そちらの受話器を一度切ってください。』",
 		   NULL, " Alors dans ce cas, veuillez raccrocher.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -820,13 +822,13 @@
 	DrawScene( "background/sinryou_sinsatu1", 400 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps2/10/181000044", 540, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6009", 256, TRUE);
 	OutputLine(NULL, "「わかりました。",
 		   NULL, "— Oui, bien sûr.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s12/10/181000045", 256, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6010", 256, TRUE);
 	OutputLine(NULL, "…梨花さん、すみません。",
 		   NULL, " Rika, je suis désolé,", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps3/s12/10/181000046", 256, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6011", 256, TRUE);
 	OutputLine(NULL, "東京からの電話です。」",
 		   NULL, " mais j'ai un appel important qui m'attend.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2784,7 +2786,7 @@
 	ModDrawCharacterWithFiltering(2, 2, "sprite/re2a_def_a1_", "2", "maskright", 1, 240, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s12/02/180200010", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena6000", 256, TRUE);
 	OutputLine(NULL, "「うーん！！",
 		   NULL, "— Hmmmmm...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2793,13 +2795,13 @@
 	ModDrawCharacter(2, 2, "sprite/re2b_kaii_b1_", "2", 240, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>Rena</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 2, "ps3/s12/02/180200011", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena6001", 256, TRUE);
 	OutputLine(NULL, "ケンタくん人形とか売ってもらえないのかなぁ。",
 		   NULL, "Je me demande si je ne pourrais pas acheter un Kenta.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s12/02/180200012", 256, TRUE);
-	OutputLine(NULL, "興宮チェーン店に５万円持ってったら売ってくれないかなぁ！",
+	ModPlayVoiceLS(4, 2, "org/rena6002", 256, TRUE);
+	OutputLine(NULL, "フライドチキン屋さんに５万円持ってったら売ってくれないかなぁ！",
 		   NULL, " Je ne sais pas si je peux simplement me pointer au prochain Fried Chicken et leur laisser la liasse de billets dans les mains.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 2, "ps3/s12/02/180200013", 256, TRUE);
+	ModPlayVoiceLS(4, 2, "org/rena6003", 256, TRUE);
 	OutputLine(NULL, "　はぅ。」",
 		   NULL, " Hauuu☆!", Line_Normal);
 	ClearMessage();
@@ -5628,10 +5630,10 @@
 
 	SetSpeedOfMessage( FALSE, 0 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>Keiichi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 1, "ps2/01/180100119", 540, TRUE);
+	ModPlayVoiceLS(4, 1, "org/keiichi6000", 256, TRUE);
 	OutputLine(NULL, "「そっかぁ！",
-		   NULL, "— Je vois…", Line_Continue);
-	Wait(1400);
+		   NULL, "— Je vois…", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "org/keiichi6001", 256, TRUE);
 	OutputLine(NULL, "　おじさんの店の手伝いってんじゃ仕方ねえなぁ…！」",
 		   NULL, " C'est vraiment dommage, mais bon, si c'est pour du travail, tu dois y aller...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -5924,7 +5926,7 @@
 	ModDrawCharacter(1, 3, "sprite/me2_akuwarai_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300028", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion6000", 256, TRUE);
 	OutputLine(NULL, "「圭ちゃんが持ってたら、確実に明日から変態扱いだね。うん！」",
 		   NULL, "— Si tu la ramènes demain à l'école, tu passeras pour un détraqué, c'est clair !", Line_Normal);
 	ClearMessage();

@@ -25,22 +25,16 @@
 
 	SetSpeedOfMessage( TRUE, 128 );
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300033", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion6001", 256, TRUE);
 	OutputLine(NULL, "「だだ、",
-		   NULL, "— Mais enfin,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 800 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, "— Mais enfin,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion6002", 256, TRUE);
 	OutputLine(NULL, "だからさおじさん、",
-		   NULL, " si je te dis que ces trucs,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1500 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " si je te dis que ces trucs,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion6003", 256, TRUE);
 	OutputLine(NULL, "こういう可愛いお人形はさ、",
-		   NULL, " ces poupées, ces rubans, ces frous-frous, quoi, tout ça,", Line_Continue);
-	// (backup) SetValidityOfInput( FALSE );
-	Wait( 1700 );
-	// (backup) SetValidityOfInput( TRUE );
+		   NULL, " ces poupées, ces rubans, ces frous-frous, quoi, tout ça,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 3, "org/mion6004", 256, TRUE);
 	OutputLine(NULL, "ちゃんとした可愛い女の子に渡した方が似合うと思うんだよね！",
 		   NULL, " c'est pour les filles toutes mignonnes, pas pour moi !", Line_Continue);
 	SetSpeedOfMessage( FALSE, 0 );
@@ -51,7 +45,7 @@
 	ModDrawCharacter(1, 3, "sprite/me2_hau_a1_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 3, "ps3/s12/03/180300034", 256, TRUE);
+	ModPlayVoiceLS(4, 3, "org/mion6005", 256, TRUE);
 	OutputLine(NULL, "私みたいな男女に渡してもほら、人形の方が可哀想というか、あはははは…！」",
 		   NULL, "J'en fais quoi, moi ? Regarde-la, cette poupée, elle fait tache, quoi, je peux pas me montrer avec ! C'est même pire, elle ne peut pas se montrer avec moi !", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

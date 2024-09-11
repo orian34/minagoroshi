@@ -63,26 +63,26 @@
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…それに気付いた、洗濯物を干していた主婦が声をかける。",
-		   NULL, "Un voisin qui pendait son linge le remarqua et lui adressa la parole.", Line_Normal);
+		   NULL, "Une voisine qui pendait son linge le remarqua et lui adressa la parole.", Line_Normal);
 	ClearMessage();
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/mana18003", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>主婦</color>", NULL, "<color=#f5e6d3>Ménagère</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3a2000", 256, TRUE);
 	OutputLine(NULL, "「あんれ、こんぬつわー！",
 		   NULL, "— Ah tiens, bonjour !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/mana18004", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob3a2001", 256, TRUE);
 	OutputLine(NULL, "　今日もお暑いこって！」",
 		   NULL, " Il fait chaud, hein ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
-	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Homme</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/manb18008", 256, TRUE);
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>大家</color>", NULL, "<color=#f5e6d3>Propriétaire</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "org/mob3b2000", 256, TRUE);
 	OutputLine(NULL, "「ちゃー、暑いねぇ！",
 		   NULL, "— Oui, oh ça oui !", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/manb18009", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob3b2001", 256, TRUE);
 	OutputLine(NULL, "　こんな暑いと茹だっちまってかなわねぇよ。",
 		   NULL, " Par c'temps-là, je bous là-d'sous.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s12/00/manb18010", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/mob3b2002", 256, TRUE);
 	OutputLine(NULL, "えっへっへ！」",
 		   NULL, " Hahaha !", Line_Normal);
 	ClearMessage();
@@ -1978,13 +1978,19 @@
 
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s12/09/taka081301", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano6059", 256, TRUE);
 	OutputLine(NULL, "「さて、どうかしら。",
-		   NULL, "— Hmm, je me demande.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "— Hmm, je me demande. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", "<size=-3>", Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/taka081302", 540, TRUE);
-	OutputLine(NULL, "現時点では、何も起きていないわけでしょう？」",
-		   NULL, "Pour l'instant, la personne ayant légitimement la garde de l'enfant est revenue la récupérer. Si Satoko avait des traces visibles de mauvais traitements, les choses seraient différentes, mais pour l'instant, si j'ai bien compris, ce n'est pas le cas ?", GetGlobalFlag(GLinemodeSp));
+	ModPlayVoiceLS(4, 9, "org/takano6060", 256, TRUE);
+	OutputLine(NULL, "現時点では、親権者が現れて沙都子ちゃんを保護しただけよ？",
+		   NULL, "Pour l'instant, la personne ayant légitimement la garde de l'enfant est revenue la récupérer.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano6061", 256, TRUE);
+	OutputLine(NULL, "　沙都子ちゃんが大怪我でもしたというならともかく。",
+		   NULL, " Si Satoko avait des traces visibles de mauvais traitements, les choses seraient différentes,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano6062", 256, TRUE);
+	OutputLine(NULL, "…そういうわけではないんでしょう？」",
+		   NULL, " mais pour l'instant, si j'ai bien compris, ce n'est pas le cas ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
@@ -2029,7 +2035,7 @@
 	DrawScene( "background/sinryou_sinsatu1", 1000 );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s12/09/taka081303", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano6063", 256, TRUE);
 	OutputLine(NULL, "「多分、こういうのはまず、児童相談所に訴えるのが先じゃないかしら。」",
 		   NULL, "— D'abord, je pense qu'il faut alerter les autorités compétentes, le service de protection des enfants, non ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2038,13 +2044,13 @@
 	ModDrawCharacter(2, 10, "sprite/iri2_majime_", "2", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 10, "ps2/10/181000161", 540, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6017", 256, TRUE);
 	OutputLine(NULL, "「………そう言えば以前。",
 		   NULL, "— ... Ce qui me rappelle…", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps2/10/181000162", 540, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6018", 256, TRUE);
 	OutputLine(NULL, "…沙都子ちゃんが、児童相談所に虚偽の通報をした、なんてことがありましたね…。",
 		   NULL, " que Satoko a déjà eu affaire à eux. Elle avait fait de fausses dépositions.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 10, "ps2/10/181000163", 540, TRUE);
+	ModPlayVoiceLS(4, 10, "org/irie6019", 256, TRUE);
 	OutputLine(NULL, "ちゃんと話を聞いてくれるといいのですが…。」",
 		   NULL, " J'espère qu'ils écouteront au moins ce que nous avons à dire...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
@@ -2409,7 +2415,7 @@
 	ModDrawCharacter(1, 9, "sprite/ta2_akuwarai_", "2", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s12/09/taka081304", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano6064", 256, TRUE);
 	OutputLine(NULL, "「……………助けてください、という言い方が、お二人とも実に偽善的ね。",
 		   NULL, "— ... Je trouve votre façon de formuler les choses très hypocrite.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2418,12 +2424,14 @@
 	ModDrawCharacter(1, 9, "sprite/ta2_def_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 9, "org/takano6065", 256, TRUE);
 	OutputLine(NULL, "沙都子ちゃんをさらって永遠に監禁するわけじゃないんでしょう？",
 		   NULL, "Vous ne me demandez pas d'enlever Satoko et de la garder prisonnière pour le reste de sa vie, n'est-ce pas ?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 9, "org/takano6066", 256, TRUE);
 	OutputLine(NULL, "　沙都子ちゃんにこれまでと同じ生活を送らせるために救うのでしょう？",
 		   NULL, " Vous voulez la sauver pour qu'elle puisse continuer à mener la vie qu'elle avait avant aujourd'hui. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s12/09/taka081305", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano6067", 256, TRUE);
 	OutputLine(NULL, "　それはつまり、叔父の方を摘出せよというご命令ですわよね…？」",
 		   NULL, "Ce qui veut dire qu'en fait, vous me demandez de supprimer l'oncle ?", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -2990,16 +2998,16 @@
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps3/s12/09/taka081306", 256, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano6068", 256, TRUE);
 	OutputLine(NULL, "「日の当る世界では、日の当る世界のルールで解決するのが筋かと思います。",
 		   NULL, "— Je pense que pour régler les problèmes de manière honnête et conventionnelle, il suffit de suivre les lois.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/180900256", 540, TRUE);
+	ModPlayVoiceLS(4, 9, "org/takano6069", 256, TRUE);
 	OutputLine(NULL, "例えば警察へ相談する、児童相談所に相談する。",
 		   NULL, "Nous pouvons aller porter plainte à la gendarmerie, ou bien au centre de protection de l'enfance.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f6d9a8>鷹野</color>", NULL, "<color=#f6d9a8>Takano</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 9, "ps2/09/taka081307", 540, TRUE);
-	OutputLine(NULL, "さしあたっては学校、警察、あるいは……、」",
+	ModPlayVoiceLS(4, 9, "org/takano6070", 256, TRUE);
+	OutputLine(NULL, "学校へ相談するのも方法かもしれません。」",
 		   NULL, "Il y a peut-être même moyen de demander de l'aide au niveau de l'école.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 

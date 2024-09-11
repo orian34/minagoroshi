@@ -106,19 +106,19 @@
 	ModDrawCharacter(0, 11, "sprite/oisi1_4_", "1", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700081", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6112", 256, TRUE);
 	OutputLine(NULL, "「彼女についても残念なご連絡があります。",
 		   NULL, "— J'ai aussi de mauvaises nouvelles à son sujet.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700082", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6113", 256, TRUE);
 	OutputLine(NULL, "岐阜の山中で焼死体で発見されました。",
 		   NULL, "Elle a été retrouvée, calcinée, dans les hauteurs des montagnes de Gifu.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700083", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6114", 256, TRUE);
 	OutputLine(NULL, "死体の状況から、多分、絞殺された後に焼かれたんじゃないかと思っているのですが。",
 		   NULL, "D'après l'état du corps, nous pensons qu'elle a été étranglée, déplacée, puis ensuite seulement brûlée. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700084", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6115", 256, TRUE);
 	OutputLine(NULL, "どちらにせよ気の毒な話です。」",
 		   NULL, "Quoi qu'il en soit, ce n'est pas une mort très digne. C'est vraiment moche.", Line_Normal);
 	ClearMessage();
@@ -618,10 +618,10 @@
 	OutputLine(NULL, "ただ、うちの鑑識のジジイが言うにはそれでも１００％じゃないと言う。",
 		   NULL, " Mais notre médecin-légiste m'a dit que ce n'était pas fiable à 100%. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700129", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6118", 256, TRUE);
 	OutputLine(NULL, "……まぁ、それよりおかしいのが岐阜県警鑑識の死亡時刻なんです。",
 		   NULL, "Enfin bon, le plus étrange là-dedans, c'est l'heure du décès constatée par nos collègues de Gifu.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700130", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6119", 256, TRUE);
 	OutputLine(NULL, "当初、死亡時刻が合わなかったらしいんです。」",
 		   NULL, " Dans le premier rapport d'autopsie, ils nous disent que l'heure du décès ne correspond pas.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
@@ -646,10 +646,10 @@
 	OutputLine(NULL, "内容物とかそういうのから調べるらしいですね。",
 		   NULL, " Lui se base sur les analyses de son contenu stomacal. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/280700134", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6123", 256, TRUE);
 	OutputLine(NULL, "ですが、この時点で岐阜さんには、鷹野の話をしちゃってたんです。",
 		   NULL, "Et sur ces entrefaits, nous leur téléphonons en leur parlant de Miyo Takano.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700135", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6124", 256, TRUE);
 	OutputLine(NULL, "だから岐阜さん、綿流しの日に彼氏とデートしてたはずの死体が死後２４時間では話が合わないって言って、その鑑定結果を握り潰しちゃったらしい。",
 		   NULL, " Et alors eux nous disent que non, ce n'est pas leur corps, que celui qu'ils ont est mort depuis au moins 24h. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -693,7 +693,7 @@
 	ModDrawCharacter(2, 11, "sprite/oisi1_5_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700142", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6131", 256, TRUE);
 	OutputLine(NULL, "……まぁ、そんなのは抜きにして、単純に岐阜さんが鷹野に間違いないと決め付けてしまった可能性の方が高いですが。",
 		   NULL, "Les erreurs de l'autopsie font toujours tache dans les dossiers. ", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
@@ -717,10 +717,10 @@
 	ClearMessage();
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ôishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700146", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6135", 256, TRUE);
 	OutputLine(NULL, "「鷹野三四は先日以来、車ごと行方不明です。",
 		   NULL, "— Miyo Takano a disparu avec sa voiture hier soir.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 11, "ps3/s12/11/280700147", 256, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi6136", 256, TRUE);
 	OutputLine(NULL, "岐阜の死体が鷹野でないなら、……これは何だか面白そうな話になってきます。」",
 		   NULL, " Si le corps retrouvé à Gifu n'est en réalité pas le sien... alors là, je crois que cette affaire sera la plus passionnante de ma carrière.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

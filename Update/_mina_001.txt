@@ -130,6 +130,9 @@
 	DrawSceneWithMask("black", "maskleft", 0, 0, 300 );
 	Wait( 300 );
 	DrawSceneWithMask( "scene/045", "maskright", 1, 0, 300 );
+	if (GetGlobalFlag(GHideCG)) {ModSetLayerFilter(0, 179, "none");}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 12, "sprite/ha1_au_", "2", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 0, FALSE );}
+	if (GetGlobalFlag(GHideCG)) {DrawSceneWithMask("background/mo1", "maskright", 0, 0, 300 );}
 
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　振り返ると、その口調を裏切らない、おどおどとした姿が目に入る。",
@@ -185,8 +188,11 @@
 		   NULL, "Là encore, j'eus bien l'impression qu'elle se rendit compte de ma vraie question au moment où j'étais en train de tout lui expliquer.", Line_Normal);
 	ClearMessage();
 
+	if (GetGlobalFlag(GHideCG)) {DisableWindow();}
+	if (GetGlobalFlag(GHideCG)) {ModDrawCharacter(0, 12, "sprite/ha1_yowaki_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 5, 200, TRUE );}
+
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#8676cf>羽入</color>", NULL, "<color=#8676cf>Hanyû</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 12, "ps3/s12/12/181100004", 256, TRUE);
+	ModPlayVoiceLS(4, 12, "org/hanyu6006", 256, TRUE);
 	OutputLine(NULL, "「…………えっとえっと、",
 		   NULL, "— ... Euh, hmmm…", Line_Continue);
 	// (backup) SetValidityOfInput( FALSE );
@@ -198,8 +204,10 @@
 	Wait( 800 );
 	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "…昭和５８年、６月なのです。",
-		   NULL, "Nous sommes en juin 1983.", Line_WaitForInput);
-	ModPlayVoiceLS(4, 12, "ps3/s12/12/181100005", 256, TRUE);
+		   NULL, "Nous sommes en juin 1983.", Line_Continue);
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 800 );
+	// (backup) SetValidityOfInput( TRUE );
 	OutputLine(NULL, "綿流しのお祭りが来週なのですから……えっとえっと……、」",
 		   NULL, " La cérémonie de la purification du coton se déroulera dans un peu plus d'une semaine, donc nous sommes très exactement le... Euh...", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
